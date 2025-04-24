@@ -465,7 +465,7 @@ def run_shared_state_sync(
         num_syncs: IntRef,
         train_profiler: Profiler,
         late_joiner: bool,
-        strategy: SharedStateSyncStragy
+        strategy: SharedStateSyncStrategy
 ):
     # 3) Sync shared state => ensures we have the same aggregator (outer) parameters
     with train_profiler.session("pccl::sync_shared_state"):
