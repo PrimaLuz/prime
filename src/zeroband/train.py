@@ -632,6 +632,7 @@ def train(logger: Logger, config: Config, mpi_config: Optional[MPIConfig], devic
 
     num_inner_steps = config.diloco.inner_steps if config.diloco is not None else 1
 
+    logger.info(f"Attempting to connect PCCL to {config.pccl.ccoip_host}")
     # initialize PCCL
     communicator = Communicator(config.pccl.ccoip_host, mpi_config.mpi_rank if mpi_config is not None else 0)
     communicator.connect(n_attempts=15)
