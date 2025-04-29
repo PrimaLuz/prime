@@ -20,7 +20,7 @@ class DataConfig(BaseConfig):
     num_workers: int = 1
     max_train_samples: int | None = None
     max_eval_samples: int | None = None
-    dataset_ratio: str | None = None
+    dataset_ratio: str = "100"
     data_rank: int | None = None
     data_world_size: int | None = None
     reverse_data_files: bool = False
