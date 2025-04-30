@@ -30,11 +30,10 @@ class DataConfig(BaseConfig):
     def data_config_valid(self):
         assert self.fake == (
                     self.dataset_name_or_paths is None), "Data must be fake if 'dataset_name_or_paths' is not set"
-
-        if self.dataset_ratio is None:
+                
+        if self.fake or self.dataset_ratio is None:
             return self
 
-        assert self.dataset_name_or_paths is not None, "'dataset_name_or_paths' must be set if 'dataset_ratio' is set"
         dataset_files = self.dataset_name_or_paths.split(',')
         ratio_texts = self.dataset_ratio.split(":")
         assert len(dataset_files) == len(

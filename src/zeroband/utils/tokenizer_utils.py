@@ -1,9 +1,6 @@
 from dataclasses import dataclass
-from typing import TYPE_CHECKING
 from zeroband.config import Config
 
-if TYPE_CHECKING:
-    from zeroband.data import DEBUG_VOCAB_SIZE
 
 
 @dataclass
@@ -17,7 +14,14 @@ class TokenizerInfo:
 
 def get_tokenizer_info(config: Config) -> TokenizerInfo:
     if config.data.fake and config.model_name == "debugmodel":
-        return DEBUG_VOCAB_SIZE
+        from zeroband.data import DEBUG_VOCAB_SIZE
+        return TokenizerInfo(
+            hf_name="debugmodel",
+            vocab_size=DEBUG_VOCAB_SIZE,
+            bot_token=1,
+            eot_token=2,
+        )
+    
     elif config.model_type == "llama2":
         return TokenizerInfo(
             hf_name="mistralai/Mistral-7B-v0.1",
