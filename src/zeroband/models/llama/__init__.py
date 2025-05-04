@@ -6,6 +6,7 @@
 #
 # Llama 2 is licensed under the LLAMA 2 Community License,
 # Copyright (c) Meta Platforms, Inc. All Rights Reserved.
+import torch
 
 from zeroband.config import Config
 from zeroband.models.llama.model import ModelArgs, Transformer
@@ -94,6 +95,8 @@ llama3_configs = {
 def make_model(
         config: Config,
         vocab_size: int,
+        dtype: torch.dtype,
+        device: torch.device
 ) -> tuple[Transformer, ModelArgs]:
     """
     Constructs a model instance according to the supplied configuration and target vocab size
@@ -111,4 +114,4 @@ def make_model(
     model_config.max_seq_len = config.data.seq_length
     model_config.attn_fn = config.hardware.attn_fn
 
-    return Transformer(model_config), model_config
+    return Transformer(model_config, dtype=dtype, device=device), model_config

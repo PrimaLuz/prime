@@ -21,7 +21,7 @@ from torch.distributed.tensor import Partial, Replicate, Shard
 from torch.distributed.tensor.experimental import local_map
 
 
-def build_norm(norm_type: str, dim: int, eps: float = 1e-6):
+def build_norm(norm_type: str, dim: int, eps: float, dtype: torch.dtype, device: torch.device):
     """
     Builds the specified normalization layer based on the norm_type.
 
@@ -29,7 +29,9 @@ def build_norm(norm_type: str, dim: int, eps: float = 1e-6):
         norm_type (str): The type of normalization layer to build.
             Supported types: layernorm, np_layernorm, rmsnorm, fused_rmsnorm
         dim (int): The dimension of the normalization layer.
-        eps (float, optional): The epsilon value for numerical stability. Defaults to 1e-6.
+        eps (float, optional): The epsilon value for numerical stability.
+        dtype: The data type to use for the parameter tensor
+        device: The device to place the layer on
 
     Returns:
         The built normalization layer.
@@ -40,13 +42,13 @@ def build_norm(norm_type: str, dim: int, eps: float = 1e-6):
     norm_type = norm_type.lower()  # Normalize to lowercase
 
     if norm_type == "layernorm":
-        return nn.LayerNorm(dim, eps=eps, bias=False)
+        return nn.LayerNorm(dim, eps=eps, bias=False, dtype=dtype, device=device)
     elif norm_type == "np_layernorm":
-        return nn.LayerNorm(dim, eps=eps, elementwise_affine=False, bias=False)
+        return nn.LayerNorm(dim, eps=eps, elementwise_affine=False, bias=False, dtype=dtype, device=device)
     elif norm_type == "rmsnorm":
-        return RMSNorm(dim, eps=eps)
+        return RMSNorm(dim, eps=eps, dtype=dtype, device=device)
     elif norm_type == "fused_rmsnorm":
-        return FusedRMSNorm(dim, eps=eps)
+        return FusedRMSNorm(dim, eps=eps, dtype=dtype, device=device)
     else:
         raise NotImplementedError(f"Unknown norm_type: '{norm_type}'")
 
@@ -57,11 +59,13 @@ class FusedRMSNorm(nn.Module):
     def __init__(
             self,
             dim: int,
-            eps: float = 1e-6,
+            eps: float,
+            dtype: torch.dtype,
+            device: torch.device
     ):
         super().__init__()
         self.eps = eps
-        self.weight = nn.Parameter(torch.ones(dim))
+        self.weight = nn.Parameter(torch.ones(dim, dtype=dtype, device=device))
         self.fused_rms_norm_fn = fused_rms_norm_fn
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
@@ -82,7 +86,9 @@ class RMSNorm(nn.Module):
 
     Args:
         dim (int): The dimension of the input tensor.
-        eps (float, optional): A small value added to the denominator for numerical stability. Default is 1e-6.
+        eps (float, optional): A small value added to the denominator for numerical stability.
+        dtype: The data type to use
+        device: The torch device to place the layer on
 
     Attributes:
         eps (float): A small value added to the denominator for numerical stability.
@@ -90,10 +96,10 @@ class RMSNorm(nn.Module):
 
     """
 
-    def __init__(self, dim: int, eps: float = 1e-6):
+    def __init__(self, dim: int, eps: float, dtype: torch.dtype, device: torch.device):
         super().__init__()
         self.eps = eps
-        self.weight = nn.Parameter(torch.ones(dim))
+        self.weight = nn.Parameter(torch.ones(dim, dtype=dtype, device=device))
 
     def _norm(self, x: torch.Tensor):
         return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps)
