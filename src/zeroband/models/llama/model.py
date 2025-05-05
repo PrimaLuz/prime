@@ -170,7 +170,7 @@ def seqlens_to_docs_tensor(seqlens: list[torch.Tensor]) -> torch.Tensor:
     return torch.stack([torch.repeat_interleave(torch.arange(len(seq), device=seq.device), seq) for seq in seqlens])
 
 
-def create_block_mask_from_seqlens(seqlens: list[torch.Tensor], dtype: torch.dtype, device: torch.device) -> BlockMask:
+def create_block_mask_from_seqlens(seqlens: list[torch.Tensor]) -> BlockMask:
     """Creates a block mask from a list of sequence lengths.
 
     Example:
@@ -183,7 +183,7 @@ def create_block_mask_from_seqlens(seqlens: list[torch.Tensor], dtype: torch.dty
                 [0 0 1 1 0]  # Second token of doc 1 can see both tokens of doc 1
                 [0 0 0 0 1]] # Token of doc 2 can only see itself
     """
-    docs = seqlens_to_docs_tensor(seqlens).to(dtype=dtype, device=device)
+    docs = seqlens_to_docs_tensor(seqlens).to("cuda")
     batch_size, max_seq_len = docs.shape
 
     def document_causal_mask(b, h, q_idx, kv_idx):
@@ -197,7 +197,7 @@ def create_block_mask_from_seqlens(seqlens: list[torch.Tensor], dtype: torch.dty
         None,
         max_seq_len,
         max_seq_len,
-        device=device.type,
+        device="cuda",
         _compile=True,
         BLOCK_SIZE=max_seq_len if max_seq_len < _DEFAULT_SPARSE_BLOCK_SIZE else _DEFAULT_SPARSE_BLOCK_SIZE,
     )
@@ -222,17 +222,17 @@ class Attention(nn.Module):
 
     """
 
-    def __init__(self, model_args: ModelArgs, dtype: torch.dtype, device: torch.device):
+    def __init__(self, model_args: ModelArgs):
         super().__init__()
         self.n_heads = model_args.n_heads
         self.n_kv_heads = model_args.n_heads if model_args.n_kv_heads is None else model_args.n_kv_heads
         self.n_rep = self.n_heads // self.n_kv_heads
         self.head_dim = model_args.dim // model_args.n_heads
 
-        self.wq = nn.Linear(model_args.dim, model_args.n_heads * self.head_dim, bias=False, dtype=dtype, device=device)
-        self.wk = nn.Linear(model_args.dim, self.n_kv_heads * self.head_dim, bias=False, dtype=dtype, device=device)
-        self.wv = nn.Linear(model_args.dim, self.n_kv_heads * self.head_dim, bias=False, dtype=dtype, device=device)
-        self.wo = nn.Linear(model_args.n_heads * self.head_dim, model_args.dim, bias=False, dtype=dtype, device=device)
+        self.wq = nn.Linear(model_args.dim, model_args.n_heads * self.head_dim, bias=False)
+        self.wk = nn.Linear(model_args.dim, self.n_kv_heads * self.head_dim, bias=False)
+        self.wv = nn.Linear(model_args.dim, self.n_kv_heads * self.head_dim, bias=False)
+        self.wo = nn.Linear(model_args.n_heads * self.head_dim, model_args.dim, bias=False)
 
         self.attn_fn = model_args.attn_fn
 
@@ -342,8 +342,6 @@ class FeedForward(nn.Module):
             hidden_dim: int,
             multiple_of: int,
             ffn_dim_multiplier: Optional[float],
-            dtype: torch.dtype,
-            device: torch.device
     ):
         super().__init__()
         hidden_dim = int(2 * hidden_dim / 3)
@@ -352,9 +350,9 @@ class FeedForward(nn.Module):
             hidden_dim = int(ffn_dim_multiplier * hidden_dim)
         hidden_dim = multiple_of * ((hidden_dim + multiple_of - 1) // multiple_of)
 
-        self.w1 = nn.Linear(dim, hidden_dim, bias=False, dtype=dtype, device=device)
-        self.w2 = nn.Linear(hidden_dim, dim, bias=False, dtype=dtype, device=device)
-        self.w3 = nn.Linear(dim, hidden_dim, bias=False, dtype=dtype, device=device)
+        self.w1 = nn.Linear(dim, hidden_dim, bias=False)
+        self.w2 = nn.Linear(hidden_dim, dim, bias=False)
+        self.w3 = nn.Linear(dim, hidden_dim, bias=False)
 
     def forward(self, x: torch.Tensor, flop_counter: FlopCounter = FlopCounter()):
         flop_counter.track_linear(self.w1, x)
@@ -400,23 +398,22 @@ class TransformerBlock(nn.Module):
 
     """
 
-    def __init__(self, layer_id: int, model_args: ModelArgs, dtype: torch.dtype, device: torch.device):
+    def __init__(self, layer_id: int, model_args: ModelArgs):
         super().__init__()
         self.n_heads = model_args.n_heads
         self.dim = model_args.dim
-        self.attention = Attention(model_args, dtype=dtype, device=device)
+        self.attention = Attention(model_args)
         self.feed_forward = FeedForward(
             dim=model_args.dim,
             hidden_dim=4 * model_args.dim,
             multiple_of=model_args.multiple_of,
             ffn_dim_multiplier=model_args.ffn_dim_multiplier,
-            dtype=dtype, device=device
         )
         self.layer_id = layer_id
         self.num_layers = model_args.n_layers
 
-        self.attention_norm = build_norm(model_args.norm_type, dim=model_args.dim, eps=model_args.norm_eps, dtype=dtype, device=device)
-        self.ffn_norm = build_norm(model_args.norm_type, dim=model_args.dim, eps=model_args.norm_eps, dtype=dtype, device=device)
+        self.attention_norm = build_norm(model_args.norm_type, dim=model_args.dim, eps=model_args.norm_eps)
+        self.ffn_norm = build_norm(model_args.norm_type, dim=model_args.dim, eps=model_args.norm_eps)
 
         if model_args.depth_init:
             self.weight_init_std = 0.02 / (2 * (self.layer_id + 1)) ** 0.5
@@ -484,7 +481,7 @@ class Transformer(nn.Module):
 
     """
 
-    def __init__(self, model_args: ModelArgs, dtype: torch.dtype, device: torch.device):
+    def __init__(self, model_args: ModelArgs):
         super().__init__()
         self.model_args = model_args
         self.vocab_size = model_args.vocab_size
@@ -499,15 +496,15 @@ class Transformer(nn.Module):
         # a seed checkpoint rather than calling init_weights, we need freqs_cis to be
         # initialized by the checkpoint, or we need to add a separate initializer for
         # just the non-persistent buffers that is called after loading checkpoints.
-        self.register_buffer("freqs_cis", self._precompute_freqs_cis(dtype=dtype, device=device), persistent=True)
+        self.register_buffer("freqs_cis", self._precompute_freqs_cis(), persistent=True)
 
         self.layers = torch.nn.ModuleDict()
         for layer_id in range(model_args.n_layers):
-            self.layers[str(layer_id)] = TransformerBlock(layer_id, model_args, dtype=dtype, device=device)
+            self.layers[str(layer_id)] = TransformerBlock(layer_id, model_args)
 
-        self.norm = build_norm(model_args.norm_type, dim=model_args.dim, eps=model_args.norm_eps, dtype=dtype, device=device)
+        self.norm = build_norm(model_args.norm_type, dim=model_args.dim, eps=model_args.norm_eps)
 
-        self.output = nn.Linear(model_args.dim, model_args.vocab_size, bias=False, dtype=dtype, device=device)
+        self.output = nn.Linear(model_args.dim, model_args.vocab_size, bias=False)
         self.init_weights()
 
     def init_weights(self):
@@ -522,6 +519,8 @@ class Transformer(nn.Module):
         ``init_weights``. We only call it in the constructor of this
         ``Transformer`` root module to avoid reinitializing tensors.
         """
+        with torch.device(self.freqs_cis.device):
+            self.freqs_cis = self._precompute_freqs_cis()
         if self.tok_embeddings is not None:
             nn.init.normal_(self.tok_embeddings.weight)
         for layer in self.layers.values():
@@ -540,14 +539,14 @@ class Transformer(nn.Module):
                 b=cutoff_factor * final_out_std,
             )
 
-    def _precompute_freqs_cis(self, dtype: torch.dtype, device: torch.device) -> torch.Tensor:
+    def _precompute_freqs_cis(self) -> torch.Tensor:
         return precompute_freqs_cis(
             self.model_args.dim // self.model_args.n_heads,
             # Need to compute until at least the max token limit for generation
             # (use 2x max sequence length to be safe)
             self.model_args.max_seq_len * 2,
-            self.model_args.rope_theta
-        ).to(dtype=dtype, device=device)
+            self.model_args.rope_theta,
+        )
 
     def forward(self, tokens: torch.Tensor, block_mask: BlockMask | None = None, flop_counter: FlopCounter = FlopCounter()):
         """
@@ -575,6 +574,20 @@ class Transformer(nn.Module):
         output = self.output(h)
 
         return output
+
+    @classmethod
+    def from_model_args(cls, model_args: ModelArgs) -> "Transformer":
+        """
+        Initialize a Transformer model from a ModelArgs object.
+
+        Args:
+            model_args (ModelArgs): Model configuration arguments.
+
+        Returns:
+            Transformer: Transformer model.
+
+        """
+        return cls(model_args)
 
     def count_parameters(self, exclude_embedding: bool = False) -> int:
         """

@@ -124,7 +124,6 @@ def run_inner_steps(
     num_param_scalars = model.count_parameters()
 
     for _inner_step in range(num_inner_steps):
-        #torch.cuda.memory._record_memory_history(max_entries=100000)
         train_profiler.start_session("inner_step")
 
         flop_counter = FlopCounter()
@@ -233,9 +232,6 @@ def run_inner_steps(
         if memory_profiler is not None:
             memory_profiler.step()
         train_profiler.end_session()
-
-        #torch.cuda.memory._dump_snapshot('snapshot.pickle')
-        #torch.cuda.memory._record_memory_history(enabled=None)
 
 
 def compute_crc32(tensor: torch.Tensor) -> int:
@@ -522,7 +518,7 @@ def make_shared_state(outer_parameters: Dict[str, torch.nn.Parameter],
     return shared_state
 
 
-def train(logger: Logger, config: Config, mpi_config: Optional[MPIConfig], dtype: torch.dtype, device: torch.device):
+def train(logger: Logger, config: Config, mpi_config: Optional[MPIConfig], device: torch.device):
     grad_accum_steps = calc_gradient_accumulation_steps(
         config.train.batch_size, config.hardware.micro_batch_size, mpi_config
     )
@@ -546,8 +542,6 @@ def train(logger: Logger, config: Config, mpi_config: Optional[MPIConfig], dtype
             model, model_config = make_model(
                 config,
                 vocab_size=tokenizer_info.vocab_size,
-                dtype=dtype,
-                device=device,
             )
         num_param_scalars = model.count_parameters()
         logger.info(f"Number of parameters: {num_param_scalars}")
@@ -711,16 +705,16 @@ def train(logger: Logger, config: Config, mpi_config: Optional[MPIConfig], dtype
             continue
 
         local_world_size = communicator.get_attribute(Attribute.LOCAL_WORLD_SIZE)
-        #if local_world_size < 2:
-        #    logger.info("Waiting for more workers to join...")
-        #    time.sleep(1)
-        #    continue
+        if local_world_size < 2:
+            logger.info("Waiting for more workers to join...")
+            time.sleep(1)
+            continue
 
         if topology_updated:
             logger.info("Optimizing Topology...")
             while True:
                 try:
-                    # communicator.optimize_topology()  # may raise an error if it fails
+                    communicator.optimize_topology()  # may raise an error if it fails
                     break
                 except PCCLError as e:
                     print(f"[Peer] OptimizeTopology failed => {e}. Retrying...")
@@ -835,8 +829,7 @@ def main():
     device = torch.device(f'cuda:{torch.cuda.current_device()}')
     logger.info(f"Using device: {torch.cuda.get_device_name(device)}")
 
-    dtype = torch.bfloat16 # TODO: MAKE CONFIGURABLE
-    train(logger, config, mpi_config, dtype, device)
+    train(logger, config, mpi_config, device)
 
 
 if __name__ == "__main__":
