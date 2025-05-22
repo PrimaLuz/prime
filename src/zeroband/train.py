@@ -4,7 +4,7 @@ import time
 import zlib
 from dataclasses import asdict
 from logging import Logger
-from typing import TYPE_CHECKING, Optional, Iterator, List, Dict, Tuple
+from typing import TYPE_CHECKING, Optional, Iterator, List, Dict
 
 import torch
 import torch.distributed as dist

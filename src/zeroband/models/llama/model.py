@@ -10,8 +10,6 @@
 # Llama 2 is licensed under the LLAMA 2 Community License,
 # Copyright (c) Meta Platforms, Inc. All Rights Reserved.
 
-
-import contextlib
 from dataclasses import dataclass
 from typing import Optional, Tuple
 
@@ -21,7 +19,6 @@ from zeroband.models.norms import build_norm
 from zeroband.config import AttnFnType
 
 from torch.nn.attention.flex_attention import create_block_mask, flex_attention, BlockMask, _DEFAULT_SPARSE_BLOCK_SIZE
-from torch.nn.attention import SDPBackend, sdpa_kernel
 
 from zeroband.utils.mfu_tracker import FlopCounter
 
