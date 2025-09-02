@@ -1,0 +1,82 @@
+exec source ~/.bashrc
+begin to run code
+W0901 16:14:49.691000 304 site-packages/torch/distributed/run.py:792] 
+W0901 16:14:49.691000 304 site-packages/torch/distributed/run.py:792] *****************************************
+W0901 16:14:49.691000 304 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0901 16:14:49.691000 304 site-packages/torch/distributed/run.py:792] *****************************************
+World size: 2
+2025-09-01 16:15:14 [Rank 0][main] Model initialized on CPU, model info: TinyModel(
+  (layer1): Linear(in_features=10, out_features=10, bias=False)
+  (layer2): Linear(in_features=10, out_features=10, bias=False)
+)
+2025-09-01 16:15:14 [Rank 1][main] Model initialized on CPU, model info: TinyModel(
+  (layer1): Linear(in_features=10, out_features=10, bias=False)
+  (layer2): Linear(in_features=10, out_features=10, bias=False)
+)
+2025-09-01 16:15:15 [Rank 1][shard_model] Param layer1.weight, local_shape=torch.Size([5, 10]), placements=(Shard(dim=0),)
+2025-09-01 16:15:15 [Rank 0][shard_model] Param layer1.weight, local_shape=torch.Size([5, 10]), placements=(Shard(dim=0),)
+2025-09-01 16:15:15 [Rank 1][shard_model] Param layer2.weight, local_shape=torch.Size([5, 10]), placements=(Shard(dim=0),)
+2025-09-01 16:15:15 [Rank 0][shard_model] Param layer2.weight, local_shape=torch.Size([5, 10]), placements=(Shard(dim=0),)
+2025-09-01 16:15:15 [Rank 1][main] Model sharded on CUDA, model info: FSDPTinyModel(
+  (layer1): FSDPLinear(in_features=10, out_features=10, bias=False)
+  (layer2): FSDPLinear(in_features=10, out_features=10, bias=False)
+)
+2025-09-01 16:15:15 [Rank 0][main] Model sharded on CUDA, model info: FSDPTinyModel(
+  (layer1): FSDPLinear(in_features=10, out_features=10, bias=False)
+  (layer2): FSDPLinear(in_features=10, out_features=10, bias=False)
+)
+2025-09-01 16:15:15 [Rank 0][get_offloaded_param] Offloading model parameters..., model info: FSDPTinyModel(
+  (layer1): FSDPLinear(in_features=10, out_features=10, bias=False)
+  (layer2): FSDPLinear(in_features=10, out_features=10, bias=False)
+)
+2025-09-01 16:15:15 [Rank 1][get_offloaded_param] Offloading model parameters..., model info: FSDPTinyModel(
+  (layer1): FSDPLinear(in_features=10, out_features=10, bias=False)
+  (layer2): FSDPLinear(in_features=10, out_features=10, bias=False)
+)
+2025-09-01 16:15:15 [Rank 0][get_offloaded_param] Model parameters: <generator object Module.parameters at 0x7fc89c7b51c0>
+2025-09-01 16:15:15 [Rank 1][get_offloaded_param] Model parameters: <generator object Module.parameters at 0x7fec3dc911c0>
+2025-09-01 16:15:15 [Rank 0][get_offloaded_param] Model named parameters: <generator object Module.named_parameters at 0x7fc8983b4040>
+2025-09-01 16:15:15 [Rank 1][get_offloaded_param] Model named parameters: <generator object Module.named_parameters at 0x7fec3c0b4040>
+2025-09-01 16:15:15 [Rank 0][get_offloaded_param] param=layer1.weight, shard_shape=torch.Size([5, 10]), copy 50 elements from GPU → CPU at offset 0
+2025-09-01 16:15:15 [Rank 1][get_offloaded_param] param=layer1.weight, shard_shape=torch.Size([5, 10]), copy 50 elements from GPU → CPU at offset 0
+2025-09-01 16:15:15 [Rank 0][get_offloaded_param] param=layer2.weight, shard_shape=torch.Size([5, 10]), copy 50 elements from GPU → CPU at offset 50
+2025-09-01 16:15:15 [Rank 1][get_offloaded_param] param=layer2.weight, shard_shape=torch.Size([5, 10]), copy 50 elements from GPU → CPU at offset 50
+2025-09-01 16:15:15 [Rank 0][get_offloaded_param] Offloaded params: [DTensor(local_tensor=tensor([[ 0.2458, -0.2030,  0.2028,  0.1974, -0.0643, -0.0832, -0.1686,  0.2482,
+         -0.2071,  0.2957],
+        [-0.1003,  0.1225, -0.2187, -0.0008, -0.2395, -0.1255, -0.1753,  0.1009,
+         -0.0061, -0.3040],
+        [-0.0229, -0.1448, -0.0613,  0.1650, -0.0292, -0.2298, -0.3027,  0.2294,
+         -0.1160, -0.0989],
+        [-0.1005,  0.1092,  0.2112, -0.2555,  0.3103,  0.0103, -0.0555, -0.2603,
+          0.2053,  0.2429],
+        [-0.1935,  0.0536,  0.1968,  0.1844,  0.2683,  0.2344,  0.2958, -0.2644,
+          0.0937, -0.1850]]), device_mesh=DeviceMesh('cpu', [0, 1]), placements=(Shard(dim=0),)), DTensor(local_tensor=tensor([[-0.2631,  0.0425, -0.0059, -0.0674, -0.2974, -0.3086,  0.3046,  0.2021,
+          0.1824, -0.2231],
+        [-0.1986,  0.2938, -0.2893,  0.0751,  0.1651, -0.0556,  0.1508,  0.0395,
+         -0.2659,  0.0045],
+        [ 0.0889,  0.2081,  0.0453,  0.2358, -0.2398,  0.1630, -0.0094,  0.2890,
+         -0.0395,  0.0657],
+        [ 0.2133, -0.1431, -0.0610, -0.0169, -0.1524,  0.2894, -0.2254,  0.0296,
+          0.1449,  0.0382],
+        [-0.2214,  0.2252, -0.0452, -0.0770,  0.0090, -0.2918,  0.1204,  0.3021,
+         -0.0291, -0.0708]]), device_mesh=DeviceMesh('cpu', [0, 1]), placements=(Shard(dim=0),))]
+2025-09-01 16:15:15 [Rank 1][get_offloaded_param] Offloaded params: [DTensor(local_tensor=tensor([[ 0.0200,  0.1654,  0.1705, -0.0144, -0.2811,  0.2507, -0.0661, -0.2355,
+          0.1231, -0.1794],
+        [-0.0159, -0.1655,  0.3087, -0.1812,  0.1888, -0.2404, -0.1350, -0.0346,
+          0.2696, -0.0274],
+        [ 0.1101,  0.3114,  0.2251,  0.2833,  0.2175,  0.2900,  0.1244,  0.0380,
+          0.0622,  0.0403],
+        [-0.2129, -0.0102, -0.0204, -0.2777,  0.1952,  0.0024,  0.1866, -0.2601,
+         -0.1494, -0.2039],
+        [-0.2329,  0.3012,  0.0897,  0.1532, -0.0984, -0.1429,  0.1265, -0.0883,
+         -0.0252,  0.2264]]), device_mesh=DeviceMesh('cpu', [0, 1]), placements=(Shard(dim=0),)), DTensor(local_tensor=tensor([[ 0.1692,  0.1250, -0.1583,  0.1513, -0.2488, -0.2899, -0.1682,  0.0738,
+          0.0501, -0.2251],
+        [-0.3048, -0.2891, -0.0348, -0.2247,  0.0711,  0.0226, -0.0844, -0.0992,
+          0.0608,  0.1950],
+        [-0.3098, -0.1304,  0.2296, -0.0989,  0.1950, -0.1955, -0.1747,  0.1255,
+          0.3123,  0.0221],
+        [-0.2963, -0.1473, -0.3009,  0.0390,  0.0421,  0.2361, -0.2474, -0.1986,
+         -0.1426, -0.0347],
+        [ 0.2702,  0.1577, -0.1708, -0.2255, -0.2707, -0.3118,  0.0198, -0.1869,
+         -0.2462, -0.2527]]), device_mesh=DeviceMesh('cpu', [0, 1]), placements=(Shard(dim=0),))]
+2025-09-01 16:15:15 [Rank 0][main] === Training setup done ===
