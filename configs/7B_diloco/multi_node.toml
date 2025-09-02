@@ -1,0 +1,43 @@
+# 双节点7B diloco训练配置
+name_model = "7B"
+project = "7B_diloco_multi_node"
+type_model = "llama2"
+
+[train]
+micro_bs = 2  # 根据双节点调整
+ac_ckpt = true
+reshard_after_forward = true
+reduce_fp32 = true
+torch_compile = true
+
+[optim]
+batch_size = 2048  # 双节点翻倍
+warmup_steps = 1000
+total_steps = 88_000
+
+[optim.optim]
+type = "adam"
+lr = 3e-4
+weight_decay = 0.1
+betas1 = 0.9
+betas2 = 0.95
+
+[data]
+dataset_name_or_paths = "datasets/fineweb-edu"
+seq_length = 2048
+num_workers = 8
+sequence_packing = true
+max_train_samples = null
+
+[diloco]
+outer_lr = 0.7
+inner_steps = 50
+compression = "uint8"
+retry_all_reduce = 3
+
+[ckpt]
+path = "/data/outputs_7b_diloco_multi"
+interval = 1000  # 每50个diloco step保存一次
+
+[monitor]
+log_flush_interval = 10

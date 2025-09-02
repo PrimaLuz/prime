@@ -1,0 +1,1 @@
+torchrun --nproc-per-node=4 tiny_instance.py
