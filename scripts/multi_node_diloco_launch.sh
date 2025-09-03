@@ -38,7 +38,7 @@ if [ ! -d "$DATA_DIR/datasets/fineweb-edu" ]; then
 fi
 
 # 日志配置
-LOG_DIR="/root/github/prime/logs/node_${NODE_RANK}"
+LOG_DIR="/root/github/prime/train_logs/node_${NODE_RANK}"
 mkdir -p "$LOG_DIR"
 
 # 启动命令
