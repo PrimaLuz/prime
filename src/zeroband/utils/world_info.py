@@ -12,16 +12,24 @@ class WorldInfo:
     local_world_size: int
 
     def __init__(self):
+        # GPU总数
         self.world_size = int(os.environ["WORLD_SIZE"])
+        # 进程的全局 ID，范围是 0 到 world_size - 1。
         self.rank = int(os.environ["RANK"])
+        # 进程的本地 ID，范围是 0 到 local_world_size - 1。
         self.local_rank = int(os.environ["LOCAL_RANK"])
+        # 单个节点上的 GPU 数（进程数）
         self.local_world_size = int(os.environ["LOCAL_WORLD_SIZE"])
+        # 节点数
         self.nnodes = self.world_size // self.local_world_size
 
+        # 节点的唯一ID
         self.global_unique_id = os.environ.get("GLOBAL_UNIQUE_ID", None)
         self.global_addr = os.environ.get("GLOBAL_ADDR", None)
         self.global_port = int(os.environ.get("GLOBAL_PORT")) if "GLOBAL_PORT" in os.environ else None
+        # 节点总数
         self.global_world_size = int(os.environ.get("GLOBAL_WORLD_SIZE", 1))
+        # 节点排名归属
         self.global_rank = int(os.environ.get("GLOBAL_RANK", 0))
 
     def __repr__(self):
