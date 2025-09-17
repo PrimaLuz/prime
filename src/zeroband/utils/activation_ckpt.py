@@ -15,7 +15,7 @@ def apply_ac_ckpt(model: Transformer, num: int):
 
     layers_ckpt = 0
 
-    for layer_id, transformer_block in model.layers.named_children():
+    for layer_id, transformer_block in model.model.layers.named_children():
         if layers_ckpt % num == 0:
             transformer_block = checkpoint_wrapper(transformer_block, preserve_rng_state=False)
             model.layers.register_module(layer_id, transformer_block)
