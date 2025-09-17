@@ -27,7 +27,7 @@ from zeroband.utils import (
     get_num_params,
     get_num_flop_per_token,
 )
-from zeroband.utils.metric_logger import MetricLogger, WandbMetricLogger, DummyMetricLogger
+from zeroband.utils.metric_logger import MetricLogger, WandbMetricLogger, DummyMetricLogger, SwanlabMetricLogger, TensorboardMetricLogger
 from zeroband.utils.activation_ckpt import apply_ac_ckpt
 from zeroband.utils.profiler import MemoryProfiler
 from zeroband.utils.world_info import get_world_info
@@ -96,14 +96,16 @@ def train(config: Config):
 
     # Load tokenizer
     with sw.record_block("Load Tokenizer"):
-        if config.data.fake and config.name_model == "debugmodel":
-            tokenizer = FakeTokenizer()
-        elif config.type_model == "llama2":
-            tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1", use_fast=True)
-        elif config.type_model == "llama3":
-            tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", use_fast=True)
-        else:
-            raise ValueError(f"Model type {config.type_model} not supported")
+        # if config.data.fake and config.name_model == "debugmodel":
+        #     tokenizer = FakeTokenizer()
+        # elif config.type_model == "llama2":
+        #     tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1", use_fast=True)
+        # elif config.type_model == "llama3":
+        #     tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", use_fast=True)
+        # else:
+        #     raise ValueError(f"Model type {config.type_model} not supported")
+        
+        tokenizer = AutoTokenizer.from_pretrained(config.name_model, trust_remote_code=True)
 
     with sw.record_block("Get Dataloader"):
         train_dataloader = get_dataloader(
@@ -118,7 +120,7 @@ def train(config: Config):
     with sw.record_block("Get Model"):
         model, model_config = get_model(
             config,
-            vocab_size=len(tokenizer) if config.name_model != "debugmodel" or not config.data.fake else TEST_VOCAB_SIZE,
+            TEST_VOCAB_SIZE, # will be removed
         )
 
     gpu_peak_flops = get_peak_flops(torch.cuda.get_device_name(torch.device("cuda")))
@@ -196,12 +198,34 @@ def train(config: Config):
         )
 
     if world_info.rank == 0:
-        logger_cls = WandbMetricLogger if config.metric_logger_type == "wandb" else DummyMetricLogger
-        metric_logger = logger_cls(
-            project=config.project,
-            logger_config={"config": config.model_dump(), "world_info": world_info.json()},
-            resume=config.wandb_resume,
-        )
+        if config.metric_logger_type == "wandb":
+            logger_cls = WandbMetricLogger
+            metric_logger = logger_cls(
+                project=config.project,
+                logger_config={"config": config.model_dump(), "world_info": world_info.json()},
+                resume=config.wandb_resume,
+            )
+        elif config.metric_logger_type == "swanlab":
+            logger_cls = SwanlabMetricLogger
+            metric_logger = logger_cls(
+                project=config.project,
+                logger_config={"config": config.model_dump(), "world_info": world_info.json()},
+                resume=config.swanlab_resume,
+            )
+        elif config.metric_logger_type == "tensorboard":
+            logger_cls = TensorboardMetricLogger
+            metric_logger = logger_cls(
+                project=config.project,
+                logger_config={"config": config.model_dump(), "world_info": world_info.json()},
+                log_dir=config.tensorboard_log_dir,
+            )
+        else:
+            # Default to DummyMetricLogger
+            logger_cls = DummyMetricLogger
+            metric_logger = logger_cls(
+                project=config.project,
+                logger_config={"config": config.model_dump(), "world_info": world_info.json()},
+            )
     else:
         metric_logger = None
 

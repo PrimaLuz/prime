@@ -449,7 +449,7 @@ def _load_datasets(
     tokenizer: PreTrainedTokenizer,
     data_rank: Optional[int] = None,
     data_world_size: Optional[int] = None,
-    streaming: bool = True,
+    streaming: bool = False,
     probabilities: Optional[List[float]] = None,
     reverse_data_files: bool = False,
 ) -> InterleaveDataset:
@@ -475,6 +475,7 @@ def _load_datasets(
     datasets = []
     for ds_arg in ds_args:
         # logger.debug(f"Loading dataset: {ds_arg['data_files']}")
+        get_logger().info(f"[Rank{data_rank}/{data_world_size}] files:{ds_arg["data_files"]}")
         _ds = ParquetDataset(files=ds_arg["data_files"], tokenizer=tokenizer)
         datasets.append(_ds)
 

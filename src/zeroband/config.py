@@ -13,7 +13,7 @@ class Compression(Enum):
 
 
 class DataConfig(BaseConfig):
-    dataset_name_or_paths: str = "datasets/fineweb-edu"
+    dataset_name_or_paths: str = "/userdata/datasets/fineweb-edu"
     val_dataset_name_or_paths: str | None = None
     sequence_packing: bool = True
     seq_length: int = 1024
@@ -156,8 +156,8 @@ ENV_VAR_PREFIX = "ZERO_BAND_"
 
 class Config(BaseConfig):
     # main config
-    name_model: Literal["debugmodel", "70M","150M", "271M", "1B", "7B", "10B", "13B", "26B", "70B"] = "150M"
-    type_model: Literal["llama2", "llama3"] = "llama3"
+    name_model: str = "/userdata/models/Qwen/Qwen2.5-7B-Instruct"
+    type_model: str = "qwen2"
 
     # Project/Run
     project: str = "zeroband"
@@ -165,8 +165,10 @@ class Config(BaseConfig):
     run_name: str | None = None
 
     # Logger
-    metric_logger_type: Literal["wandb", "dummy"] = "wandb"
+    metric_logger_type: Literal["wandb", "dummy", "swanlab", "tensorboard"] = "tensorboard"
     wandb_resume: bool = False
+    swanlab_resume: bool = False
+    tensorboard_log_dir: str = "tensorboard_logs"
     log_level: Literal["NOTSET", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"] = "INFO"
     log_all_rank: bool = False
 

@@ -12,6 +12,12 @@ MASTER_PORT=${3:-29500}  # 主节点端口
 WORLD_SIZE=${4:-2}  # 总节点数
 GPUS_PER_NODE=${5:-8}  # 每节点GPU数
 
+export GLOBAL_RANK=$NODE_RANK
+export GLOBAL_WORLD_SIZE=$WORLD_SIZE
+export GLOBAL_ADDR=$MASTER_ADDR
+export GLOBAL_PORT=${6:-26969}
+export GLOBAL_UNIQUE_ID=$NODE_RANK
+
 # 验证参数
 if [ -z "$NODE_RANK" ] || [ -z "$MASTER_ADDR" ] || [ -z "$MASTER_PORT" ]; then
     echo "Usage: $0 <node_rank> <master_addr> <master_port> [world_size] [gpus_per_node]"
@@ -20,14 +26,15 @@ if [ -z "$NODE_RANK" ] || [ -z "$MASTER_ADDR" ] || [ -z "$MASTER_PORT" ]; then
 fi
 
 # 环境变量配置
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+# export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 export NCCL_DEBUG=INFO
-export NCCL_SOCKET_IFNAME=eth0  # 根据实际网络接口调整
-export PYTHONPATH=/root/github/prime
+export NCCL_SOCKET_IFNAME=eth0  
+
+export PYTHONPATH=/userdata/workspace/Prime
 
 # 数据路径配置
-DATA_DIR="/data"
-OUTPUT_DIR="/data/outputs_7b_diloco_multi"
+DATA_DIR="/userdata"
+OUTPUT_DIR="/userdata/workspace/output/outputs_7b_diloco_multi"
 mkdir -p "$OUTPUT_DIR"
 
 # 检查数据
@@ -38,7 +45,7 @@ if [ ! -d "$DATA_DIR/datasets/fineweb-edu" ]; then
 fi
 
 # 日志配置
-LOG_DIR="/root/github/prime/train_logs/node_${NODE_RANK}"
+LOG_DIR="/userdata/workspace/train_logs/node_${NODE_RANK}"
 mkdir -p "$LOG_DIR"
 
 # 启动命令
