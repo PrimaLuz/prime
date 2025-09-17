@@ -799,16 +799,16 @@ wheels = [
 ]
 
 [[package]]
-name = "liger-kernel-nightly"
-version = "0.5.2.dev20250129180649"
+name = "liger-kernel"
+version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "torch" },
     { name = "triton" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/07/23/fcab81f6e9dd018eecf112f462831f6648b9d85765fe2b70c35e73d4bdc5/liger_kernel_nightly-0.5.2.dev20250129180649.tar.gz", hash = "sha256:d11bdac72655c468ed498ca48a15bd14d2ecf2df4efd913288ab84d26bf5c3ff", size = 3460969 }
+sdist = { url = "https://files.pythonhosted.org/packages/31/23/be0b4dcac42d77f99406c906567cde22a7a3d71b3f3ffdfda2ac6153ec36/liger_kernel-0.6.2.tar.gz", hash = "sha256:5c5bcffffa769bc26ae838f5a4954170dd5cacde036abb1b383039f39fa5fd69", size = 3679495 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2d/c7/a843f4c8289024034eeb03687326456b3ab356748d41f7d449551d4040a1/liger_kernel_nightly-0.5.2.dev20250129180649-py3-none-any.whl", hash = "sha256:2ae45799cea28e319e401217797ba7ba73cb6476db95cdd4a40497feb70e7ca6", size = 112180 },
+    { url = "https://files.pythonhosted.org/packages/94/2c/68d992835e8630c1b94cdcb246ea7eecad790a955037ca3f19b6c01e8215/liger_kernel-0.6.2-py3-none-any.whl", hash = "sha256:303b9bbf5c10f9289c3139afb41e4d989e8c809516624a106b89b064163d971d", size = 192815 },
 ]
 
 [[package]]
@@ -2861,7 +2861,7 @@ source = { editable = "." }
 dependencies = [
     { name = "datasets" },
     { name = "fsspec", extra = ["gcs"] },
-    { name = "liger-kernel-nightly" },
+    { name = "liger-kernel" },
     { name = "ninja" },
     { name = "numpy" },
     { name = "psutil" },
@@ -2894,7 +2894,7 @@ dev = [
 requires-dist = [
     { name = "datasets", specifier = ">=3.0.0" },
     { name = "fsspec", extras = ["gcs"], specifier = ">=2024.3.1" },
-    { name = "liger-kernel-nightly", specifier = ">=0.5.2.dev20250122195349" },
+    { name = "liger-kernel", specifier = ">=0.6.1" },
     { name = "lm-eval", marker = "extra == 'all'" },
     { name = "ninja" },
     { name = "numpy" },
