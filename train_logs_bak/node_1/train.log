@@ -1,0 +1,301 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0919 15:59:38.269000 74571 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0919 15:59:38.269000 74571 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0919 15:59:38.269000 74571 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0919 15:59:38.269000 74571 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=4, local_rank=0, local_world_size=4, nnodes=2, global_unique_id=1, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=5, local_rank=1, local_world_size=4, nnodes=2, global_unique_id=1, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=7, local_rank=3, local_world_size=4, nnodes=2, global_unique_id=1, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=6, local_rank=2, local_world_size=4, nnodes=2, global_unique_id=1, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 4 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:02 [INFO] [Rank 0] Loading Train dataset(s)
+16:00:02 [INFO] [Rank 0] [Rank4/8] files:['/userdata/datasets/fineweb-edu/data0/train-00004.parquet', '/userdata/datasets/fineweb-edu/data0/train-00012.parquet']
+16:00:02 [INFO] [Rank 0] Loaded datasets (train)
+16:00:02 [INFO] [Rank 0] Train dataset: <zeroband.data.ParquetDataset object at 0x7f119c24c040>
+16:00:02 [WARNING] [Rank 0] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 7 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:03 [INFO] [Rank 3] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 6 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:03 [INFO] [Rank 2] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 5 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:03 [INFO] [Rank 1] Loading Train dataset(s)
+16:00:03 [INFO] [Rank 3] [Rank7/8] files:['/userdata/datasets/fineweb-edu/data0/train-00007.parquet', '/userdata/datasets/fineweb-edu/data0/train-00015.parquet']
+16:00:03 [INFO] [Rank 3] Loaded datasets (train)
+16:00:03 [INFO] [Rank 3] Train dataset: <zeroband.data.ParquetDataset object at 0x7f70015101c0>
+16:00:03 [INFO] [Rank 2] [Rank6/8] files:['/userdata/datasets/fineweb-edu/data0/train-00006.parquet', '/userdata/datasets/fineweb-edu/data0/train-00014.parquet']
+16:00:03 [INFO] [Rank 2] Loaded datasets (train)
+16:00:03 [INFO] [Rank 2] Train dataset: <zeroband.data.ParquetDataset object at 0x7fbbef344040>
+16:00:03 [WARNING] [Rank 3] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:00:03 [INFO] [Rank 1] [Rank5/8] files:['/userdata/datasets/fineweb-edu/data0/train-00005.parquet', '/userdata/datasets/fineweb-edu/data0/train-00013.parquet']
+16:00:03 [INFO] [Rank 1] Loaded datasets (train)
+16:00:03 [INFO] [Rank 1] Train dataset: <zeroband.data.ParquetDataset object at 0x7f44efa80070>
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]16:00:04 [WARNING] [Rank 2] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 2] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:00:04 [WARNING] [Rank 1] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.29s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:17,  5.83s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:17,  5.74s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:17,  5.86s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.52s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.34s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.32s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.35s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.53s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.43s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.45s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.43s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.22s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.39s/it]
+16:00:24 [INFO] [Rank 0] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:24 [INFO] [Rank 0] Number of parameters: 7070619136
+16:00:24 [INFO] [Rank 0] [1](Leader: False) TCPStore init: Connecting via 172.16.0.10:26969
+16:00:24 [INFO] [Rank 0] Destroyed process group
+16:00:24 [INFO] [Rank 0] Elastic Device mesh init done with 2 peers in 0.25818648500717245 seconds
+16:00:24 [INFO] [Rank 0] Started iperf server on 172.16.92.244 with port 10102
+16:00:24 [INFO] [Rank 0] finished init global pg
+Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.18s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.29s/it]
+16:00:25 [INFO] [Rank 3] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:25 [INFO] [Rank 3] Number of parameters: 7070619136
+16:00:25 [INFO] [Rank 3] [1](Leader: False) TCPStore init: Connecting via 172.16.0.10:26972
+16:00:25 [INFO] [Rank 3] Destroyed process group
+Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.17s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.29s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.29s/it]
+16:00:25 [INFO] [Rank 2] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:25 [INFO] [Rank 2] Number of parameters: 7070619136
+16:00:25 [INFO] [Rank 2] [1](Leader: False) TCPStore init: Connecting via 172.16.0.10:26971
+16:00:25 [INFO] [Rank 2] Destroyed process group
+16:00:25 [INFO] [Rank 1] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:25 [INFO] [Rank 1] Number of parameters: 7070619136
+16:00:25 [INFO] [Rank 1] [1](Leader: False) TCPStore init: Connecting via 172.16.0.10:26970
+16:00:25 [INFO] [Rank 1] Destroyed process group
+16:00:25 [INFO] [Rank 3] Elastic Device mesh init done with 2 peers in 0.24545777999446727 seconds
+16:00:25 [INFO] [Rank 3] finished init global pg
+16:00:25 [INFO] [Rank 2] Elastic Device mesh init done with 2 peers in 0.2405628589913249 seconds
+16:00:25 [INFO] [Rank 2] finished init global pg
+16:00:25 [INFO] [Rank 1] Elastic Device mesh init done with 2 peers in 0.24912363500334322 seconds
+16:00:25 [INFO] [Rank 1] finished init global pg
+16:00:25 [INFO] [Rank 0] finished dist.init_process_group
+16:00:25 [INFO] [Rank 2] finished dist.init_process_group
+16:00:25 [INFO] [Rank 3] finished dist.init_process_group
+16:00:25 [INFO] [Rank 1] finished dist.init_process_group
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:1', [0, 4], '1'), ('ptd:6', [4, 5, 6, 7], '6')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:6', [4, 5, 6, 7], '6')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:4', [3, 7], '4'), ('ptd:6', [4, 5, 6, 7], '6')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:6', [4, 5, 6, 7], '6')[0m
+16:00:25 [INFO] [Rank 0] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:2', [1, 5], '2'), ('ptd:6', [4, 5, 6, 7], '6')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:6', [4, 5, 6, 7], '6')[0m
+16:00:25 [INFO] [Rank 3] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:3', [2, 6], '3'), ('ptd:6', [4, 5, 6, 7], '6')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:6', [4, 5, 6, 7], '6')[0m
+16:00:25 [INFO] [Rank 1] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:00:25 [INFO] [Rank 2] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:00:26 [INFO] [Rank 1] Destroyed process group
+16:00:26 [INFO] [Rank 0] Destroyed process group
+16:00:26 [INFO] [Rank 2] Destroyed process group
+16:00:26 [INFO] [Rank 3] Destroyed process group
+16:00:26 [INFO] [Rank 2] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 1] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 0] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 3] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 1] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 1] global_pg size : 2, local_pg size: 4
+16:00:26 [INFO] [Rank 3] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 0] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 3] global_pg size : 2, local_pg size: 4
+16:00:26 [INFO] [Rank 0] global_pg size : 2, local_pg size: 4
+16:00:26 [INFO] [Rank 1] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 1] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 3] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 0] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 3] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 0] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 2] finished global_pg.barrier().wait()
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[][0m
+16:00:26 [INFO] [Rank 2] global_pg size : 2, local_pg size: 4
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[][0m
+16:00:26 [INFO] [Rank 1] Caught an exception, terminating children
+16:00:26 [INFO] [Rank 2] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 1] list index out of range
+16:00:26 [INFO] [Rank 3] Caught an exception, terminating children
+16:00:26 [INFO] [Rank 3] list index out of range
+16:00:26 [INFO] [Rank 0] Caught an exception, terminating children
+16:00:26 [INFO] [Rank 2] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 0] list index out of range
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[][0m
+16:00:26 [INFO] [Rank 2] Caught an exception, terminating children
+16:00:26 [INFO] [Rank 2] list index out of range
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 598, in <module>
+[rank5]:     raise e
+[rank5]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 590, in <module>
+[rank5]:     train(config)
+[rank5]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 158, in train
+[rank5]:     fully_shard(
+[rank5]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/contract.py", line 125, in wrapper
+[rank5]:     updated = func(inp_module, *args, **kwargs)
+[rank5]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/fully_shard.py", line 113, in fully_shard
+[rank5]:     mesh_info = FSDPMeshInfo(mesh, shard_mesh_dim=0)
+[rank5]:   File "<string>", line 6, in __init__
+[rank5]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_common.py", line 38, in __post_init__
+[rank5]:     self.shard_process_group = self.mesh.get_group(self.shard_mesh_dim)
+[rank5]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/device_mesh.py", line 723, in get_group
+[rank5]:     test_p = self._dim_group_infos[-1]
+[rank5]: IndexError: list index out of range
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 598, in <module>
+[rank6]:     raise e
+[rank6]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 590, in <module>
+[rank6]:     train(config)
+[rank6]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 158, in train
+[rank6]:     fully_shard(
+[rank6]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/contract.py", line 125, in wrapper
+[rank6]:     updated = func(inp_module, *args, **kwargs)
+[rank6]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/fully_shard.py", line 113, in fully_shard
+[rank6]:     mesh_info = FSDPMeshInfo(mesh, shard_mesh_dim=0)
+[rank6]:   File "<string>", line 6, in __init__
+[rank6]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_common.py", line 38, in __post_init__
+[rank6]:     self.shard_process_group = self.mesh.get_group(self.shard_mesh_dim)
+[rank6]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/device_mesh.py", line 723, in get_group
+[rank6]:     test_p = self._dim_group_infos[-1]
+[rank6]: IndexError: list index out of range
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 598, in <module>
+[rank4]:     raise e
+[rank4]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 590, in <module>
+[rank4]:     train(config)
+[rank4]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 158, in train
+[rank4]:     fully_shard(
+[rank4]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/contract.py", line 125, in wrapper
+[rank4]:     updated = func(inp_module, *args, **kwargs)
+[rank4]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/fully_shard.py", line 113, in fully_shard
+[rank4]:     mesh_info = FSDPMeshInfo(mesh, shard_mesh_dim=0)
+[rank4]:   File "<string>", line 6, in __init__
+[rank4]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_common.py", line 38, in __post_init__
+[rank4]:     self.shard_process_group = self.mesh.get_group(self.shard_mesh_dim)
+[rank4]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/device_mesh.py", line 723, in get_group
+[rank4]:     test_p = self._dim_group_infos[-1]
+[rank4]: IndexError: list index out of range
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 598, in <module>
+[rank7]:     raise e
+[rank7]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 590, in <module>
+[rank7]:     train(config)
+[rank7]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 158, in train
+[rank7]:     fully_shard(
+[rank7]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/contract.py", line 125, in wrapper
+[rank7]:     updated = func(inp_module, *args, **kwargs)
+[rank7]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/fully_shard.py", line 113, in fully_shard
+[rank7]:     mesh_info = FSDPMeshInfo(mesh, shard_mesh_dim=0)
+[rank7]:   File "<string>", line 6, in __init__
+[rank7]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_common.py", line 38, in __post_init__
+[rank7]:     self.shard_process_group = self.mesh.get_group(self.shard_mesh_dim)
+[rank7]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/device_mesh.py", line 723, in get_group
+[rank7]:     test_p = self._dim_group_infos[-1]
+[rank7]: IndexError: list index out of range
+W0919 16:00:29.293000 74571 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 74635 closing signal SIGTERM
+W0919 16:00:29.294000 74571 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 74637 closing signal SIGTERM
+W0919 16:00:29.295000 74571 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 74638 closing signal SIGTERM
+E0919 16:00:29.611000 74571 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 74636) of binary: /userdata/workspace/Prime/.venv/bin/python3
+Traceback (most recent call last):
+  File "/userdata/workspace/Prime/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/zeroband/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-09-19_16:00:29
+  host      : dc-traning-hd01-1.dc-traning-hd01.default.svc.cluster.local
+  rank      : 5 (local_rank: 1)
+  exitcode  : 1 (pid: 74636)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

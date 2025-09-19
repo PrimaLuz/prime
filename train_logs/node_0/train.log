@@ -1,0 +1,1250 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0919 16:11:15.998000 81384 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0919 16:11:15.998000 81384 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0919 16:11:15.998000 81384 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0919 16:11:15.998000 81384 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=3, local_rank=3, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=2, local_rank=2, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=0, local_rank=0, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=1, local_rank=1, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 0 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:11:41 [INFO] [Rank 0] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 1 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:11:42 [INFO] [Rank 1] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 2 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:11:42 [INFO] [Rank 2] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 3 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:11:42 [INFO] [Rank 3] Loading Train dataset(s)
+16:11:42 [INFO] [Rank 2] [Rank2/8] files:['/userdata/datasets/fineweb-edu/data0/train-00002.parquet', '/userdata/datasets/fineweb-edu/data0/train-00010.parquet']
+16:11:42 [INFO] [Rank 2] Loaded datasets (train)
+16:11:42 [INFO] [Rank 2] Train dataset: <zeroband.data.ParquetDataset object at 0x7f4967a3c0a0>
+16:11:42 [INFO] [Rank 0] [Rank0/8] files:['/userdata/datasets/fineweb-edu/data0/train-00000.parquet', '/userdata/datasets/fineweb-edu/data0/train-00008.parquet']
+16:11:42 [INFO] [Rank 3] [Rank3/8] files:['/userdata/datasets/fineweb-edu/data0/train-00003.parquet', '/userdata/datasets/fineweb-edu/data0/train-00011.parquet']
+16:11:42 [INFO] [Rank 0] Loaded datasets (train)
+16:11:42 [INFO] [Rank 0] Train dataset: <zeroband.data.ParquetDataset object at 0x7fd57ad34160>
+16:11:42 [INFO] [Rank 3] Loaded datasets (train)
+16:11:42 [INFO] [Rank 3] Train dataset: <zeroband.data.ParquetDataset object at 0x7f82b95543a0>
+16:11:42 [INFO] [Rank 1] [Rank1/8] files:['/userdata/datasets/fineweb-edu/data0/train-00001.parquet', '/userdata/datasets/fineweb-edu/data0/train-00009.parquet']
+16:11:42 [INFO] [Rank 1] Loaded datasets (train)
+16:11:42 [INFO] [Rank 1] Train dataset: <zeroband.data.ParquetDataset object at 0x7f6b4b164040>
+16:11:42 [WARNING] [Rank 2] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 2] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 3] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 1] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:11:42 [WARNING] [Rank 0] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.11s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.11s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.12s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.20s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.91s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.91s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.91s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.90s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.48s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.48s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.28s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.48s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.28s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.49s/it]
+16:12:04 [INFO] [Rank 1] Peak FLOPS used for computing MFU: 9.890e+14
+16:12:04 [INFO] [Rank 0] Peak FLOPS used for computing MFU: 9.890e+14
+16:12:04 [INFO] [Rank 1] Number of parameters: 7070619136
+16:12:04 [INFO] [Rank 1] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26970
+16:12:04 [INFO] [Rank 0] Number of parameters: 7070619136
+16:12:04 [INFO] [Rank 0] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26969
+16:12:04 [INFO] [Rank 3] Peak FLOPS used for computing MFU: 9.890e+14
+16:12:04 [INFO] [Rank 3] Number of parameters: 7070619136
+16:12:04 [INFO] [Rank 3] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26972
+16:12:04 [INFO] [Rank 2] Peak FLOPS used for computing MFU: 9.890e+14
+16:12:04 [INFO] [Rank 2] Number of parameters: 7070619136
+16:12:04 [INFO] [Rank 2] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26971
+16:12:05 [INFO] [Rank 0] Destroyed process group
+16:12:05 [INFO] [Rank 0] Elastic Device mesh init done with 2 peers in 1.1561165649909526 seconds
+16:12:05 [INFO] [Rank 0] Started iperf server on 172.16.0.10 with port 10101
+16:12:05 [INFO] [Rank 0] finished init global pg
+16:12:05 [INFO] [Rank 2] Destroyed process group
+16:12:06 [INFO] [Rank 1] Destroyed process group
+16:12:06 [INFO] [Rank 2] Elastic Device mesh init done with 2 peers in 1.4789108639961341 seconds
+16:12:06 [INFO] [Rank 2] finished init global pg
+16:12:06 [INFO] [Rank 3] Destroyed process group
+16:12:06 [INFO] [Rank 1] Elastic Device mesh init done with 2 peers in 1.745285134005826 seconds
+16:12:06 [INFO] [Rank 1] finished init global pg
+16:12:06 [INFO] [Rank 3] Elastic Device mesh init done with 2 peers in 1.7743316920095822 seconds
+16:12:06 [INFO] [Rank 3] finished init global pg
+16:12:06 [INFO] [Rank 0] finished dist.init_process_group
+16:12:06 [INFO] [Rank 1] finished dist.init_process_group
+16:12:06 [INFO] [Rank 2] finished dist.init_process_group
+16:12:06 [INFO] [Rank 3] finished dist.init_process_group
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:4', [3, 7], '4'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:3', [2, 6], '3'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:1', [0, 4], '1'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:2', [1, 5], '2'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+16:12:06 [INFO] [Rank 0] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:12:06 [INFO] [Rank 1] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:12:06 [INFO] [Rank 3] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:12:06 [INFO] [Rank 2] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:12:07 [INFO] [Rank 0] Destroyed process group
+16:12:07 [INFO] [Rank 3] Destroyed process group
+16:12:07 [INFO] [Rank 1] Destroyed process group
+16:12:07 [INFO] [Rank 2] Destroyed process group
+16:12:07 [INFO] [Rank 3] finished optimize_ring_ranks
+16:12:07 [INFO] [Rank 1] finished optimize_ring_ranks
+16:12:07 [INFO] [Rank 0] finished optimize_ring_ranks
+16:12:07 [INFO] [Rank 2] finished optimize_ring_ranks
+16:12:07 [INFO] [Rank 3] finished global_pg.barrier().wait()
+16:12:07 [INFO] [Rank 3] global_pg size : 2, local_pg size: 4
+16:12:07 [INFO] [Rank 1] finished global_pg.barrier().wait()
+16:12:07 [INFO] [Rank 0] finished global_pg.barrier().wait()
+16:12:07 [INFO] [Rank 3] FSDP2 shard model, cuda_local_mesh size: 4
+16:12:07 [INFO] [Rank 3] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:12:07 [INFO] [Rank 1] global_pg size : 2, local_pg size: 4
+16:12:07 [INFO] [Rank 2] finished global_pg.barrier().wait()
+16:12:07 [INFO] [Rank 0] global_pg size : 2, local_pg size: 4
+16:12:07 [INFO] [Rank 2] global_pg size : 2, local_pg size: 4
+16:12:07 [INFO] [Rank 1] FSDP2 shard model, cuda_local_mesh size: 4
+16:12:07 [INFO] [Rank 0] FSDP2 shard model, cuda_local_mesh size: 4
+16:12:07 [INFO] [Rank 1] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:12:07 [INFO] [Rank 0] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:12:07 [INFO] [Rank 2] FSDP2 shard model, cuda_local_mesh size: 4
+16:12:07 [INFO] [Rank 2] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f4752427270>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fd36452a7b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f693647e8b0>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f80a811a930>
+16:12:12 [INFO] [Rank 2] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+16:12:12 [INFO] [Rank 0] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+16:12:12 [INFO] [Rank 1] finished shard model using FSDP2
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Loading extension module collectives...
+16:12:12 [INFO] [Rank 3] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+Loading extension module collectives...
+16:12:19 [INFO] [Rank 2] need_live_recovery: False
+16:12:19 [INFO] [Rank 2] outer_step step: 0
+16:12:19 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+16:12:19 [INFO] [Rank 1] need_live_recovery: False
+16:12:19 [INFO] [Rank 1] outer_step step: 0
+16:12:19 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+16:12:19 [INFO] [Rank 3] need_live_recovery: False
+16:12:19 [INFO] [Rank 3] outer_step step: 0
+16:12:19 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+16:12:20 [INFO] [Rank 0] need_live_recovery: False
+16:12:20 [INFO] [Rank 0] outer_step step: 0
+16:12:20 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+dc-traning-hd01-0:81449:81449 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81449:81449 [0] NCCL INFO Bootstrap : Using eth0:172.16.0.10<0>
+dc-traning-hd01-0:81449:81449 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+dc-traning-hd01-0:81449:81449 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+dc-traning-hd01-0:81449:81449 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+dc-traning-hd01-0:81449:81449 [0] NCCL INFO cudaDriverVersion 12080
+NCCL version 2.21.5+cuda12.4
+dc-traning-hd01-0:81452:81452 [3] NCCL INFO cudaDriverVersion 12080
+dc-traning-hd01-0:81452:81452 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81452:81452 [3] NCCL INFO Bootstrap : Using eth0:172.16.0.10<0>
+dc-traning-hd01-0:81452:81452 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+dc-traning-hd01-0:81452:81452 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+dc-traning-hd01-0:81452:81452 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+dc-traning-hd01-0:81451:81451 [2] NCCL INFO cudaDriverVersion 12080
+dc-traning-hd01-0:81451:81451 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81451:81451 [2] NCCL INFO Bootstrap : Using eth0:172.16.0.10<0>
+dc-traning-hd01-0:81450:81450 [1] NCCL INFO cudaDriverVersion 12080
+dc-traning-hd01-0:81450:81450 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81451:81451 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+dc-traning-hd01-0:81451:81451 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+dc-traning-hd01-0:81451:81451 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+dc-traning-hd01-0:81450:81450 [1] NCCL INFO Bootstrap : Using eth0:172.16.0.10<0>
+dc-traning-hd01-0:81450:81450 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+dc-traning-hd01-0:81450:81450 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+dc-traning-hd01-0:81450:81450 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO NET/IB : Using [0]ib7s400p0:1/IB [1]ib7s400p1:1/IB [RO]; OOB eth0:172.16.0.10<0>
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Using network IB
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO NET/IB : Using [0]ib7s400p0:1/IB [1]ib7s400p1:1/IB [RO]; OOB eth0:172.16.0.10<0>
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Using network IB
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO NET/IB : Using [0]ib7s400p0:1/IB [1]ib7s400p1:1/IB [RO]; OOB eth0:172.16.0.10<0>
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Using network IB
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO NET/IB : Using [0]ib7s400p0:1/IB [1]ib7s400p1:1/IB [RO]; OOB eth0:172.16.0.10<0>
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Using network IB
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO ncclCommInitRank comm 0x56517667e6c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0xd7b211f46a22e4f8 - Init START
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO ncclCommInitRank comm 0x55c2757c7170 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId c0000 commId 0xd7b211f46a22e4f8 - Init START
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO ncclCommInitRank comm 0x5598505d76c0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 16000 commId 0xd7b211f46a22e4f8 - Init START
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO ncclCommInitRank comm 0x55efbbaf7a70 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 97000 commId 0xd7b211f46a22e4f8 - Init START
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO MNNVL busId 0xc1000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO MNNVL busId 0xc0000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO MNNVL busId 0x16000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO MNNVL busId 0x97000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Setting affinity for GPU 0 to ffff,ffffffff,00000000,0000ffff,ffffffff
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO NVLS multicast support is available on dev 0
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffff0000,00000000,ffffffff,ffff0000,00000000
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO NVLS multicast support is available on dev 3
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,ffff0000,00000000,ffffffff,ffff0000,00000000
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO NVLS multicast support is available on dev 1
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffff0000,00000000,ffffffff,ffff0000,00000000
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO NVLS multicast support is available on dev 2
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO comm 0x55c2757c7170 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO comm 0x56517667e6c0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO comm 0x55efbbaf7a70 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO comm 0x5598505d76c0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] -1/-1/-1->3->2 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->2 [9] -1/-1/-1->3->2 [10] -1/-1/-1->3->2 [11] -1/-1/-1->3->2 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->2 [17] -1/-1/-1->3->2 [18] -1/-1/-1->3->2 [19] -1/-1/-1->3->2 [20] -1/-1/-1->3->2 [21] -1/-1/-1->3->2 [22] -1/-1/-1->3->2 [23] -1/-1/-1->3->2
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 01/24 :    0   1   2   3
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 02/24 :    0   1   2   3
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 03/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 04/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 05/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 07/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 08/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 09/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 10/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 11/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 13/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 14/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 15/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 16/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 17/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 19/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 20/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 21/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 22/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 23/24 :    0   1   2   3
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 12/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 13/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 14/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 15/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 16/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 17/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 18/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 19/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 21/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 22/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Connected all rings
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Connected all rings
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Connected all rings
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Connected all rings
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 08/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 09/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 12/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 13/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 14/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 15/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 16/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 17/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 18/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 19/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 20/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 21/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Channel 23/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 10/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 13/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 14/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 16/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 17/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 18/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 19/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 20/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 21/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 22/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 22/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Channel 23/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO Connected all trees
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO Connected all trees
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO Connected all trees
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO Connected all trees
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO NVLS comm 0x55efbbaf7a70 headRank 1 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO NVLS comm 0x55c2757c7170 headRank 2 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO NVLS comm 0x5598505d76c0 headRank 0 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO NVLS comm 0x56517667e6c0 headRank 3 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+dc-traning-hd01-0:81451:85766 [2] NCCL INFO ncclCommInitRank comm 0x55c2757c7170 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId c0000 commId 0xd7b211f46a22e4f8 - Init COMPLETE
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+dc-traning-hd01-0:81450:85767 [1] NCCL INFO ncclCommInitRank comm 0x55efbbaf7a70 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 97000 commId 0xd7b211f46a22e4f8 - Init COMPLETE
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+dc-traning-hd01-0:81449:85764 [0] NCCL INFO ncclCommInitRank comm 0x5598505d76c0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 16000 commId 0xd7b211f46a22e4f8 - Init COMPLETE
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+dc-traning-hd01-0:81452:85765 [3] NCCL INFO ncclCommInitRank comm 0x56517667e6c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0xd7b211f46a22e4f8 - Init COMPLETE
+Token indices sequence length is longer than the specified maximum sequence length for this model (150113 > 131072). Running this sequence through the model will result in indexing errors
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Using network IB
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Using network IB
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Using network IB
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Using non-device net plugin version 0
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Using network IB
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO ncclCommInitRank comm 0x55c280b1c030 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId c0000 commId 0xa0145cd9803e256c - Init START
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO ncclCommInitRank comm 0x55efc2e741c0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 97000 commId 0xa0145cd9803e256c - Init START
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO ncclCommInitRank comm 0x56517ed72610 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0xa0145cd9803e256c - Init START
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO ncclCommInitRank comm 0x55986d20e920 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 16000 commId 0xa0145cd9803e256c - Init START
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO MNNVL busId 0x97000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO MNNVL busId 0xc0000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO MNNVL busId 0xc1000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO MNNVL busId 0x16000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,ffff0000,00000000,ffffffff,ffff0000,00000000
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO NVLS multicast support is available on dev 1
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffff0000,00000000,ffffffff,ffff0000,00000000
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO NVLS multicast support is available on dev 2
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffff0000,00000000,ffffffff,ffff0000,00000000
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Setting affinity for GPU 0 to ffff,ffffffff,00000000,0000ffff,ffffffff
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO NVLS multicast support is available on dev 3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO NVLS multicast support is available on dev 0
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO comm 0x55c280b1c030 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO comm 0x56517ed72610 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO comm 0x55efc2e741c0 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO comm 0x55986d20e920 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 01/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 02/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 03/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 04/24 :    0   1   2   3
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] -1/-1/-1->3->2 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->2 [9] -1/-1/-1->3->2 [10] -1/-1/-1->3->2 [11] -1/-1/-1->3->2 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->2 [17] -1/-1/-1->3->2 [18] -1/-1/-1->3->2 [19] -1/-1/-1->3->2 [20] -1/-1/-1->3->2 [21] -1/-1/-1->3->2 [22] -1/-1/-1->3->2 [23] -1/-1/-1->3->2
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 05/24 :    0   1   2   3
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 07/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 08/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 09/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 10/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 11/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 13/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 14/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 15/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 16/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 17/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 19/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 20/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 21/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 22/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 23/24 :    0   1   2   3
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO P2P Chunksize set to 524288
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 12/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 13/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 14/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 15/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 16/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 17/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 18/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 19/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 21/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 22/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Connected all rings
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Connected all rings
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Connected all rings
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Connected all rings
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 08/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 09/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 12/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 13/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 14/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 15/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 16/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 17/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 18/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 19/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 20/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 21/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Channel 23/0 : 3[3] -> 2[2] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 10/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 13/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 14/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 16/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 17/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 18/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 19/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 20/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 21/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 22/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 22/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Channel 23/0 : 1[1] -> 0[0] via P2P/CUMEM
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO Connected all trees
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO Connected all trees
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO Connected all trees
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO Connected all trees
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO NVLS comm 0x55986d20e920 headRank 0 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO NVLS comm 0x55c280b1c030 headRank 2 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO NVLS comm 0x55efc2e741c0 headRank 1 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO NVLS comm 0x56517ed72610 headRank 3 nHeads 4 buffSize 1048576 memSize 2097152 nvlsPerRankSize 150994944 nvlsTotalSize 603979776
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO 24 coll channels, 24 collnet channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+dc-traning-hd01-0:81449:86861 [0] NCCL INFO ncclCommInitRank comm 0x55986d20e920 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 16000 commId 0xa0145cd9803e256c - Init COMPLETE
+dc-traning-hd01-0:81452:86863 [3] NCCL INFO ncclCommInitRank comm 0x56517ed72610 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0xa0145cd9803e256c - Init COMPLETE
+dc-traning-hd01-0:81451:86862 [2] NCCL INFO ncclCommInitRank comm 0x55c280b1c030 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId c0000 commId 0xa0145cd9803e256c - Init COMPLETE
+dc-traning-hd01-0:81450:86864 [1] NCCL INFO ncclCommInitRank comm 0x55efc2e741c0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 97000 commId 0xa0145cd9803e256c - Init COMPLETE
+16:18:36 [INFO] [Rank 0] step: 1, loss: 2.1591, diloco_peers: 2
+16:18:37 [INFO] [Rank 1] step: 1, loss: 2.1591, diloco_peers: 2
+16:18:37 [INFO] [Rank 3] step: 1, loss: 2.1591, diloco_peers: 2
+16:18:37 [INFO] [Rank 2] step: 1, loss: 2.1591, diloco_peers: 2
+16:18:39 [INFO] [Rank 2] Caught an exception, terminating children
+16:18:39 [INFO] [Rank 2] CUDA out of memory. Tried to allocate 896.00 MiB. GPU 2 has a total capacity of 79.19 GiB of which 661.00 MiB is free. Process 1823184 has 78.54 GiB memory in use. Of the allocated memory 70.35 GiB is allocated by PyTorch, and 3.14 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 601, in <module>
+[rank2]:     raise e
+[rank2]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 593, in <module>
+[rank2]:     train(config)
+[rank2]:   File "/userdata/workspace/Prime/src/zeroband/train.py", line 340, in train
+[rank2]:     logits = model(input_ids=input_ids).logits.contiguous()
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1844, in _call_impl
+[rank2]:     return inner()
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in inner
+[rank2]:     result = forward_call(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 816, in forward
+[rank2]:     outputs = self.model(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 574, in forward
+[rank2]:     layer_outputs = decoder_layer(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1844, in _call_impl
+[rank2]:     return inner()
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in inner
+[rank2]:     result = forward_call(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 259, in forward
+[rank2]:     hidden_states, self_attn_weights = self.self_attn(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 191, in forward
+[rank2]:     attn_output, attn_weights = attention_interface(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/transformers/integrations/flex_attention.py", line 33, in flex_attention_forward
+[rank2]:     attn_output, attention_weights = flex_attention(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/attention/flex_attention.py", line 1038, in flex_attention
+[rank2]:     out, lse = torch.compile(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 465, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/nn/attention/flex_attention.py", line 1032, in _flex_attention_hop_wrapper
+[rank2]:     def _flex_attention_hop_wrapper(*args, **kwargs):
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:   File "<eval_with_key>.6", line 24, in forward
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 109, in __call__
+[rank2]:     return super().__call__(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 433, in __call__
+[rank2]:     return wrapper()
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 429, in wrapper
+[rank2]:     return self.dispatch(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 295, in dispatch
+[rank2]:     return kernel(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 703, in flex_attention_autograd
+[rank2]:     out, logsumexp = FlexAttentionAutogradOp.apply(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+[rank2]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 591, in forward
+[rank2]:     out, logsumexp = flex_attention(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 109, in __call__
+[rank2]:     return super().__call__(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 433, in __call__
+[rank2]:     return wrapper()
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 424, in wrapper
+[rank2]:     return torch.overrides.handle_torch_function(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/overrides.py", line 1717, in handle_torch_function
+[rank2]:     result = mode.__torch_function__(public_api, types, args, kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 85, in __torch_function__
+[rank2]:     return func(*args, **(kwargs or {}))
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 109, in __call__
+[rank2]:     return super().__call__(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 433, in __call__
+[rank2]:     return wrapper()
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 429, in wrapper
+[rank2]:     return self.dispatch(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_ops.py", line 295, in dispatch
+[rank2]:     return kernel(*args, **kwargs)
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 276, in sdpa_dense
+[rank2]:     out, lse = math_attention(
+[rank2]:   File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/_higher_order_ops/flex_attention.py", line 259, in math_attention
+[rank2]:     post_mod_scores = torch._safe_softmax(post_mod_scores, dim=-1)
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 896.00 MiB. GPU 2 has a total capacity of 79.19 GiB of which 661.00 MiB is free. Process 1823184 has 78.54 GiB memory in use. Of the allocated memory 70.35 GiB is allocated by PyTorch, and 3.14 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+dc-traning-hd01-0:81451:85782 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+dc-traning-hd01-0:81451:86886 [2] NCCL INFO comm 0x55c2757c7170 rank 2 nranks 4 cudaDev 2 busId c0000 - Abort COMPLETE
+dc-traning-hd01-0:81451:86869 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+dc-traning-hd01-0:81451:86887 [2] NCCL INFO comm 0x55c280b1c030 rank 2 nranks 4 cudaDev 2 busId c0000 - Abort COMPLETE
+W0919 16:18:42.827000 81384 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 81449 closing signal SIGTERM
+W0919 16:18:42.832000 81384 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 81450 closing signal SIGTERM
+W0919 16:18:42.838000 81384 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 81452 closing signal SIGTERM
+E0919 16:18:43.818000 81384 .venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 81451) of binary: /userdata/workspace/Prime/.venv/bin/python3
+Traceback (most recent call last):
+  File "/userdata/workspace/Prime/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/zeroband/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-09-19_16:18:42
+  host      : dc-traning-hd01-0.dc-traning-hd01.default.svc.cluster.local
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 81451)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

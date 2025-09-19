@@ -1,0 +1,560 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0919 15:59:36.142000 76996 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0919 15:59:36.142000 76996 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0919 15:59:36.142000 76996 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0919 15:59:36.142000 76996 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=0, local_rank=0, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=3, local_rank=3, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=1, local_rank=1, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=8, rank=2, local_rank=2, local_world_size=4, nnodes=2, global_unique_id=0, global_addr=172.16.0.10, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 0 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:02 [INFO] [Rank 0] Loading Train dataset(s)
+16:00:02 [INFO] [Rank 0] [Rank0/8] files:['/userdata/datasets/fineweb-edu/data0/train-00000.parquet', '/userdata/datasets/fineweb-edu/data0/train-00008.parquet']
+16:00:02 [INFO] [Rank 0] Loaded datasets (train)
+16:00:02 [INFO] [Rank 0] Train dataset: <zeroband.data.ParquetDataset object at 0x7fa3208fc070>
+16:00:02 [WARNING] [Rank 0] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:02 [WARNING] [Rank 0] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 3 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:03 [INFO] [Rank 3] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 1 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:03 [INFO] [Rank 1] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 2 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:00:03 [INFO] [Rank 2] Loading Train dataset(s)
+16:00:03 [INFO] [Rank 3] [Rank3/8] files:['/userdata/datasets/fineweb-edu/data0/train-00003.parquet', '/userdata/datasets/fineweb-edu/data0/train-00011.parquet']
+16:00:03 [INFO] [Rank 3] Loaded datasets (train)
+16:00:03 [INFO] [Rank 3] Train dataset: <zeroband.data.ParquetDataset object at 0x7fdde015c100>
+16:00:03 [INFO] [Rank 1] [Rank1/8] files:['/userdata/datasets/fineweb-edu/data0/train-00001.parquet', '/userdata/datasets/fineweb-edu/data0/train-00009.parquet']
+16:00:03 [INFO] [Rank 1] Loaded datasets (train)
+16:00:03 [INFO] [Rank 1] Train dataset: <zeroband.data.ParquetDataset object at 0x7f2f088fc070>
+16:00:03 [WARNING] [Rank 3] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 3] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:00:03 [INFO] [Rank 2] [Rank2/8] files:['/userdata/datasets/fineweb-edu/data0/train-00002.parquet', '/userdata/datasets/fineweb-edu/data0/train-00010.parquet']
+16:00:03 [INFO] [Rank 2] Loaded datasets (train)
+16:00:03 [INFO] [Rank 2] Train dataset: <zeroband.data.ParquetDataset object at 0x7f63739ac100>
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]16:00:03 [WARNING] [Rank 1] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 1] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:00:03 [WARNING] [Rank 2] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.18s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.05s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.30s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.17s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.77s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.77s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.81s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.65s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.73s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.39s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.53s/it]
+16:00:21 [INFO] [Rank 0] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:21 [INFO] [Rank 0] Number of parameters: 7070619136
+16:00:21 [INFO] [Rank 0] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26969
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.43s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.56s/it]
+16:00:22 [INFO] [Rank 1] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:22 [INFO] [Rank 1] Number of parameters: 7070619136
+16:00:22 [INFO] [Rank 1] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26970
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.43s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.57s/it]
+16:00:22 [INFO] [Rank 2] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:22 [INFO] [Rank 2] Number of parameters: 7070619136
+16:00:22 [INFO] [Rank 2] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26971
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.48s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.63s/it]
+16:00:22 [INFO] [Rank 3] Peak FLOPS used for computing MFU: 9.890e+14
+16:00:22 [INFO] [Rank 3] Number of parameters: 7070619136
+16:00:22 [INFO] [Rank 3] [0](Leader: True) TCPStore init: Connecting via 172.16.0.10:26972
+16:00:24 [INFO] [Rank 0] Destroyed process group
+16:00:24 [INFO] [Rank 0] Elastic Device mesh init done with 2 peers in 3.720341820997419 seconds
+16:00:24 [INFO] [Rank 0] Started iperf server on 172.16.0.10 with port 10101
+16:00:24 [INFO] [Rank 0] finished init global pg
+16:00:25 [INFO] [Rank 3] Destroyed process group
+16:00:25 [INFO] [Rank 2] Destroyed process group
+16:00:25 [INFO] [Rank 1] Destroyed process group
+16:00:25 [INFO] [Rank 3] Elastic Device mesh init done with 2 peers in 3.222701061007683 seconds
+16:00:25 [INFO] [Rank 3] finished init global pg
+16:00:25 [INFO] [Rank 2] Elastic Device mesh init done with 2 peers in 3.3994880200043553 seconds
+16:00:25 [INFO] [Rank 2] finished init global pg
+16:00:25 [INFO] [Rank 1] Elastic Device mesh init done with 2 peers in 3.576534890002222 seconds
+16:00:25 [INFO] [Rank 1] finished init global pg
+16:00:25 [INFO] [Rank 0] finished dist.init_process_group
+16:00:25 [INFO] [Rank 1] finished dist.init_process_group
+16:00:25 [INFO] [Rank 2] finished dist.init_process_group
+16:00:25 [INFO] [Rank 3] finished dist.init_process_group
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:1', [0, 4], '1'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:3', [2, 6], '3'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:4', [3, 7], '4'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos:[('ptd:2', [1, 5], '2'), ('ptd:5', [0, 1, 2, 3], '5')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 1, _dim_group_infos[-1]: ('ptd:5', [0, 1, 2, 3], '5')[0m
+16:00:25 [INFO] [Rank 0] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:00:25 [INFO] [Rank 1] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:00:25 [INFO] [Rank 3] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:00:25 [INFO] [Rank 2] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:00:26 [INFO] [Rank 1] Destroyed process group
+16:00:26 [INFO] [Rank 0] Destroyed process group
+16:00:26 [INFO] [Rank 3] Destroyed process group
+16:00:26 [INFO] [Rank 2] Destroyed process group
+16:00:26 [INFO] [Rank 1] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 0] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 3] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 2] finished optimize_ring_ranks
+16:00:26 [INFO] [Rank 1] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 1] global_pg size : 2, local_pg size: 4
+16:00:26 [INFO] [Rank 0] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 0] global_pg size : 2, local_pg size: 4
+16:00:26 [INFO] [Rank 3] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 1] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 3] global_pg size : 2, local_pg size: 4
+16:00:26 [INFO] [Rank 1] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 0] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 0] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 3] FSDP2 shard model, cuda_local_mesh size: 4
+16:00:26 [INFO] [Rank 3] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:00:26 [INFO] [Rank 2] finished global_pg.barrier().wait()
+16:00:26 [INFO] [Rank 2] global_pg size : 2, local_pg size: 4
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+16:00:26 [INFO] [Rank 2] FSDP2 shard model, cuda_local_mesh size: 4
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+16:00:26 [INFO] [Rank 2] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f615e422630>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2ccc562770>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdba455e730>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+16:00:30 [INFO] [Rank 2] finished shard model using FSDP2
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+16:00:30 [INFO] [Rank 3] finished shard model using FSDP2
+16:00:30 [INFO] [Rank 1] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos:[('ptd:7', [0, 1, 2, 3], '7')][0m
+[1;94m[Torch DeviceMesh] get_group, mesh_dim: 0, _dim_group_infos[-1]: ('ptd:7', [0, 1, 2, 3], '7')[0m
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fa110192570>
+Loading extension module collectives...
+16:00:31 [INFO] [Rank 0] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
