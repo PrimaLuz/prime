@@ -12,11 +12,15 @@ MASTER_PORT=${3:-29500}  # 主节点端口
 WORLD_SIZE=${4:-2}  # 总节点数
 GPUS_PER_NODE=${5:-8}  # 每节点GPU数
 
+export LOCAL_WORLD_SIZE=$GPUS_PER_NODE
+
 export GLOBAL_RANK=$NODE_RANK
 export GLOBAL_WORLD_SIZE=$WORLD_SIZE
 export GLOBAL_ADDR=$MASTER_ADDR
 export GLOBAL_PORT=${6:-26969}
-export GLOBAL_UNIQUE_ID=$NODE_RANK
+# GLOBAL_UNIQUE_ID is calculated in world_info.py as f"{global_rank}-{rank}"
+export BASE_PORT=${BASE_PORT:-10001}
+export GLOO_SOCKET_IFNAME=eth0
 
 # 验证参数
 if [ -z "$NODE_RANK" ] || [ -z "$MASTER_ADDR" ] || [ -z "$MASTER_PORT" ]; then
@@ -31,6 +35,7 @@ export NCCL_DEBUG=INFO
 export NCCL_SOCKET_IFNAME=eth0  
 
 export PYTHONPATH=/userdata/workspace/Prime
+
 
 # 数据路径配置
 DATA_DIR="/userdata"
@@ -54,6 +59,7 @@ echo "主节点: $MASTER_ADDR:$MASTER_PORT"
 echo "GPU配置: $GPUS_PER_NODE GPUs per node"
 echo "日志目录: $LOG_DIR"
 
+
 # 使用torchrun启动
 uv run torchrun \
     --nproc_per_node=$GPUS_PER_NODE \
@@ -63,8 +69,6 @@ uv run torchrun \
     --master_port=$MASTER_PORT \
     src/zeroband/train.py \
     @configs/7B_diloco/multi_node.toml \
-    --data.data_world_size $WORLD_SIZE \
-    --data.data_rank $NODE_RANK \
     --ckpt.path $OUTPUT_DIR \
     --log_level INFO \
     --log_all_rank true \

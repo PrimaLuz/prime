@@ -24,14 +24,14 @@ class WorldInfo:
         self.nnodes = self.world_size // self.local_world_size
 
         # 节点的唯一ID
-        self.global_unique_id = os.environ.get("GLOBAL_UNIQUE_ID", None)
+        
         self.global_addr = os.environ.get("GLOBAL_ADDR", None)
         self.global_port = int(os.environ.get("GLOBAL_PORT")) if "GLOBAL_PORT" in os.environ else None
         # 节点总数
         self.global_world_size = int(os.environ.get("GLOBAL_WORLD_SIZE", 1))
         # 节点排名归属
         self.global_rank = int(os.environ.get("GLOBAL_RANK", 0))
-
+        self.global_unique_id = f"{self.global_rank}"
     def __repr__(self):
         return f"WorldInfo(world_size={self.world_size}, rank={self.rank}, local_rank={self.local_rank}, local_world_size={self.local_world_size}, nnodes={self.nnodes}, global_unique_id={self.global_unique_id}, global_addr={self.global_addr}, global_port={self.global_port}, global_world_size={self.global_world_size}, global_rank={self.global_rank})"
 

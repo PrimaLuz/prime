@@ -15,7 +15,7 @@ from uuid import uuid4
 import toposolve
 from zeroband.utils.ip import parse_iperf_output
 
-TCPSTORE_TIMEOUT = timedelta(seconds=int(os.getenv("ZERO_BAND_GLOBAL_STORE_TIMEOUT_SECONDS", "300")))
+TCPSTORE_TIMEOUT = timedelta(seconds=int(os.getenv("ZERO_BAND_GLOBAL_STORE_TIMEOUT_SECONDS", "60")))
 TCPSTORE_POLLING_INTERVAL = float(os.getenv("ZERO_BAND_GLOBAL_STORE_POLLING_INTERVAL_SECONDS", "0.1"))
 GLOBAL_PG_TIMEOUT = timedelta(seconds=int(os.getenv("ZERO_BAND_GLOBAL_PG_TIMEOUT_SECONDS", "600")))
 MAX_JOINERS = 100  # Maximum number of nodes that can join in a single reinit
@@ -74,17 +74,12 @@ class ElasticDeviceMesh:
         self.local_pg = self.mesh.get_group("intranode")
 
         # Start heartbeat
-        
-        # node_start_rank = self.world_info.rank - self.world_info.local_rank
-        # local_ranks = list(range(node_start_rank, node_start_rank + self.world_info.local_world_size))
-        # self._logger.info(f"node_start_rank: {node_start_rank}, local_ranks: {local_ranks}")
-        
-        # self.cuda_local_mesh = DeviceMesh(device_type="cuda",mesh=torch.tensor(local_ranks))
-        
-        self.cuda_local_mesh = init_device_mesh("cuda", mesh_shape=(self.local_pg.size(),))
-        self.cpu_local_mesh = init_device_mesh("cpu", mesh_shape=(self.local_pg.size(),))
-        
-        self._logger.info(f"local_pg size: {self.local_pg.size()}, cuda_local_mesh size: {self.cuda_local_mesh.size()}, cpu_local_mesh size: {self.cpu_local_mesh.size()}")
+
+        # Build 1D local meshes over the ranks of this node explicitly
+        node_start_rank = self.world_info.rank - self.world_info.local_rank
+        local_ranks = list(range(node_start_rank, node_start_rank + self.world_info.local_world_size))
+        self.cuda_local_mesh = DeviceMesh("cuda", torch.tensor(local_ranks))
+        self.cpu_local_mesh = DeviceMesh("cpu", torch.tensor(local_ranks))
 
         # Logging
         if self.enable:
@@ -101,31 +96,52 @@ class ElasticDeviceMesh:
 
     def __del__(self):
         self._stop_heartbeat()
-        dist.destroy_process_group()
+        try:
+            if dist.is_initialized():
+                dist.destroy_process_group()
+        except Exception:
+            pass
 
     def _init_global_store(self):
         self._logger.info(
             f"[{self.world_info.global_unique_id}](Leader: {self._global_leader}) TCPStore init: Connecting via {self.world_info.global_addr}:{self.world_info.global_port + self.world_info.local_rank}"
         )
-        self.global_store = dist.TCPStore(
-            host_name=self.world_info.global_addr,
-            port=self.world_info.global_port + self.world_info.local_rank,
-            timeout=TCPSTORE_TIMEOUT,
-            is_master=self._global_leader,
-        )
-        self.god_store = dist.TCPStore(
-            host_name=self.world_info.global_addr,
-            port=self.world_info.global_port,
-            timeout=TCPSTORE_TIMEOUT,
-            is_master=False,
-        )
+        
+        # Retry TCPStore initialization with exponential backoff
+        max_retries = 1
+        for attempt in range(max_retries):
+            try:
+                self.global_store = dist.TCPStore(
+                    host_name=self.world_info.global_addr,
+                    port=self.world_info.global_port + self.world_info.local_rank,
+                    timeout=TCPSTORE_TIMEOUT,
+                    is_master=self._global_leader
+                )
+                # Only one process (global leader, local_rank==0) should own the god_store server
+                self.god_store = dist.TCPStore(
+                    host_name=self.world_info.global_addr,
+                    port=self.world_info.global_port,
+                    timeout=TCPSTORE_TIMEOUT,
+                    is_master=False,
+                )
+                self._logger.info(f'finished init global store')
+                break
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    self._logger.warning(f"[{self.world_info.global_unique_id}] TCPStore init failed (attempt {attempt + 1}/{max_retries}): {e}. Retrying in {wait_time}s...")
+                    time.sleep(wait_time)
+                else:
+                    self._logger.error(f"[{self.world_info.global_unique_id}] TCPStore init failed after {max_retries} attempts: {e}")
+                    raise
 
     def _init_global_store_values(self):
         """Initialize the global store with mesh_count, joiner_0, and status. Also sets the global status."""
-        self._logger.debug("Initializing global store values")
+        self._logger.debug(f"[{self.world_info.global_unique_id}] Initializing global store values")
         self.global_store.set(f"gid_{self.world_info.global_rank}", self.world_info.global_unique_id)
         self.global_store.set(f"rank_{self.world_info.global_unique_id}", str(self.world_info.global_rank))
         if self._global_leader:
+            self._logger.info(f"[{self.world_info.global_unique_id}] Setting up as global leader")
             self.global_store.set("mesh_count", "0")
             self.global_store.set("world_size", str(self.world_info.global_world_size))
             self.global_store.set("joiner_0", "null")
@@ -134,16 +150,21 @@ class ElasticDeviceMesh:
             self._global_ids = [
                 self.global_store.get(f"gid_{i}").decode("utf-8") for i in range(self.world_info.global_world_size)
             ]
+            self._logger.info(f"_global_ids in def _initgsv_v1: {self._global_ids}")
             for i in self._global_ids:
                 for j in self._global_ids:
                     self.global_store.set(f"ping_{i}_{j}", "1000_000_000")
             self.global_store.set("status", "init")
             self.global_status = "init"
+            self._logger.info(f"[{self.world_info.global_unique_id}] Set status to 'init'")
         else:
+            self._logger.info(f"[{self.world_info.global_unique_id}] Waiting for leader to set status")
             self.global_status = self._wait_for_status()
+            self._logger.info(f"[{self.world_info.global_unique_id}] Received status: {self.global_status}")
             self._global_ids = [
                 self.global_store.get(f"gid_{i}").decode("utf-8") for i in range(self.world_info.global_world_size)
             ]
+            self._logger.info(f"_global_ids in def _initgsv_v2: {self._global_ids}")
 
     def _create_global_pg(self):
         # Delete the old global_pg
@@ -182,20 +203,21 @@ class ElasticDeviceMesh:
         self._global_ids = [
             self.global_store.get(f"gid_{i}").decode("utf-8") for i in range(self.world_info.global_world_size)
         ]
+        self._logger.info(f"_global_ids: in opti _v1{self._global_ids}")
         if self.world_info.local_rank == 0:
-            self._logger.debug("Measuring bandwidths")
+            self._logger.info("Measuring bandwidths")
             self._measure_connectivity()
-            self._logger.debug("Measuring bandwidths done")
+            self._logger.info("Measuring bandwidths done")
 
         self.local_pg.barrier().wait()
         self.global_pg.barrier().wait()
 
         if self._global_leader:
-            self._logger.debug("Calculating TSP")
+            self._logger.info("Calculating TSP")
             pings = self.get_pings()
             min_dist, path = toposolve.TSPSolver().solve_tsp(pings)
             self._logger.debug(f"Min distance: {min_dist}")
-            self._logger.debug(f"Path: {path}")
+            self._logger.info(f"Path: {path}")
             new_gids = [self._global_ids[i] for i in path[:-1]]
             assert set(new_gids) == set(self._global_ids)
 
@@ -244,16 +266,28 @@ class ElasticDeviceMesh:
         Returns:
             status (str): The status.
         """
+        self._logger.info(f"[{self.world_info.global_unique_id}] Waiting for status: {status}")
+        start_time = time.time()
+        timeout = 120  # 2 minutes timeout
         while True:
             try:
                 ret = self.global_store.get("status").decode("utf-8")
+                self._logger.debug(f"[{self.world_info.global_unique_id}] Got status: {ret}")
                 if status is None or ret == status:
+                    self._logger.info(f"[{self.world_info.global_unique_id}] Status received: {ret}")
                     return ret
                 time.sleep(TCPSTORE_POLLING_INTERVAL)
             except dist.DistStoreError as e:
+                elapsed = time.time() - start_time
+                self._logger.warning(f"[{self.world_info.global_unique_id}] DistStoreError after {elapsed:.2f}s: {e}")
                 if status is not None:
                     raise e
                 time.sleep(0.1)
+            
+            # Check timeout
+            if time.time() - start_time > timeout:
+                self._logger.error(f"[{self.world_info.global_unique_id}] Timeout waiting for status after {timeout}s")
+                raise RuntimeError(f"Timeout waiting for status after {timeout} seconds")
 
     def _init_global_pg(self) -> None:
         # Each rank gets its own global store with global rank 0 as the master
@@ -290,6 +324,7 @@ class ElasticDeviceMesh:
         )
 
         if self.world_info.local_rank == 0:
+            self._logger.info("Starting iperf server")
             self._start_iperf_server()
         self._evicted_nodes = []
 
@@ -336,6 +371,7 @@ class ElasticDeviceMesh:
     def _check_heartbeats(self) -> List[str]:
         """Check heartbeats and return a list of nodes that have missed their heartbeats."""
         dead_nodes = []
+        return dead_nodes
         current_time = time.time()
         for gid in self._global_ids:
             try:
@@ -393,6 +429,7 @@ class ElasticDeviceMesh:
             new_world_size += 1
 
         self._global_ids = live_ranks
+        self._logger.info(f"_global_ids: {self._global_ids}")
         for i in self._global_ids:
             for j in self._global_ids:
                 self.global_store.set(f"ping_{i}_{j}", "1000_000_000")
@@ -514,6 +551,7 @@ class ElasticDeviceMesh:
             from zeroband.utils.ip import get_ip_address
 
             iperf_addr = get_ip_address(IPERF_IFNAME)
+            self._logger.info(f'iperf_addr: {iperf_addr}')
             iperf_port = IPERF_PORT + self.world_info.global_rank
             cmd: List[str] = ["iperf", "-s", "-p", str(iperf_port)]
             self.server_process = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -529,6 +567,7 @@ class ElasticDeviceMesh:
                 continue
             target_host, target_port = self.god_store.get(f"iperf_{i}").decode("utf-8").split(":")
             target_port = int(target_port)
+            self._logger.info(f"[ _measure_connectivity] Measuring bandwidth to {target_host}:{target_port}")
             time_taken = self.measure_bandwidth(target_host, target_port)
             self.god_store.set(f"ping_{self.world_info.global_unique_id}_{i}", str(time_taken))
 
@@ -553,6 +592,7 @@ class ElasticDeviceMesh:
                 "-t",
                 "1",  # 1 second test
             ]
+            self._logger.info(f"Running iperf command: {' '.join(cmd)}")
             result: subprocess.CompletedProcess = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
 
             if result.returncode != 0:

@@ -7,7 +7,7 @@ type_model = "llama2"
 micro_bs = 2  # 根据双节点调整
 reshard_after_forward = true
 reduce_fp32 = true
-torch_compile = true
+torch_compile = false
 
 [optim]
 batch_size = 2048  # 双节点翻倍

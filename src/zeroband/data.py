@@ -475,8 +475,9 @@ def _load_datasets(
     datasets = []
     for ds_arg in ds_args:
         # logger.debug(f"Loading dataset: {ds_arg['data_files']}")
-        get_logger().info(f"[Rank{data_rank}/{data_world_size}] files:{ds_arg["data_files"]}")
-        _ds = ParquetDataset(files=ds_arg["data_files"], tokenizer=tokenizer)
+        files = ds_arg["data_files"]
+        get_logger().info(f"[Rank{data_rank}/{data_world_size}] files:{files}")
+        _ds = ParquetDataset(files=files, tokenizer=tokenizer)
         datasets.append(_ds)
 
     if len(datasets) > 1:
@@ -512,9 +513,12 @@ def load_all_datasets(
     ):
         split_rank = data_config.data_rank * world_size + rank
         split_world_size = data_config.data_world_size * world_size
+        
+        print(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>\nuse split, split_rank {split_rank} split_world_size {split_world_size}\n>>>>>>>>>>>>>>>>>>>>>>>>\n")
     else:
         split_rank = rank
         split_world_size = world_size
+        print(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>\nNO USE  split_rank {split_rank} split_world_size {split_world_size}\n>>>>>>>>>>>>>>>>>>>>>>>>\n")
 
 
     get_logger().info("Loading Train dataset(s)")
