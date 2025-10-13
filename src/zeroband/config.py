@@ -72,6 +72,7 @@ class DilocoConfig(BaseConfig):
     compression: Compression = Compression.NO
 
     retry_all_reduce: int = 3
+    
 
 
 class MemoryProfilerConfig(BaseConfig):
@@ -163,6 +164,8 @@ class Config(BaseConfig):
     project: str = "zeroband"
     run_id: str | None = None
     run_name: str | None = None
+    
+    inner_nodes_per_group: int = 1
 
     # Logger
     metric_logger_type: Literal["wandb", "dummy", "swanlab", "tensorboard"] = "tensorboard"

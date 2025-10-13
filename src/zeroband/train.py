@@ -80,6 +80,7 @@ def train(config: Config):
     # batch_size is the total batch size for all GPUs
     assert config.optim.batch_size % world_info.local_world_size == 0
     batch_size = config.optim.batch_size // world_info.local_world_size
+    logger.info(f"<test dist info> rank:{world_info.rank}")
 
     assert batch_size % config.train.micro_bs == 0, (
         f"The micro batch size ({config.train.micro_bs}) must divide the number of samples on each GPU ({batch_size})."
@@ -168,11 +169,14 @@ def train(config: Config):
             reshard_after_forward=config.train.reshard_after_forward,
             offload_policy=offload_policy,
         )
+    
+    
 
     # Setup optimizers
     with sw.record_block("Optimizer Setup"):
         inner_optimizer = get_optimizer(config, model.parameters())
-
+        
+        logger.info(f"init Diloco")
         diloco = Diloco(config.diloco, model, elastic_device_mesh) if config.diloco is not None else None
 
         scheduler = get_scheduler(

@@ -1,0 +1,331 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0925 16:57:01.724000 13143 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0925 16:57:01.724000 13143 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0925 16:57:01.724000 13143 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0925 16:57:01.724000 13143 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+16:57:06 [INFO] [Rank 0] 
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=0, local_rank=0, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.215, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:06 [INFO] [Rank 3] 
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=3, local_rank=3, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.215, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:06 [INFO] [Rank 2] 
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=2, local_rank=2, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.215, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:06 [INFO] [Rank 1] 
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=1, local_rank=1, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.215, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:08 [INFO] [Rank 0] 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+use split, split_rank 0 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:08 [INFO] [Rank 0] Loading Train dataset(s)
+16:57:08 [INFO] [Rank 0] [Rank0/8] files:['/userdata/datasets/fineweb-edu/data0/train-00000.parquet', '/userdata/datasets/fineweb-edu/data0/train-00008.parquet']
+16:57:08 [INFO] [Rank 0] Loaded datasets (train)
+16:57:08 [INFO] [Rank 0] Train dataset: <zeroband.data.ParquetDataset object at 0x7fe246d8c640>
+16:57:08 [INFO] [Rank 1] 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+use split, split_rank 1 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:08 [INFO] [Rank 1] Loading Train dataset(s)
+16:57:08 [INFO] [Rank 2] 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+use split, split_rank 2 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:08 [INFO] [Rank 2] Loading Train dataset(s)
+16:57:08 [INFO] [Rank 3] 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+use split, split_rank 3 split_world_size 8
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+16:57:08 [INFO] [Rank 3] Loading Train dataset(s)
+16:57:09 [WARNING] [Rank 0] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 0] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]16:57:09 [INFO] [Rank 2] [Rank2/8] files:['/userdata/datasets/fineweb-edu/data0/train-00002.parquet', '/userdata/datasets/fineweb-edu/data0/train-00010.parquet']
+16:57:09 [INFO] [Rank 2] Loaded datasets (train)
+16:57:09 [INFO] [Rank 2] Train dataset: <zeroband.data.ParquetDataset object at 0x7fa7546b0610>
+16:57:09 [INFO] [Rank 3] [Rank3/8] files:['/userdata/datasets/fineweb-edu/data0/train-00003.parquet', '/userdata/datasets/fineweb-edu/data0/train-00011.parquet']
+16:57:09 [INFO] [Rank 3] Loaded datasets (train)
+16:57:09 [INFO] [Rank 3] Train dataset: <zeroband.data.ParquetDataset object at 0x7fac82790580>
+16:57:09 [INFO] [Rank 1] [Rank1/8] files:['/userdata/datasets/fineweb-edu/data0/train-00001.parquet', '/userdata/datasets/fineweb-edu/data0/train-00009.parquet']
+16:57:09 [INFO] [Rank 1] Loaded datasets (train)
+16:57:09 [INFO] [Rank 1] Train dataset: <zeroband.data.ParquetDataset object at 0x7f369ac24670>
+16:57:09 [WARNING] [Rank 2] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 2] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 3] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 0 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 3 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 6 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 1 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 5 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 2 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 4 Number of workers 8 is greater than the number of files 2
+16:57:09 [WARNING] [Rank 1] dataloader rank 7 Number of workers 8 is greater than the number of files 2
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.34s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.14s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.20s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.29s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:09,  4.97s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.91s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.89s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.83s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.78s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.73s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.79s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.78s/it]
+16:57:28 [INFO] [Rank 0] Peak FLOPS used for computing MFU: 9.890e+14
+16:57:28 [INFO] [Rank 0] Number of parameters: 7070619136
+16:57:28 [INFO] [Rank 0] [0](Leader: True) TCPStore init: Connecting via 172.16.92.215:26969
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.58s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.70s/it]
+16:57:28 [INFO] [Rank 1] Peak FLOPS used for computing MFU: 9.890e+14
+16:57:28 [INFO] [Rank 1] Number of parameters: 7070619136
+16:57:28 [INFO] [Rank 1] [0](Leader: True) TCPStore init: Connecting via 172.16.92.215:26970
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.63s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.73s/it]
+16:57:28 [INFO] [Rank 3] Peak FLOPS used for computing MFU: 9.890e+14
+16:57:28 [INFO] [Rank 3] Number of parameters: 7070619136
+16:57:28 [INFO] [Rank 3] [0](Leader: True) TCPStore init: Connecting via 172.16.92.215:26972
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.64s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.74s/it]
+16:57:28 [INFO] [Rank 2] Peak FLOPS used for computing MFU: 9.890e+14
+16:57:28 [INFO] [Rank 2] Number of parameters: 7070619136
+16:57:28 [INFO] [Rank 2] [0](Leader: True) TCPStore init: Connecting via 172.16.92.215:26971
+16:57:29 [INFO] [Rank 0] Destroyed process group
+16:57:29 [INFO] [Rank 0] Elastic Device mesh init done with 2 peers in 1.2495475300820544 seconds
+16:57:29 [INFO] [Rank 0] Started iperf server on 172.16.92.215 with port 10101
+16:57:29 [INFO] [Rank 0] finished init global pg
+16:57:30 [INFO] [Rank 1] Destroyed process group
+16:57:30 [INFO] [Rank 2] Destroyed process group
+16:57:30 [INFO] [Rank 3] Destroyed process group
+16:57:30 [INFO] [Rank 1] Elastic Device mesh init done with 2 peers in 2.4022925150347874 seconds
+16:57:30 [INFO] [Rank 1] finished init global pg
+16:57:30 [INFO] [Rank 2] Elastic Device mesh init done with 2 peers in 2.37475505808834 seconds
+16:57:30 [INFO] [Rank 2] finished init global pg
+16:57:30 [INFO] [Rank 3] Elastic Device mesh init done with 2 peers in 2.4279493059730157 seconds
+16:57:30 [INFO] [Rank 3] finished init global pg
+16:57:30 [INFO] [Rank 3] finished dist.init_process_group
+16:57:30 [INFO] [Rank 2] finished dist.init_process_group
+16:57:30 [INFO] [Rank 0] finished dist.init_process_group
+16:57:30 [INFO] [Rank 1] finished dist.init_process_group
+16:57:30 [INFO] [Rank 0] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:57:30 [INFO] [Rank 2] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:57:30 [INFO] [Rank 0] Measuring bandwidths
+16:57:30 [INFO] [Rank 3] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:57:30 [INFO] [Rank 1] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+16:57:31 [INFO] [Rank 0] Measuring bandwidths done
+16:57:31 [INFO] [Rank 0] Destroyed process group
+16:57:31 [INFO] [Rank 3] Destroyed process group
+16:57:31 [INFO] [Rank 2] Destroyed process group
+16:57:31 [INFO] [Rank 1] Destroyed process group
+16:57:31 [INFO] [Rank 0] finished optimize_ring_ranks
+16:57:31 [INFO] [Rank 0] finished global_pg.barrier().wait()
+16:57:31 [INFO] [Rank 0] global_pg size : 2, local_pg size: 4
+16:57:31 [INFO] [Rank 0] HierarchicalDeviceMesh: inner_nodes_per_group=1，保持单节点 FSDP 设置
+16:57:31 [INFO] [Rank 0] FSDP2 shard model, cuda_local_mesh size: 4
+16:57:31 [INFO] [Rank 0] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:57:31 [INFO] [Rank 1] finished optimize_ring_ranks
+16:57:31 [INFO] [Rank 3] finished optimize_ring_ranks
+16:57:31 [INFO] [Rank 1] finished global_pg.barrier().wait()
+16:57:31 [INFO] [Rank 1] global_pg size : 2, local_pg size: 4
+16:57:31 [INFO] [Rank 1] HierarchicalDeviceMesh: inner_nodes_per_group=1，保持单节点 FSDP 设置
+16:57:31 [INFO] [Rank 1] FSDP2 shard model, cuda_local_mesh size: 4
+16:57:31 [INFO] [Rank 3] finished global_pg.barrier().wait()
+16:57:31 [INFO] [Rank 1] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:57:31 [INFO] [Rank 3] global_pg size : 2, local_pg size: 4
+16:57:31 [INFO] [Rank 3] HierarchicalDeviceMesh: inner_nodes_per_group=1，保持单节点 FSDP 设置
+16:57:31 [INFO] [Rank 3] FSDP2 shard model, cuda_local_mesh size: 4
+16:57:31 [INFO] [Rank 3] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:57:31 [INFO] [Rank 2] finished optimize_ring_ranks
+16:57:31 [INFO] [Rank 2] finished global_pg.barrier().wait()
+16:57:31 [INFO] [Rank 2] global_pg size : 2, local_pg size: 4
+16:57:31 [INFO] [Rank 2] HierarchicalDeviceMesh: inner_nodes_per_group=1，保持单节点 FSDP 设置
+16:57:31 [INFO] [Rank 2] FSDP2 shard model, cuda_local_mesh size: 4
+16:57:31 [INFO] [Rank 2] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+16:57:36 [INFO] [Rank 2] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+16:57:36 [INFO] [Rank 3] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+16:57:36 [INFO] [Rank 1] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+16:57:37 [INFO] [Rank 0] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+16:57:43 [INFO] [Rank 2] need_live_recovery: False
+16:57:43 [INFO] [Rank 2] outer_step step: 0
+16:57:43 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+16:57:43 [INFO] [Rank 1] need_live_recovery: False
+16:57:43 [INFO] [Rank 1] outer_step step: 0
+16:57:43 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+16:57:43 [INFO] [Rank 3] need_live_recovery: False
+16:57:43 [INFO] [Rank 3] outer_step step: 0
+16:57:43 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+swanlab: Tracking run with swanlab version 0.6.10
+swanlab: Run data will be saved locally in 
+/userdata/workspace/Prime/swanlog/run-20250925_165748-8hasehn10vtq8yav2f8y7
+swanlab: 👋 Hi boewoe,welcome to swanlab!
+swanlab: Syncing run exp_20250925_165700 to the cloud
+swanlab: 🏠 View project at https://swanlab.cn/@boewoe/Qwen25_7B_diloco_multi_node
+swanlab: 🚀 View run at 
+https://swanlab.cn/@boewoe/Qwen25_7B_diloco_multi_node/runs/8hasehn10vtq8yav2f8y7
+16:57:48 [INFO] [Rank 0] need_live_recovery: False
+16:57:48 [INFO] [Rank 0] outer_step step: 0
+16:57:48 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+16:57:57 [INFO] [Rank 1] step: 1, loss: 2.1143, diloco_peers: 2
+16:57:57 [INFO] [Rank 3] step: 1, loss: 2.1143, diloco_peers: 2
+16:57:57 [INFO] [Rank 2] step: 1, loss: 2.1143, diloco_peers: 2
+16:57:57 [INFO] [Rank 0] step: 1, loss: 2.1143, diloco_peers: 2
+16:58:00 [INFO] [Rank 1] step: 2, loss: 2.1733, tokens_per_second: 23639.12, mfu: 26.82, diloco_peers: 2
+16:58:00 [INFO] [Rank 3] step: 2, loss: 2.1733, tokens_per_second: 23733.15, mfu: 26.93, diloco_peers: 2
+16:58:00 [INFO] [Rank 2] step: 2, loss: 2.1733, tokens_per_second: 23799.94, mfu: 27.01, diloco_peers: 2
+16:58:00 [INFO] [Rank 0] step: 2, loss: 2.1733, tokens_per_second: 25792.74, mfu: 29.27, diloco_peers: 2
+16:58:03 [INFO] [Rank 3] step: 3, loss: 2.1659, tokens_per_second: 23231.91, mfu: 26.36, diloco_peers: 2
+16:58:03 [INFO] [Rank 1] step: 3, loss: 2.1659, tokens_per_second: 23186.09, mfu: 26.31, diloco_peers: 2
+16:58:03 [INFO] [Rank 2] step: 3, loss: 2.1659, tokens_per_second: 23263.41, mfu: 26.40, diloco_peers: 2
+16:58:03 [INFO] [Rank 0] step: 3, loss: 2.1659, tokens_per_second: 24176.08, mfu: 27.43, diloco_peers: 2
+16:58:05 [INFO] [Rank 1] step: 4, loss: 2.1510, tokens_per_second: 23318.19, mfu: 26.46, diloco_peers: 2
+16:58:05 [INFO] [Rank 2] step: 4, loss: 2.1510, tokens_per_second: 23371.34, mfu: 26.52, diloco_peers: 2
+16:58:05 [INFO] [Rank 0] step: 4, loss: 2.1510, tokens_per_second: 23977.52, mfu: 27.21, diloco_peers: 2
+16:58:05 [INFO] [Rank 3] step: 4, loss: 2.1510, tokens_per_second: 23174.00, mfu: 26.30, diloco_peers: 2
+16:58:08 [INFO] [Rank 1] step: 5, loss: 2.1112, tokens_per_second: 22739.50, mfu: 25.80, diloco_peers: 2
+16:58:08 [INFO] [Rank 3] step: 5, loss: 2.1112, tokens_per_second: 22793.38, mfu: 25.86, diloco_peers: 2
+16:58:08 [INFO] [Rank 2] step: 5, loss: 2.1112, tokens_per_second: 22777.36, mfu: 25.85, diloco_peers: 2
+16:58:08 [INFO] [Rank 0] step: 5, loss: 2.1112, tokens_per_second: 23215.65, mfu: 26.34, diloco_peers: 2
+16:58:11 [INFO] [Rank 3] step: 6, loss: 1.9794, tokens_per_second: 23006.79, mfu: 26.11, diloco_peers: 2
+16:58:11 [INFO] [Rank 1] step: 6, loss: 1.9794, tokens_per_second: 22926.22, mfu: 26.02, diloco_peers: 2
+16:58:11 [INFO] [Rank 2] step: 6, loss: 1.9794, tokens_per_second: 22954.09, mfu: 26.05, diloco_peers: 2
+16:58:11 [INFO] [Rank 0] step: 6, loss: 1.9794, tokens_per_second: 23302.87, mfu: 26.44, diloco_peers: 2
+16:58:14 [INFO] [Rank 3] step: 7, loss: 2.1453, tokens_per_second: 22959.11, mfu: 26.05, diloco_peers: 2
+16:58:14 [INFO] [Rank 1] step: 7, loss: 2.1453, tokens_per_second: 22917.00, mfu: 26.00, diloco_peers: 2
+16:58:14 [INFO] [Rank 2] step: 7, loss: 2.1453, tokens_per_second: 22944.59, mfu: 26.04, diloco_peers: 2
+16:58:14 [INFO] [Rank 0] step: 7, loss: 2.1453, tokens_per_second: 23237.11, mfu: 26.37, diloco_peers: 2
+16:58:17 [INFO] [Rank 1] step: 8, loss: 2.0781, tokens_per_second: 22931.99, mfu: 26.02, diloco_peers: 2
+16:58:17 [INFO] [Rank 3] step: 8, loss: 2.0781, tokens_per_second: 22945.16, mfu: 26.04, diloco_peers: 2
+16:58:17 [INFO] [Rank 2] step: 8, loss: 2.0781, tokens_per_second: 22953.48, mfu: 26.05, diloco_peers: 2
+16:58:17 [INFO] [Rank 0] step: 8, loss: 2.0781, tokens_per_second: 23200.31, mfu: 26.33, diloco_peers: 2
+16:58:20 [INFO] [Rank 1] step: 9, loss: 2.0772, tokens_per_second: 23038.11, mfu: 26.14, diloco_peers: 2
+16:58:20 [INFO] [Rank 3] step: 9, loss: 2.0772, tokens_per_second: 23049.98, mfu: 26.16, diloco_peers: 2
+16:58:20 [INFO] [Rank 2] step: 9, loss: 2.0772, tokens_per_second: 23057.05, mfu: 26.16, diloco_peers: 2
+16:58:20 [INFO] [Rank 0] step: 9, loss: 2.0772, tokens_per_second: 23274.74, mfu: 26.41, diloco_peers: 2
+16:58:23 [INFO] [Rank 3] step: 10, loss: 2.1485, tokens_per_second: 22889.35, mfu: 25.97, diloco_peers: 2
+16:58:23 [INFO] [Rank 2] step: 10, loss: 2.1485, tokens_per_second: 22876.64, mfu: 25.96, diloco_peers: 2
+16:58:23 [INFO] [Rank 0] step: 10, loss: 2.1485, tokens_per_second: 23086.52, mfu: 26.20, diloco_peers: 2
+16:58:23 [INFO] [Rank 1] step: 10, loss: 2.1485, tokens_per_second: 22867.32, mfu: 25.95, diloco_peers: 2
+16:58:42 [INFO] [Rank 2] Sync psuedo-gradient in 19.002046 seconds
+16:58:42 [INFO] [Rank 2] all reduce pseudo gradient in: 19.002577216015197 seconds
+16:58:42 [INFO] [Rank 0] Sync psuedo-gradient in 19.003833 seconds
+16:58:42 [INFO] [Rank 0] all reduce pseudo gradient in: 19.005039158044383 seconds
+16:58:42 [INFO] [Rank 1] Sync psuedo-gradient in 19.305340 seconds
+16:58:42 [INFO] [Rank 1] all reduce pseudo gradient in: 19.305887815076858 seconds
+16:58:43 [INFO] [Rank 3] Sync psuedo-gradient in 20.083565 seconds
+16:58:43 [INFO] [Rank 3] all reduce pseudo gradient in: 20.084164047962986 seconds
+16:58:51 [INFO] [Rank 1] effective mfu: 10.936061509152156
+16:58:51 [INFO] [Rank 1] outer_step step: 1
+16:58:51 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+16:58:53 [INFO] [Rank 2] effective mfu: 10.600330120941862
+16:58:53 [INFO] [Rank 2] outer_step step: 1
+16:58:53 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+16:58:53 [INFO] [Rank 0] effective mfu: 11.467183968058793
+16:58:53 [INFO] [Rank 0] outer_step step: 1
+16:58:53 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+16:58:54 [INFO] [Rank 3] effective mfu: 10.49253840116959
+16:58:54 [INFO] [Rank 3] outer_step step: 1
+16:58:54 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+16:58:57 [INFO] [Rank 3] step: 11, loss: 2.1112, tokens_per_second: 10367.49, mfu: 11.76, diloco_peers: 2
+16:58:57 [INFO] [Rank 0] step: 11, loss: 2.1112, tokens_per_second: 10367.44, mfu: 11.76, diloco_peers: 2
+16:58:57 [INFO] [Rank 1] step: 11, loss: 2.1112, tokens_per_second: 10361.22, mfu: 11.76, diloco_peers: 2
+16:58:57 [INFO] [Rank 2] step: 11, loss: 2.1112, tokens_per_second: 10361.19, mfu: 11.76, diloco_peers: 2
+16:59:00 [INFO] [Rank 1] step: 12, loss: 2.1391, tokens_per_second: 10339.16, mfu: 11.73, diloco_peers: 2
+16:59:00 [INFO] [Rank 3] step: 12, loss: 2.1391, tokens_per_second: 10342.15, mfu: 11.74, diloco_peers: 2
+16:59:00 [INFO] [Rank 2] step: 12, loss: 2.1391, tokens_per_second: 10340.34, mfu: 11.73, diloco_peers: 2
+16:59:00 [INFO] [Rank 0] step: 12, loss: 2.1391, tokens_per_second: 10342.18, mfu: 11.74, diloco_peers: 2
+16:59:03 [INFO] [Rank 1] step: 13, loss: 2.0161, tokens_per_second: 10307.16, mfu: 11.70, diloco_peers: 2
+16:59:03 [INFO] [Rank 3] step: 13, loss: 2.0161, tokens_per_second: 10318.73, mfu: 11.71, diloco_peers: 2
+16:59:03 [INFO] [Rank 2] step: 13, loss: 2.0161, tokens_per_second: 10307.15, mfu: 11.70, diloco_peers: 2
+16:59:03 [INFO] [Rank 0] step: 13, loss: 2.0161, tokens_per_second: 10297.03, mfu: 11.68, diloco_peers: 2
+16:59:05 [INFO] [Rank 1] step: 14, loss: 2.1122, tokens_per_second: 10348.03, mfu: 11.74, diloco_peers: 2
+16:59:05 [INFO] [Rank 2] step: 14, loss: 2.1122, tokens_per_second: 10348.09, mfu: 11.74, diloco_peers: 2
+16:59:05 [INFO] [Rank 3] step: 14, loss: 2.1122, tokens_per_second: 10345.22, mfu: 11.74, diloco_peers: 2
+16:59:05 [INFO] [Rank 0] step: 14, loss: 2.1122, tokens_per_second: 10344.25, mfu: 11.74, diloco_peers: 2
+16:59:09 [INFO] [Rank 3] step: 15, loss: 2.0877, tokens_per_second: 10284.10, mfu: 11.67, diloco_peers: 2
+16:59:09 [INFO] [Rank 1] step: 15, loss: 2.0877, tokens_per_second: 10288.40, mfu: 11.67, diloco_peers: 2
+16:59:09 [INFO] [Rank 2] step: 15, loss: 2.0877, tokens_per_second: 10288.04, mfu: 11.67, diloco_peers: 2
+16:59:09 [INFO] [Rank 0] step: 15, loss: 2.0877, tokens_per_second: 10291.16, mfu: 11.68, diloco_peers: 2
+Token indices sequence length is longer than the specified maximum sequence length for this model (150113 > 131072). Running this sequence through the model will result in indexing errors
+16:59:11 [INFO] [Rank 3] step: 16, loss: 2.1813, tokens_per_second: 10281.95, mfu: 11.67, diloco_peers: 2
+16:59:11 [INFO] [Rank 0] step: 16, loss: 2.1813, tokens_per_second: 10284.68, mfu: 11.67, diloco_peers: 2
+16:59:11 [INFO] [Rank 1] step: 16, loss: 2.1813, tokens_per_second: 10278.14, mfu: 11.66, diloco_peers: 2
+16:59:11 [INFO] [Rank 2] step: 16, loss: 2.1813, tokens_per_second: 10277.80, mfu: 11.66, diloco_peers: 2
+16:59:14 [INFO] [Rank 1] step: 17, loss: 2.1035, tokens_per_second: 10267.81, mfu: 11.65, diloco_peers: 2
+16:59:14 [INFO] [Rank 3] step: 17, loss: 2.1035, tokens_per_second: 10270.52, mfu: 11.65, diloco_peers: 2
+16:59:14 [INFO] [Rank 2] step: 17, loss: 2.1035, tokens_per_second: 10267.53, mfu: 11.65, diloco_peers: 2
+16:59:14 [INFO] [Rank 0] step: 17, loss: 2.1035, tokens_per_second: 10270.56, mfu: 11.65, diloco_peers: 2
+16:59:17 [INFO] [Rank 1] step: 18, loss: 2.1317, tokens_per_second: 10212.28, mfu: 11.59, diloco_peers: 2
+16:59:17 [INFO] [Rank 3] step: 18, loss: 2.1317, tokens_per_second: 10212.25, mfu: 11.59, diloco_peers: 2
+16:59:17 [INFO] [Rank 2] step: 18, loss: 2.1317, tokens_per_second: 10212.37, mfu: 11.59, diloco_peers: 2
+16:59:17 [INFO] [Rank 0] step: 18, loss: 2.1317, tokens_per_second: 10208.28, mfu: 11.58, diloco_peers: 2
+16:59:20 [INFO] [Rank 3] step: 19, loss: 2.1189, tokens_per_second: 10237.97, mfu: 11.62, diloco_peers: 2
+16:59:20 [INFO] [Rank 1] step: 19, loss: 2.1189, tokens_per_second: 10240.18, mfu: 11.62, diloco_peers: 2
+16:59:20 [INFO] [Rank 2] step: 19, loss: 2.1189, tokens_per_second: 10241.79, mfu: 11.62, diloco_peers: 2
+16:59:20 [INFO] [Rank 0] step: 19, loss: 2.1189, tokens_per_second: 10227.92, mfu: 11.61, diloco_peers: 2

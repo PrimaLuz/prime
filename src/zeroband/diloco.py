@@ -72,6 +72,7 @@ class Diloco:
         self.outer_optimizer = torch.optim.SGD(
             self.param_list_cpu, lr=self.config.outer_lr, momentum=0.9, nesterov=True
         )
+        # self._logger.info(f"cpu MODEL: \n{self.param_list_cpu}\n-------------------\n")
         self._logger.debug("offload model to cpu")
 
     @torch.no_grad()

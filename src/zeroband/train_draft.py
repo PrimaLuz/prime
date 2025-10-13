@@ -10,6 +10,7 @@ from torch.autograd.profiler import record_function
 
 from zeroband.checkpoint import CkptManager, TrainingProgress
 from zeroband.comms import ElasticDeviceMesh
+from zeroband.comms_hier import HierarchicalDeviceMesh
 from zeroband.config import Config, resolve_env_vars
 from zeroband.data import TEST_VOCAB_SIZE, get_dataloader
 from zeroband.diloco import Diloco
@@ -96,15 +97,6 @@ def train(config: Config):
 
     # Load tokenizer
     with sw.record_block("Load Tokenizer"):
-        # if config.data.fake and config.name_model == "debugmodel":
-        #     tokenizer = FakeTokenizer()
-        # elif config.type_model == "llama2":
-        #     tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1", use_fast=True)
-        # elif config.type_model == "llama3":
-        #     tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", use_fast=True)
-        # else:
-        #     raise ValueError(f"Model type {config.type_model} not supported")
-        
         tokenizer = AutoTokenizer.from_pretrained(config.name_model, trust_remote_code=True)
 
     with sw.record_block("Get Dataloader"):
@@ -146,10 +138,6 @@ def train(config: Config):
         mp_policy = MixedPrecisionPolicy(
             param_dtype=torch.bfloat16, reduce_dtype=torch.float32 if config.train.reduce_fp32 else None
         )
-        if world_info.global_rank != 0:
-            elastic_device_mesh.cuda_local_mesh = torch.distributed.device_mesh.DeviceMesh(
-                "cuda", torch.tensor([4,5,6,7])
-            )
         offload_policy = CPUOffloadPolicy(pin_memory=True) if config.train.fsdp_cpu_offload else None
         logger.info(f"FSDP2 shard model, cuda_local_mesh size: {elastic_device_mesh.cuda_local_mesh.size()}")
         logger.info(f"elastic_device_mesh.cuda_local_mesh: {elastic_device_mesh.cuda_local_mesh}")
@@ -479,6 +467,8 @@ def train(config: Config):
             # we only allow to checkpoint after a outer step. For non diloco training outer step = 1 anyway
 
             do_remote = config.ckpt.remote is not None and training_progress.step % config.ckpt.remote.interval == 0
+            if world_info.local_rank == 0:
+                logger.info(f"saving checkpoint at step {training_progress.step}")
             ckpt_manager.save(remote=do_remote)
             log_hash_training_state(
                 config, model, inner_optimizer, diloco, metric_logger, step=training_progress.step, id="save"
@@ -538,7 +528,7 @@ if __name__ == "__main__":
     world_info = get_world_info()
     logger = get_logger(config)
     
-    print(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>\nWorld info: {world_info}\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+    logger.info(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>\nWorld info: {world_info}\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
 
     # torch.set_default_device("cuda")
     torch.cuda.set_device(world_info.local_rank)

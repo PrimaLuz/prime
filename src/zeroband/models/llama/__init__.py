@@ -96,7 +96,7 @@ def get_model(
 ) -> tuple[Transformer, ModelArgs]:
     """get the transformer model"""
 
-    config_model = AutoConfig.from_pretrained(config.name_model, attn_implementation="flex_attention")
+    config_model = AutoConfig.from_pretrained(config.name_model)
     model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path=config.name_model, config=config_model)
     
     return model, config_model

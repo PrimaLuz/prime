@@ -68,7 +68,7 @@ class HierarchicalDeviceMesh(ElasticDeviceMesh):
         assert local_world_size > 0 and total_nodes > 0
 
         # 当前进程所在节点 id
-        node_id = self.world_info.global_rank // local_world_size
+        node_id = self.world_info.global_rank
 
         group_index = node_id // inner_nodes_per_group
         start_node = group_index * inner_nodes_per_group

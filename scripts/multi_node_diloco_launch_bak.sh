@@ -36,12 +36,10 @@ export NCCL_SOCKET_IFNAME=eth0
 
 export PYTHONPATH=/userdata/workspace/Prime
 
-# export ZERO_BAND_INNER_NODES_PER_GROUP=2
-
 
 # 数据路径配置
 DATA_DIR="/userdata"
-OUTPUT_DIR="/userdata/workspace/output/qwen25_7b_diloco_2nodes"
+OUTPUT_DIR="/userdata/workspace/output/outputs_7b_diloco_multi"
 mkdir -p "$OUTPUT_DIR"
 
 # 检查数据
@@ -51,10 +49,8 @@ if [ ! -d "$DATA_DIR/datasets/fineweb-edu" ]; then
     exit 1
 fi
 
-# 日志配置 添加时间戳
-time=$(date +"%Y%m%d_%H")
-tt1=$(date +"%Y%m%d_%H%M%S")
-LOG_DIR="/userdata/workspace/Prime/train_logs/${time}_test2/node_${NODE_RANK}"
+# 日志配置
+LOG_DIR="/userdata/workspace/train_logs/node_${NODE_RANK}"
 mkdir -p "$LOG_DIR"
 
 # 启动命令
@@ -62,29 +58,20 @@ echo "启动节点 $NODE_RANK/$WORLD_SIZE..."
 echo "主节点: $MASTER_ADDR:$MASTER_PORT"
 echo "GPU配置: $GPUS_PER_NODE GPUs per node"
 echo "日志目录: $LOG_DIR"
-SR=true
-if [ "$NODE_RANK" -ne 0 ]; then
-    SR=false
-fi
-echo "是否启用swanlab_resume: $SR"
 
 
 # 使用torchrun启动
-# 测试后rdzv-endpoint值可以写localhost:$MASTER_PORT
-
 uv run torchrun \
     --nproc_per_node=$GPUS_PER_NODE \
-    --rdzv-endpoint localhost:$MASTER_PORT \
-    src/zeroband/train_draft.py \
+    --nnodes=$WORLD_SIZE \
+    --node_rank=$NODE_RANK \
+    --master_addr=$MASTER_ADDR \
+    --master_port=$MASTER_PORT \
+    src/zeroband/train.py \
     @configs/7B_diloco/multi_node.toml \
-    --run_name exp_${time}_test2_node_${NODE_RANK} \
     --ckpt.path $OUTPUT_DIR \
     --log_level INFO \
-    --data.data_rank $NODE_RANK \
-    --data.data_world_size $WORLD_SIZE \
-    --metric_logger_type swanlab \
     --log_all_rank true \
-    --swanlab_resume $SR \
     2>&1 | tee "$LOG_DIR/train.log"
 
 echo "节点 $NODE_RANK 训练完成"

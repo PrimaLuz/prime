@@ -1,0 +1,835 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0923 18:16:55.256000 3712066 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0923 18:16:55.256000 3712066 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0923 18:16:55.256000 3712066 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0923 18:16:55.256000 3712066 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=0, local_rank=0, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=1, local_rank=1, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=2, local_rank=2, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=3, local_rank=3, local_world_size=4, nnodes=1, global_unique_id=0, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=0)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 0 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+18:17:54 [INFO] [Rank 0] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 3 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+18:17:55 [INFO] [Rank 3] Loading Train dataset(s)
+18:17:55 [INFO] [Rank 0] [Rank0/4] files:['/userdata/datasets/fineweb-edu/data0/train-00000.parquet', '/userdata/datasets/fineweb-edu/data0/train-00004.parquet', '/userdata/datasets/fineweb-edu/data0/train-00008.parquet', '/userdata/datasets/fineweb-edu/data0/train-00012.parquet']
+18:17:55 [INFO] [Rank 0] Loaded datasets (train)
+18:17:55 [INFO] [Rank 0] Train dataset: <zeroband.data.ParquetDataset object at 0x7f6175d10070>
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 2 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+18:17:55 [INFO] [Rank 2] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 1 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+18:17:55 [INFO] [Rank 1] Loading Train dataset(s)
+18:17:55 [INFO] [Rank 3] [Rank3/4] files:['/userdata/datasets/fineweb-edu/data0/train-00003.parquet', '/userdata/datasets/fineweb-edu/data0/train-00007.parquet', '/userdata/datasets/fineweb-edu/data0/train-00011.parquet', '/userdata/datasets/fineweb-edu/data0/train-00015.parquet']
+18:17:55 [INFO] [Rank 3] Loaded datasets (train)
+18:17:55 [INFO] [Rank 3] Train dataset: <zeroband.data.ParquetDataset object at 0x7f6c63d4c160>
+18:17:55 [WARNING] [Rank 0] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 0] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+18:17:55 [WARNING] [Rank 3] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+18:17:55 [INFO] [Rank 2] [Rank2/4] files:['/userdata/datasets/fineweb-edu/data0/train-00002.parquet', '/userdata/datasets/fineweb-edu/data0/train-00006.parquet', '/userdata/datasets/fineweb-edu/data0/train-00010.parquet', '/userdata/datasets/fineweb-edu/data0/train-00014.parquet']
+18:17:55 [INFO] [Rank 2] Loaded datasets (train)
+18:17:55 [INFO] [Rank 2] Train dataset: <zeroband.data.ParquetDataset object at 0x7f8932a98070>
+18:17:55 [INFO] [Rank 1] [Rank1/4] files:['/userdata/datasets/fineweb-edu/data0/train-00001.parquet', '/userdata/datasets/fineweb-edu/data0/train-00005.parquet', '/userdata/datasets/fineweb-edu/data0/train-00009.parquet', '/userdata/datasets/fineweb-edu/data0/train-00013.parquet']
+18:17:55 [INFO] [Rank 1] Loaded datasets (train)
+18:17:55 [INFO] [Rank 1] Train dataset: <zeroband.data.ParquetDataset object at 0x7fe400a04130>
+18:17:56 [WARNING] [Rank 1] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 1] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+18:17:56 [WARNING] [Rank 2] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:17<00:52, 17.43s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:17<00:52, 17.44s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:17<00:52, 17.45s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:17<00:52, 17.45s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:33<00:33, 16.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:33<00:33, 16.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:33<00:33, 16.90s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:33<00:33, 16.90s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:51<00:17, 17.15s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:51<00:17, 17.15s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:51<00:17, 17.15s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:51<00:17, 17.15s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.44s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.69s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.44s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.69s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.44s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.69s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.44s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:06<00:00, 16.69s/it]
+18:19:03 [INFO] [Rank 2] Peak FLOPS used for computing MFU: 9.890e+14
+18:19:03 [INFO] [Rank 2] Number of parameters: 7070619136
+18:19:03 [INFO] [Rank 2] [0](Leader: True) TCPStore init: Connecting via 172.16.92.204:26971
+18:19:04 [INFO] [Rank 0] Peak FLOPS used for computing MFU: 9.890e+14
+18:19:04 [INFO] [Rank 0] Number of parameters: 7070619136
+18:19:04 [INFO] [Rank 0] [0](Leader: True) TCPStore init: Connecting via 172.16.92.204:26969
+18:19:04 [INFO] [Rank 0] Destroyed process group
+18:19:04 [INFO] [Rank 1] Peak FLOPS used for computing MFU: 9.890e+14
+18:19:04 [INFO] [Rank 3] Peak FLOPS used for computing MFU: 9.890e+14
+18:19:04 [INFO] [Rank 1] Number of parameters: 7070619136
+18:19:04 [INFO] [Rank 3] Number of parameters: 7070619136
+18:19:04 [INFO] [Rank 1] [0](Leader: True) TCPStore init: Connecting via 172.16.92.204:26970
+18:19:04 [INFO] [Rank 3] [0](Leader: True) TCPStore init: Connecting via 172.16.92.204:26972
+18:19:04 [INFO] [Rank 3] Destroyed process group
+18:19:04 [INFO] [Rank 1] Destroyed process group
+18:19:04 [INFO] [Rank 0] Elastic Device mesh init done with 2 peers in 0.6400682519888505 seconds
+18:19:04 [INFO] [Rank 2] Destroyed process group
+18:19:04 [INFO] [Rank 0] Started iperf server on 172.16.92.204 with port 10101
+18:19:04 [INFO] [Rank 0] finished init global pg
+18:19:05 [INFO] [Rank 2] Elastic Device mesh init done with 2 peers in 1.0519345900393091 seconds
+18:19:05 [INFO] [Rank 2] finished init global pg
+18:19:05 [INFO] [Rank 1] Elastic Device mesh init done with 2 peers in 0.689943329023663 seconds
+18:19:05 [INFO] [Rank 1] finished init global pg
+18:19:05 [INFO] [Rank 3] Elastic Device mesh init done with 2 peers in 0.6943129759747535 seconds
+18:19:05 [INFO] [Rank 3] finished init global pg
+18:19:05 [INFO] [Rank 0] finished dist.init_process_group
+18:19:05 [INFO] [Rank 3] finished dist.init_process_group
+18:19:05 [INFO] [Rank 2] finished dist.init_process_group
+18:19:05 [INFO] [Rank 1] finished dist.init_process_group
+18:19:05 [INFO] [Rank 1] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+18:19:05 [INFO] [Rank 3] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+18:19:05 [INFO] [Rank 0] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+18:19:05 [INFO] [Rank 0] Measuring bandwidths
+18:19:05 [INFO] [Rank 2] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+18:19:06 [INFO] [Rank 0] Measuring bandwidths done
+18:19:06 [INFO] [Rank 0] Destroyed process group
+18:19:06 [INFO] [Rank 2] Destroyed process group
+18:19:06 [INFO] [Rank 3] Destroyed process group
+18:19:06 [INFO] [Rank 1] Destroyed process group
+18:19:06 [INFO] [Rank 3] finished optimize_ring_ranks
+18:19:06 [INFO] [Rank 3] finished global_pg.barrier().wait()
+18:19:06 [INFO] [Rank 3] global_pg size : 2, local_pg size: 4
+18:19:06 [INFO] [Rank 3] FSDP2 shard model, cuda_local_mesh size: 4
+18:19:06 [INFO] [Rank 3] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+18:19:06 [INFO] [Rank 0] finished optimize_ring_ranks
+18:19:06 [INFO] [Rank 1] finished optimize_ring_ranks
+18:19:06 [INFO] [Rank 2] finished optimize_ring_ranks
+18:19:06 [INFO] [Rank 0] finished global_pg.barrier().wait()
+18:19:06 [INFO] [Rank 0] global_pg size : 2, local_pg size: 4
+18:19:06 [INFO] [Rank 0] FSDP2 shard model, cuda_local_mesh size: 4
+18:19:06 [INFO] [Rank 2] finished global_pg.barrier().wait()
+18:19:06 [INFO] [Rank 1] finished global_pg.barrier().wait()
+18:19:06 [INFO] [Rank 0] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+18:19:06 [INFO] [Rank 2] global_pg size : 2, local_pg size: 4
+18:19:06 [INFO] [Rank 1] global_pg size : 2, local_pg size: 4
+18:19:06 [INFO] [Rank 2] FSDP2 shard model, cuda_local_mesh size: 4
+18:19:06 [INFO] [Rank 1] FSDP2 shard model, cuda_local_mesh size: 4
+18:19:06 [INFO] [Rank 1] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+18:19:06 [INFO] [Rank 2] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+18:19:14 [INFO] [Rank 1] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+18:19:15 [INFO] [Rank 0] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+18:19:15 [INFO] [Rank 2] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+18:19:16 [INFO] [Rank 3] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+18:19:20 [INFO] [Rank 1] need_live_recovery: False
+18:19:20 [INFO] [Rank 1] outer_step step: 0
+18:19:20 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:19:22 [INFO] [Rank 2] need_live_recovery: False
+18:19:22 [INFO] [Rank 2] outer_step step: 0
+18:19:22 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:19:23 [INFO] [Rank 3] need_live_recovery: False
+18:19:23 [INFO] [Rank 3] outer_step step: 0
+18:19:23 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+swanlab: Tracking run with swanlab version 0.6.10
+swanlab: Run data will be saved locally in 
+/userdata/workspace/Prime/swanlog/run-20250923_181927-zt2p3e6nwlxota6b7lw0g
+swanlab: 👋 Hi boewoe,welcome to swanlab!
+swanlab: Syncing run exp_20250923_181649 to the cloud
+swanlab: 🏠 View project at https://swanlab.cn/@boewoe/Qwen25_7B_diloco_multi_node
+swanlab: 🚀 View run at 
+https://swanlab.cn/@boewoe/Qwen25_7B_diloco_multi_node/runs/zt2p3e6nwlxota6b7lw0g
+18:19:28 [INFO] [Rank 0] need_live_recovery: False
+18:19:28 [INFO] [Rank 0] outer_step step: 0
+18:19:28 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:19:45 [INFO] [Rank 3] step: 1, loss: 2.1143, diloco_peers: 2
+18:19:45 [INFO] [Rank 1] step: 1, loss: 2.1143, diloco_peers: 2
+18:19:45 [INFO] [Rank 2] step: 1, loss: 2.1143, diloco_peers: 2
+18:19:45 [INFO] [Rank 0] step: 1, loss: 2.1143, diloco_peers: 2
+18:19:49 [INFO] [Rank 3] step: 2, loss: 2.1733, tokens_per_second: 18566.25, mfu: 21.07, diloco_peers: 2
+18:19:49 [INFO] [Rank 1] step: 2, loss: 2.1733, tokens_per_second: 18565.03, mfu: 21.07, diloco_peers: 2
+18:19:49 [INFO] [Rank 2] step: 2, loss: 2.1733, tokens_per_second: 18571.04, mfu: 21.07, diloco_peers: 2
+18:19:49 [INFO] [Rank 0] step: 2, loss: 2.1733, tokens_per_second: 20218.40, mfu: 22.94, diloco_peers: 2
+18:19:53 [INFO] [Rank 3] step: 3, loss: 2.1660, tokens_per_second: 16212.54, mfu: 18.40, diloco_peers: 2
+18:19:53 [INFO] [Rank 2] step: 3, loss: 2.1660, tokens_per_second: 16215.56, mfu: 18.40, diloco_peers: 2
+18:19:53 [INFO] [Rank 1] step: 3, loss: 2.1660, tokens_per_second: 16211.29, mfu: 18.40, diloco_peers: 2
+18:19:53 [INFO] [Rank 0] step: 3, loss: 2.1660, tokens_per_second: 16809.17, mfu: 19.07, diloco_peers: 2
+18:19:57 [INFO] [Rank 1] step: 4, loss: 2.1508, tokens_per_second: 16758.71, mfu: 19.02, diloco_peers: 2
+18:19:57 [INFO] [Rank 2] step: 4, loss: 2.1508, tokens_per_second: 16759.82, mfu: 19.02, diloco_peers: 2
+18:19:57 [INFO] [Rank 0] step: 4, loss: 2.1508, tokens_per_second: 17180.99, mfu: 19.50, diloco_peers: 2
+18:19:57 [INFO] [Rank 3] step: 4, loss: 2.1508, tokens_per_second: 16674.80, mfu: 18.92, diloco_peers: 2
+18:20:01 [INFO] [Rank 3] step: 5, loss: 2.1110, tokens_per_second: 16158.29, mfu: 18.34, diloco_peers: 2
+18:20:01 [INFO] [Rank 2] step: 5, loss: 2.1110, tokens_per_second: 16159.19, mfu: 18.34, diloco_peers: 2
+18:20:01 [INFO] [Rank 1] step: 5, loss: 2.1110, tokens_per_second: 16158.04, mfu: 18.34, diloco_peers: 2
+18:20:01 [INFO] [Rank 0] step: 5, loss: 2.1110, tokens_per_second: 16425.93, mfu: 18.64, diloco_peers: 2
+18:20:07 [INFO] [Rank 3] step: 6, loss: 1.9791, tokens_per_second: 15284.32, mfu: 17.34, diloco_peers: 2
+18:20:07 [INFO] [Rank 1] step: 6, loss: 1.9791, tokens_per_second: 15273.53, mfu: 17.33, diloco_peers: 2
+18:20:07 [INFO] [Rank 2] step: 6, loss: 1.9791, tokens_per_second: 15272.51, mfu: 17.33, diloco_peers: 2
+18:20:07 [INFO] [Rank 0] step: 6, loss: 1.9791, tokens_per_second: 15467.14, mfu: 17.55, diloco_peers: 2
+18:20:11 [INFO] [Rank 3] step: 7, loss: 2.1453, tokens_per_second: 15354.18, mfu: 17.42, diloco_peers: 2
+18:20:11 [INFO] [Rank 2] step: 7, loss: 2.1453, tokens_per_second: 15344.15, mfu: 17.41, diloco_peers: 2
+18:20:11 [INFO] [Rank 1] step: 7, loss: 2.1453, tokens_per_second: 15340.02, mfu: 17.41, diloco_peers: 2
+18:20:11 [INFO] [Rank 0] step: 7, loss: 2.1453, tokens_per_second: 15515.29, mfu: 17.61, diloco_peers: 2
+18:20:16 [INFO] [Rank 3] step: 8, loss: 2.0782, tokens_per_second: 14918.48, mfu: 16.93, diloco_peers: 2
+18:20:16 [INFO] [Rank 1] step: 8, loss: 2.0782, tokens_per_second: 14920.78, mfu: 16.93, diloco_peers: 2
+18:20:16 [INFO] [Rank 2] step: 8, loss: 2.0782, tokens_per_second: 14921.35, mfu: 16.93, diloco_peers: 2
+18:20:16 [INFO] [Rank 0] step: 8, loss: 2.0782, tokens_per_second: 15061.21, mfu: 17.09, diloco_peers: 2
+18:20:20 [INFO] [Rank 3] step: 9, loss: 2.0773, tokens_per_second: 15250.71, mfu: 17.31, diloco_peers: 2
+18:20:20 [INFO] [Rank 2] step: 9, loss: 2.0773, tokens_per_second: 15251.10, mfu: 17.31, diloco_peers: 2
+18:20:20 [INFO] [Rank 1] step: 9, loss: 2.0773, tokens_per_second: 15250.59, mfu: 17.31, diloco_peers: 2
+18:20:20 [INFO] [Rank 0] step: 9, loss: 2.0773, tokens_per_second: 15379.39, mfu: 17.45, diloco_peers: 2
+18:20:24 [INFO] [Rank 3] step: 10, loss: 2.1484, tokens_per_second: 15059.54, mfu: 17.09, diloco_peers: 2
+18:20:24 [INFO] [Rank 1] step: 10, loss: 2.1484, tokens_per_second: 15050.70, mfu: 17.08, diloco_peers: 2
+18:20:24 [INFO] [Rank 2] step: 10, loss: 2.1484, tokens_per_second: 15051.50, mfu: 17.08, diloco_peers: 2
+18:20:24 [INFO] [Rank 0] step: 10, loss: 2.1484, tokens_per_second: 15171.10, mfu: 17.22, diloco_peers: 2
+18:20:44 [INFO] [Rank 1] Sync psuedo-gradient in 19.462471 seconds
+18:20:44 [INFO] [Rank 1] all reduce pseudo gradient in: 19.463072145008482 seconds
+18:20:44 [INFO] [Rank 2] Sync psuedo-gradient in 19.730670 seconds
+18:20:44 [INFO] [Rank 2] all reduce pseudo gradient in: 19.731316889985465 seconds
+18:20:45 [INFO] [Rank 3] Sync psuedo-gradient in 20.490462 seconds
+18:20:45 [INFO] [Rank 3] all reduce pseudo gradient in: 20.491037258005235 seconds
+18:20:46 [INFO] [Rank 0] Sync psuedo-gradient in 21.944259 seconds
+18:20:46 [INFO] [Rank 0] all reduce pseudo gradient in: 21.945085701998323 seconds
+18:20:54 [INFO] [Rank 1] effective mfu: 7.913995531565921
+18:20:54 [INFO] [Rank 1] outer_step step: 1
+18:20:54 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:20:55 [INFO] [Rank 2] effective mfu: 7.978648406415531
+18:20:55 [INFO] [Rank 2] outer_step step: 1
+18:20:55 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:20:55 [INFO] [Rank 3] effective mfu: 8.015454921763132
+18:20:55 [INFO] [Rank 3] outer_step step: 1
+18:20:55 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:20:58 [INFO] [Rank 0] effective mfu: 8.236596568831132
+18:20:58 [INFO] [Rank 0] outer_step step: 1
+18:20:58 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:21:02 [INFO] [Rank 3] step: 11, loss: 2.1106, tokens_per_second: 8004.66, mfu: 9.08, diloco_peers: 2
+18:21:02 [INFO] [Rank 2] step: 11, loss: 2.1106, tokens_per_second: 8000.79, mfu: 9.08, diloco_peers: 2
+18:21:02 [INFO] [Rank 0] step: 11, loss: 2.1106, tokens_per_second: 8004.54, mfu: 9.08, diloco_peers: 2
+18:21:02 [INFO] [Rank 1] step: 11, loss: 2.1106, tokens_per_second: 8000.70, mfu: 9.08, diloco_peers: 2
+18:21:07 [INFO] [Rank 3] step: 12, loss: 2.1386, tokens_per_second: 7984.57, mfu: 9.06, diloco_peers: 2
+18:21:07 [INFO] [Rank 2] step: 12, loss: 2.1386, tokens_per_second: 7983.14, mfu: 9.06, diloco_peers: 2
+18:21:07 [INFO] [Rank 1] step: 12, loss: 2.1386, tokens_per_second: 7982.95, mfu: 9.06, diloco_peers: 2
+18:21:07 [INFO] [Rank 0] step: 12, loss: 2.1386, tokens_per_second: 7982.43, mfu: 9.06, diloco_peers: 2
+18:21:12 [INFO] [Rank 2] step: 13, loss: 2.0158, tokens_per_second: 7870.11, mfu: 8.93, diloco_peers: 2
+18:21:12 [INFO] [Rank 3] step: 13, loss: 2.0158, tokens_per_second: 7876.29, mfu: 8.94, diloco_peers: 2
+18:21:12 [INFO] [Rank 1] step: 13, loss: 2.0158, tokens_per_second: 7870.17, mfu: 8.93, diloco_peers: 2
+18:21:12 [INFO] [Rank 0] step: 13, loss: 2.0158, tokens_per_second: 7864.33, mfu: 8.92, diloco_peers: 2
+18:21:17 [INFO] [Rank 3] step: 14, loss: 2.1120, tokens_per_second: 7847.47, mfu: 8.90, diloco_peers: 2
+18:21:17 [INFO] [Rank 1] step: 14, loss: 2.1120, tokens_per_second: 7847.54, mfu: 8.90, diloco_peers: 2
+18:21:17 [INFO] [Rank 2] step: 14, loss: 2.1120, tokens_per_second: 7847.43, mfu: 8.90, diloco_peers: 2
+18:21:17 [INFO] [Rank 0] step: 14, loss: 2.1120, tokens_per_second: 7847.75, mfu: 8.91, diloco_peers: 2
+18:21:22 [INFO] [Rank 2] step: 15, loss: 2.0871, tokens_per_second: 7822.45, mfu: 8.88, diloco_peers: 2
+18:21:22 [INFO] [Rank 3] step: 15, loss: 2.0871, tokens_per_second: 7822.14, mfu: 8.88, diloco_peers: 2
+18:21:22 [INFO] [Rank 1] step: 15, loss: 2.0871, tokens_per_second: 7821.29, mfu: 8.88, diloco_peers: 2
+18:21:22 [INFO] [Rank 0] step: 15, loss: 2.0871, tokens_per_second: 7825.77, mfu: 8.88, diloco_peers: 2
+Token indices sequence length is longer than the specified maximum sequence length for this model (150113 > 131072). Running this sequence through the model will result in indexing errors
+18:21:27 [INFO] [Rank 3] step: 16, loss: 2.1807, tokens_per_second: 7771.59, mfu: 8.82, diloco_peers: 2
+18:21:27 [INFO] [Rank 0] step: 16, loss: 2.1807, tokens_per_second: 7774.13, mfu: 8.82, diloco_peers: 2
+18:21:27 [INFO] [Rank 1] step: 16, loss: 2.1807, tokens_per_second: 7770.40, mfu: 8.82, diloco_peers: 2
+18:21:27 [INFO] [Rank 2] step: 16, loss: 2.1807, tokens_per_second: 7769.71, mfu: 8.82, diloco_peers: 2
+18:21:32 [INFO] [Rank 2] step: 17, loss: 2.1034, tokens_per_second: 7808.86, mfu: 8.86, diloco_peers: 2
+18:21:32 [INFO] [Rank 3] step: 17, loss: 2.1034, tokens_per_second: 7811.71, mfu: 8.86, diloco_peers: 2
+18:21:32 [INFO] [Rank 1] step: 17, loss: 2.1034, tokens_per_second: 7809.85, mfu: 8.86, diloco_peers: 2
+18:21:32 [INFO] [Rank 0] step: 17, loss: 2.1034, tokens_per_second: 7811.39, mfu: 8.86, diloco_peers: 2
+18:21:37 [INFO] [Rank 3] step: 18, loss: 2.1319, tokens_per_second: 7637.25, mfu: 8.67, diloco_peers: 2
+18:21:37 [INFO] [Rank 1] step: 18, loss: 2.1319, tokens_per_second: 7637.31, mfu: 8.67, diloco_peers: 2
+18:21:37 [INFO] [Rank 2] step: 18, loss: 2.1319, tokens_per_second: 7637.24, mfu: 8.67, diloco_peers: 2
+18:21:37 [INFO] [Rank 0] step: 18, loss: 2.1319, tokens_per_second: 7637.31, mfu: 8.67, diloco_peers: 2
+18:21:41 [INFO] [Rank 3] step: 19, loss: 2.1188, tokens_per_second: 7661.61, mfu: 8.69, diloco_peers: 2
+18:21:41 [INFO] [Rank 1] step: 19, loss: 2.1188, tokens_per_second: 7663.94, mfu: 8.70, diloco_peers: 2
+18:21:41 [INFO] [Rank 2] step: 19, loss: 2.1188, tokens_per_second: 7663.82, mfu: 8.70, diloco_peers: 2
+18:21:41 [INFO] [Rank 0] step: 19, loss: 2.1188, tokens_per_second: 7659.99, mfu: 8.69, diloco_peers: 2
+18:21:46 [INFO] [Rank 3] step: 20, loss: 2.1738, tokens_per_second: 13481.15, mfu: 15.30, diloco_peers: 2
+18:21:46 [INFO] [Rank 2] step: 20, loss: 2.1738, tokens_per_second: 13487.90, mfu: 15.31, diloco_peers: 2
+18:21:46 [INFO] [Rank 1] step: 20, loss: 2.1738, tokens_per_second: 13487.04, mfu: 15.30, diloco_peers: 2
+18:21:46 [INFO] [Rank 0] step: 20, loss: 2.1738, tokens_per_second: 13471.00, mfu: 15.29, diloco_peers: 2
+18:22:05 [INFO] [Rank 1] Sync psuedo-gradient in 18.380256 seconds
+18:22:05 [INFO] [Rank 1] all reduce pseudo gradient in: 18.380563888989855 seconds
+18:22:06 [INFO] [Rank 2] Sync psuedo-gradient in 20.023330 seconds
+18:22:06 [INFO] [Rank 2] all reduce pseudo gradient in: 20.0238903099671 seconds
+18:22:07 [INFO] [Rank 3] Sync psuedo-gradient in 20.710228 seconds
+18:22:07 [INFO] [Rank 3] all reduce pseudo gradient in: 20.710733052983414 seconds
+18:22:08 [INFO] [Rank 0] Sync psuedo-gradient in 21.322959 seconds
+18:22:08 [INFO] [Rank 0] all reduce pseudo gradient in: 21.32376210100483 seconds
+18:22:14 [INFO] [Rank 1] effective mfu: 9.37906165737487
+18:22:14 [INFO] [Rank 1] outer_step step: 2
+18:22:14 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:22:15 [INFO] [Rank 2] effective mfu: 9.32359688244805
+18:22:15 [INFO] [Rank 2] outer_step step: 2
+18:22:15 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:22:17 [INFO] [Rank 3] effective mfu: 9.088865096112722
+18:22:17 [INFO] [Rank 3] outer_step step: 2
+18:22:17 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:22:18 [INFO] [Rank 0] effective mfu: 9.278882827083367
+18:22:18 [INFO] [Rank 0] outer_step step: 2
+18:22:18 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:22:22 [INFO] [Rank 2] step: 21, loss: 2.1146, tokens_per_second: 7849.91, mfu: 8.91, diloco_peers: 2
+18:22:22 [INFO] [Rank 1] step: 21, loss: 2.1146, tokens_per_second: 7850.21, mfu: 8.91, diloco_peers: 2
+18:22:22 [INFO] [Rank 3] step: 21, loss: 2.1146, tokens_per_second: 7851.55, mfu: 8.91, diloco_peers: 2
+18:22:22 [INFO] [Rank 0] step: 21, loss: 2.1146, tokens_per_second: 7851.07, mfu: 8.91, diloco_peers: 2
+18:22:28 [INFO] [Rank 2] step: 22, loss: 2.0124, tokens_per_second: 7789.64, mfu: 8.84, diloco_peers: 2
+18:22:28 [INFO] [Rank 3] step: 22, loss: 2.0124, tokens_per_second: 7791.49, mfu: 8.84, diloco_peers: 2
+18:22:28 [INFO] [Rank 1] step: 22, loss: 2.0124, tokens_per_second: 7789.20, mfu: 8.84, diloco_peers: 2
+18:22:28 [INFO] [Rank 0] step: 22, loss: 2.0124, tokens_per_second: 7797.09, mfu: 8.85, diloco_peers: 2
+18:22:33 [INFO] [Rank 3] step: 23, loss: 2.1326, tokens_per_second: 7725.54, mfu: 8.77, diloco_peers: 2
+18:22:33 [INFO] [Rank 2] step: 23, loss: 2.1326, tokens_per_second: 7725.73, mfu: 8.77, diloco_peers: 2
+18:22:33 [INFO] [Rank 1] step: 23, loss: 2.1326, tokens_per_second: 7725.55, mfu: 8.77, diloco_peers: 2
+18:22:33 [INFO] [Rank 0] step: 23, loss: 2.1326, tokens_per_second: 7727.69, mfu: 8.77, diloco_peers: 2
+18:22:38 [INFO] [Rank 3] step: 24, loss: 2.0807, tokens_per_second: 7813.31, mfu: 8.87, diloco_peers: 2
+18:22:38 [INFO] [Rank 1] step: 24, loss: 2.0807, tokens_per_second: 7817.49, mfu: 8.87, diloco_peers: 2
+18:22:38 [INFO] [Rank 0] step: 24, loss: 2.0807, tokens_per_second: 7815.02, mfu: 8.87, diloco_peers: 2
+18:22:38 [INFO] [Rank 2] step: 24, loss: 2.0807, tokens_per_second: 7816.67, mfu: 8.87, diloco_peers: 2
+18:22:42 [INFO] [Rank 2] step: 25, loss: 2.0764, tokens_per_second: 7797.50, mfu: 8.85, diloco_peers: 2
+18:22:42 [INFO] [Rank 3] step: 25, loss: 2.0764, tokens_per_second: 7795.40, mfu: 8.85, diloco_peers: 2
+18:22:42 [INFO] [Rank 1] step: 25, loss: 2.0764, tokens_per_second: 7797.14, mfu: 8.85, diloco_peers: 2
+18:22:42 [INFO] [Rank 0] step: 25, loss: 2.0764, tokens_per_second: 7792.81, mfu: 8.84, diloco_peers: 2
+18:22:47 [INFO] [Rank 3] step: 26, loss: 2.0633, tokens_per_second: 7840.60, mfu: 8.90, diloco_peers: 2
+18:22:47 [INFO] [Rank 1] step: 26, loss: 2.0633, tokens_per_second: 7836.59, mfu: 8.89, diloco_peers: 2
+18:22:47 [INFO] [Rank 2] step: 26, loss: 2.0633, tokens_per_second: 7837.46, mfu: 8.89, diloco_peers: 2
+18:22:47 [INFO] [Rank 0] step: 26, loss: 2.0633, tokens_per_second: 7834.53, mfu: 8.89, diloco_peers: 2
+18:22:51 [INFO] [Rank 2] step: 27, loss: 2.0093, tokens_per_second: 7909.12, mfu: 8.97, diloco_peers: 2
+18:22:51 [INFO] [Rank 3] step: 27, loss: 2.0093, tokens_per_second: 7911.38, mfu: 8.98, diloco_peers: 2
+18:22:51 [INFO] [Rank 1] step: 27, loss: 2.0093, tokens_per_second: 7909.17, mfu: 8.97, diloco_peers: 2
+18:22:51 [INFO] [Rank 0] step: 27, loss: 2.0093, tokens_per_second: 7910.10, mfu: 8.98, diloco_peers: 2
+18:22:56 [INFO] [Rank 2] step: 28, loss: 2.0045, tokens_per_second: 7876.20, mfu: 8.94, diloco_peers: 2
+18:22:56 [INFO] [Rank 3] step: 28, loss: 2.0045, tokens_per_second: 7876.23, mfu: 8.94, diloco_peers: 2
+18:22:56 [INFO] [Rank 1] step: 28, loss: 2.0045, tokens_per_second: 7876.16, mfu: 8.94, diloco_peers: 2
+18:22:56 [INFO] [Rank 0] step: 28, loss: 2.0045, tokens_per_second: 7877.89, mfu: 8.94, diloco_peers: 2
+18:23:00 [INFO] [Rank 3] step: 29, loss: 2.0396, tokens_per_second: 7948.41, mfu: 9.02, diloco_peers: 2
+18:23:00 [INFO] [Rank 2] step: 29, loss: 2.0396, tokens_per_second: 7949.88, mfu: 9.02, diloco_peers: 2
+18:23:00 [INFO] [Rank 1] step: 29, loss: 2.0396, tokens_per_second: 7950.26, mfu: 9.02, diloco_peers: 2
+18:23:00 [INFO] [Rank 0] step: 29, loss: 2.0396, tokens_per_second: 7951.98, mfu: 9.02, diloco_peers: 2
+18:23:05 [INFO] [Rank 3] step: 30, loss: 2.0563, tokens_per_second: 13795.06, mfu: 15.65, diloco_peers: 2
+18:23:05 [INFO] [Rank 1] step: 30, loss: 2.0563, tokens_per_second: 13798.56, mfu: 15.66, diloco_peers: 2
+18:23:05 [INFO] [Rank 0] step: 30, loss: 2.0563, tokens_per_second: 13803.21, mfu: 15.66, diloco_peers: 2
+18:23:05 [INFO] [Rank 2] step: 30, loss: 2.0563, tokens_per_second: 13797.36, mfu: 15.66, diloco_peers: 2
+18:23:28 [INFO] [Rank 1] Sync psuedo-gradient in 22.510142 seconds
+18:23:28 [INFO] [Rank 1] all reduce pseudo gradient in: 22.5104472169769 seconds
+18:23:28 [INFO] [Rank 2] Sync psuedo-gradient in 22.517805 seconds
+18:23:28 [INFO] [Rank 2] all reduce pseudo gradient in: 22.518172357988078 seconds
+18:23:29 [INFO] [Rank 0] Sync psuedo-gradient in 24.325097 seconds
+18:23:29 [INFO] [Rank 0] all reduce pseudo gradient in: 24.325904634024482 seconds
+18:23:30 [INFO] [Rank 3] Sync psuedo-gradient in 25.347145 seconds
+18:23:30 [INFO] [Rank 3] all reduce pseudo gradient in: 25.34777012199629 seconds
+18:23:37 [INFO] [Rank 2] effective mfu: 9.100172410061747
+18:23:37 [INFO] [Rank 2] outer_step step: 3
+18:23:37 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:23:37 [INFO] [Rank 1] effective mfu: 8.934569420517475
+18:23:37 [INFO] [Rank 1] outer_step step: 3
+18:23:37 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:23:41 [INFO] [Rank 0] effective mfu: 9.000690872625357
+18:23:41 [INFO] [Rank 0] outer_step step: 3
+18:23:41 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:23:42 [INFO] [Rank 3] effective mfu: 8.826788456616542
+18:23:42 [INFO] [Rank 3] outer_step step: 3
+18:23:42 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:23:46 [INFO] [Rank 3] step: 31, loss: 2.0632, tokens_per_second: 7543.28, mfu: 8.56, diloco_peers: 2
+18:23:46 [INFO] [Rank 0] step: 31, loss: 2.0632, tokens_per_second: 7543.34, mfu: 8.56, diloco_peers: 2
+18:23:46 [INFO] [Rank 1] step: 31, loss: 2.0632, tokens_per_second: 7540.51, mfu: 8.56, diloco_peers: 2
+18:23:46 [INFO] [Rank 2] step: 31, loss: 2.0632, tokens_per_second: 7540.11, mfu: 8.56, diloco_peers: 2
+18:23:51 [INFO] [Rank 2] step: 32, loss: 2.0684, tokens_per_second: 7597.82, mfu: 8.62, diloco_peers: 2
+18:23:51 [INFO] [Rank 3] step: 32, loss: 2.0684, tokens_per_second: 7599.58, mfu: 8.62, diloco_peers: 2
+18:23:51 [INFO] [Rank 1] step: 32, loss: 2.0684, tokens_per_second: 7597.92, mfu: 8.62, diloco_peers: 2
+18:23:51 [INFO] [Rank 0] step: 32, loss: 2.0684, tokens_per_second: 7597.94, mfu: 8.62, diloco_peers: 2
+18:23:56 [INFO] [Rank 3] step: 33, loss: 2.1315, tokens_per_second: 7528.74, mfu: 8.54, diloco_peers: 2
+18:23:56 [INFO] [Rank 2] step: 33, loss: 2.1315, tokens_per_second: 7527.06, mfu: 8.54, diloco_peers: 2
+18:23:56 [INFO] [Rank 1] step: 33, loss: 2.1315, tokens_per_second: 7527.14, mfu: 8.54, diloco_peers: 2
+18:23:56 [INFO] [Rank 0] step: 33, loss: 2.1315, tokens_per_second: 7521.92, mfu: 8.54, diloco_peers: 2
+18:24:01 [INFO] [Rank 2] step: 34, loss: 2.0141, tokens_per_second: 7544.58, mfu: 8.56, diloco_peers: 2
+18:24:01 [INFO] [Rank 3] step: 34, loss: 2.0141, tokens_per_second: 7543.05, mfu: 8.56, diloco_peers: 2
+18:24:01 [INFO] [Rank 1] step: 34, loss: 2.0141, tokens_per_second: 7544.84, mfu: 8.56, diloco_peers: 2
+18:24:01 [INFO] [Rank 0] step: 34, loss: 2.0141, tokens_per_second: 7543.65, mfu: 8.56, diloco_peers: 2
+18:24:06 [INFO] [Rank 2] step: 35, loss: 2.1199, tokens_per_second: 7437.53, mfu: 8.44, diloco_peers: 2
+18:24:06 [INFO] [Rank 3] step: 35, loss: 2.1199, tokens_per_second: 7434.58, mfu: 8.44, diloco_peers: 2
+18:24:06 [INFO] [Rank 1] step: 35, loss: 2.1199, tokens_per_second: 7437.45, mfu: 8.44, diloco_peers: 2
+18:24:06 [INFO] [Rank 0] step: 35, loss: 2.1199, tokens_per_second: 7440.05, mfu: 8.44, diloco_peers: 2
+18:24:10 [INFO] [Rank 3] step: 36, loss: 2.0509, tokens_per_second: 7476.20, mfu: 8.48, diloco_peers: 2
+18:24:10 [INFO] [Rank 0] step: 36, loss: 2.0509, tokens_per_second: 7477.37, mfu: 8.48, diloco_peers: 2
+18:24:11 [INFO] [Rank 1] step: 36, loss: 2.0509, tokens_per_second: 7440.41, mfu: 8.44, diloco_peers: 2
+18:24:11 [INFO] [Rank 2] step: 36, loss: 2.0509, tokens_per_second: 7440.05, mfu: 8.44, diloco_peers: 2
+18:24:15 [INFO] [Rank 2] step: 37, loss: 1.9996, tokens_per_second: 7458.62, mfu: 8.46, diloco_peers: 2
+18:24:15 [INFO] [Rank 1] step: 37, loss: 1.9996, tokens_per_second: 7458.29, mfu: 8.46, diloco_peers: 2
+18:24:15 [INFO] [Rank 3] step: 37, loss: 1.9996, tokens_per_second: 7460.36, mfu: 8.47, diloco_peers: 2
+18:24:15 [INFO] [Rank 0] step: 37, loss: 1.9996, tokens_per_second: 7460.58, mfu: 8.47, diloco_peers: 2
+18:24:20 [INFO] [Rank 2] step: 38, loss: 2.1816, tokens_per_second: 7389.15, mfu: 8.38, diloco_peers: 2
+18:24:20 [INFO] [Rank 1] step: 38, loss: 2.1816, tokens_per_second: 7389.15, mfu: 8.38, diloco_peers: 2
+18:24:20 [INFO] [Rank 3] step: 38, loss: 2.1816, tokens_per_second: 7389.09, mfu: 8.38, diloco_peers: 2
+18:24:20 [INFO] [Rank 0] step: 38, loss: 2.1816, tokens_per_second: 7389.21, mfu: 8.38, diloco_peers: 2
+18:24:25 [INFO] [Rank 3] step: 39, loss: 2.0388, tokens_per_second: 7400.63, mfu: 8.40, diloco_peers: 2
+18:24:25 [INFO] [Rank 2] step: 39, loss: 2.0388, tokens_per_second: 7402.63, mfu: 8.40, diloco_peers: 2
+18:24:25 [INFO] [Rank 1] step: 39, loss: 2.0388, tokens_per_second: 7402.27, mfu: 8.40, diloco_peers: 2
+18:24:25 [INFO] [Rank 0] step: 39, loss: 2.0388, tokens_per_second: 7399.05, mfu: 8.40, diloco_peers: 2
+18:24:29 [INFO] [Rank 2] step: 40, loss: 2.0800, tokens_per_second: 13601.91, mfu: 15.43, diloco_peers: 2
+18:24:29 [INFO] [Rank 3] step: 40, loss: 2.0800, tokens_per_second: 13589.34, mfu: 15.42, diloco_peers: 2
+18:24:29 [INFO] [Rank 1] step: 40, loss: 2.0800, tokens_per_second: 13602.06, mfu: 15.43, diloco_peers: 2
+18:24:30 [INFO] [Rank 0] step: 40, loss: 2.0800, tokens_per_second: 13481.02, mfu: 15.30, diloco_peers: 2
+18:24:49 [INFO] [Rank 2] Sync psuedo-gradient in 19.322870 seconds
+18:24:49 [INFO] [Rank 2] all reduce pseudo gradient in: 19.323432327015325 seconds
+18:24:49 [INFO] [Rank 1] Sync psuedo-gradient in 20.214099 seconds
+18:24:49 [INFO] [Rank 1] all reduce pseudo gradient in: 20.214379345998168 seconds
+18:24:51 [INFO] [Rank 3] Sync psuedo-gradient in 21.609037 seconds
+18:24:51 [INFO] [Rank 3] all reduce pseudo gradient in: 21.60957857099129 seconds
+18:24:51 [INFO] [Rank 0] Sync psuedo-gradient in 21.642693 seconds
+18:24:51 [INFO] [Rank 0] all reduce pseudo gradient in: 21.643509573012125 seconds
+18:24:56 [INFO] [Rank 2] effective mfu: 9.363393977331372
+18:24:56 [INFO] [Rank 2] outer_step step: 4
+18:24:56 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:24:58 [INFO] [Rank 1] effective mfu: 9.130882972835018
+18:24:58 [INFO] [Rank 1] outer_step step: 4
+18:24:58 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:25:00 [INFO] [Rank 0] effective mfu: 9.389714657616471
+18:25:00 [INFO] [Rank 0] outer_step step: 4
+18:25:00 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:25:02 [INFO] [Rank 3] effective mfu: 9.217616837510652
+18:25:02 [INFO] [Rank 3] outer_step step: 4
+18:25:02 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:25:07 [INFO] [Rank 1] step: 41, loss: 2.1705, tokens_per_second: 7745.95, mfu: 8.79, diloco_peers: 2
+18:25:07 [INFO] [Rank 3] step: 41, loss: 2.1705, tokens_per_second: 7745.20, mfu: 8.79, diloco_peers: 2
+18:25:07 [INFO] [Rank 2] step: 41, loss: 2.1705, tokens_per_second: 7745.56, mfu: 8.79, diloco_peers: 2
+18:25:07 [INFO] [Rank 0] step: 41, loss: 2.1705, tokens_per_second: 7745.11, mfu: 8.79, diloco_peers: 2
+18:25:12 [INFO] [Rank 2] step: 42, loss: 2.0736, tokens_per_second: 7758.28, mfu: 8.80, diloco_peers: 2
+18:25:12 [INFO] [Rank 3] step: 42, loss: 2.0736, tokens_per_second: 7760.35, mfu: 8.81, diloco_peers: 2
+18:25:12 [INFO] [Rank 1] step: 42, loss: 2.0736, tokens_per_second: 7758.74, mfu: 8.80, diloco_peers: 2
+18:25:12 [INFO] [Rank 0] step: 42, loss: 2.0736, tokens_per_second: 7765.91, mfu: 8.81, diloco_peers: 2
+18:25:17 [INFO] [Rank 3] step: 43, loss: 2.0117, tokens_per_second: 7742.55, mfu: 8.79, diloco_peers: 2
+18:25:17 [INFO] [Rank 1] step: 43, loss: 2.0117, tokens_per_second: 7742.64, mfu: 8.79, diloco_peers: 2
+18:25:17 [INFO] [Rank 2] step: 43, loss: 2.0117, tokens_per_second: 7742.59, mfu: 8.79, diloco_peers: 2
+18:25:17 [INFO] [Rank 0] step: 43, loss: 2.0117, tokens_per_second: 7744.24, mfu: 8.79, diloco_peers: 2
+18:25:21 [INFO] [Rank 2] step: 44, loss: 2.0494, tokens_per_second: 7834.26, mfu: 8.89, diloco_peers: 2
+18:25:21 [INFO] [Rank 3] step: 44, loss: 2.0494, tokens_per_second: 7831.99, mfu: 8.89, diloco_peers: 2
+18:25:21 [INFO] [Rank 1] step: 44, loss: 2.0494, tokens_per_second: 7834.29, mfu: 8.89, diloco_peers: 2
+18:25:21 [INFO] [Rank 0] step: 44, loss: 2.0494, tokens_per_second: 7831.98, mfu: 8.89, diloco_peers: 2
+18:25:26 [INFO] [Rank 3] step: 45, loss: 1.9999, tokens_per_second: 7785.13, mfu: 8.83, diloco_peers: 2
+18:25:26 [INFO] [Rank 2] step: 45, loss: 1.9999, tokens_per_second: 7824.63, mfu: 8.88, diloco_peers: 2
+18:25:26 [INFO] [Rank 1] step: 45, loss: 1.9999, tokens_per_second: 7824.72, mfu: 8.88, diloco_peers: 2
+18:25:26 [INFO] [Rank 0] step: 45, loss: 1.9999, tokens_per_second: 7785.10, mfu: 8.83, diloco_peers: 2
+18:25:30 [INFO] [Rank 3] step: 46, loss: 2.0154, tokens_per_second: 7866.54, mfu: 8.93, diloco_peers: 2
+18:25:30 [INFO] [Rank 0] step: 46, loss: 2.0154, tokens_per_second: 7864.13, mfu: 8.92, diloco_peers: 2
+18:25:31 [INFO] [Rank 1] step: 46, loss: 2.0154, tokens_per_second: 7827.38, mfu: 8.88, diloco_peers: 2
+18:25:31 [INFO] [Rank 2] step: 46, loss: 2.0154, tokens_per_second: 7826.56, mfu: 8.88, diloco_peers: 2
+18:25:35 [INFO] [Rank 2] step: 47, loss: 2.0631, tokens_per_second: 7896.80, mfu: 8.96, diloco_peers: 2
+18:25:35 [INFO] [Rank 3] step: 47, loss: 2.0631, tokens_per_second: 7899.21, mfu: 8.96, diloco_peers: 2
+18:25:35 [INFO] [Rank 1] step: 47, loss: 2.0631, tokens_per_second: 7897.04, mfu: 8.96, diloco_peers: 2
+18:25:35 [INFO] [Rank 0] step: 47, loss: 2.0631, tokens_per_second: 7896.03, mfu: 8.96, diloco_peers: 2
+18:25:41 [INFO] [Rank 2] step: 48, loss: 2.1275, tokens_per_second: 7778.50, mfu: 8.83, diloco_peers: 2
+18:25:41 [INFO] [Rank 3] step: 48, loss: 2.1275, tokens_per_second: 7778.48, mfu: 8.83, diloco_peers: 2
+18:25:41 [INFO] [Rank 1] step: 48, loss: 2.1275, tokens_per_second: 7778.49, mfu: 8.83, diloco_peers: 2
+18:25:41 [INFO] [Rank 0] step: 48, loss: 2.1275, tokens_per_second: 7778.09, mfu: 8.83, diloco_peers: 2
+18:25:45 [INFO] [Rank 1] step: 49, loss: 2.0320, tokens_per_second: 7737.04, mfu: 8.78, diloco_peers: 2
+18:25:45 [INFO] [Rank 0] step: 49, loss: 2.0320, tokens_per_second: 7771.55, mfu: 8.82, diloco_peers: 2
+18:25:46 [INFO] [Rank 2] step: 49, loss: 2.0320, tokens_per_second: 7718.14, mfu: 8.76, diloco_peers: 2
+18:25:46 [INFO] [Rank 3] step: 49, loss: 2.0320, tokens_per_second: 7715.96, mfu: 8.76, diloco_peers: 2
+18:25:50 [INFO] [Rank 3] step: 50, loss: 2.0746, tokens_per_second: 13601.90, mfu: 15.43, diloco_peers: 2
+18:25:50 [INFO] [Rank 1] step: 50, loss: 2.0746, tokens_per_second: 13597.79, mfu: 15.43, diloco_peers: 2
+18:25:50 [INFO] [Rank 2] step: 50, loss: 2.0746, tokens_per_second: 13599.29, mfu: 15.43, diloco_peers: 2
+18:25:50 [INFO] [Rank 0] step: 50, loss: 2.0746, tokens_per_second: 13607.40, mfu: 15.44, diloco_peers: 2
+18:26:10 [INFO] [Rank 2] Sync psuedo-gradient in 19.845698 seconds
+18:26:10 [INFO] [Rank 2] all reduce pseudo gradient in: 19.846318544994574 seconds
+18:26:11 [INFO] [Rank 1] Sync psuedo-gradient in 20.489081 seconds
+18:26:11 [INFO] [Rank 1] all reduce pseudo gradient in: 20.489362252003048 seconds
+18:26:12 [INFO] [Rank 0] Sync psuedo-gradient in 21.738492 seconds
+18:26:12 [INFO] [Rank 0] all reduce pseudo gradient in: 21.73924878204707 seconds
+18:26:12 [INFO] [Rank 3] Sync psuedo-gradient in 21.775112 seconds
+18:26:12 [INFO] [Rank 3] all reduce pseudo gradient in: 21.77567442896543 seconds
+18:26:19 [INFO] [Rank 1] effective mfu: 9.172135012117689
+18:26:19 [INFO] [Rank 1] outer_step step: 5
+18:26:19 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:26:21 [INFO] [Rank 2] effective mfu: 8.796005273481198
+18:26:21 [INFO] [Rank 2] outer_step step: 5
+18:26:21 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:26:22 [INFO] [Rank 0] effective mfu: 9.134961192411922
+18:26:22 [INFO] [Rank 0] outer_step step: 5
+18:26:22 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:26:23 [INFO] [Rank 3] effective mfu: 9.239311362187511
+18:26:23 [INFO] [Rank 3] outer_step step: 5
+18:26:23 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:26:27 [INFO] [Rank 3] step: 51, loss: 2.0683, tokens_per_second: 7842.65, mfu: 8.90, diloco_peers: 2
+18:26:27 [INFO] [Rank 0] step: 51, loss: 2.0683, tokens_per_second: 7842.69, mfu: 8.90, diloco_peers: 2
+18:26:27 [INFO] [Rank 2] step: 51, loss: 2.0683, tokens_per_second: 7841.11, mfu: 8.90, diloco_peers: 2
+18:26:27 [INFO] [Rank 1] step: 51, loss: 2.0683, tokens_per_second: 7840.69, mfu: 8.90, diloco_peers: 2
+18:26:31 [INFO] [Rank 2] step: 52, loss: 2.1213, tokens_per_second: 7901.93, mfu: 8.97, diloco_peers: 2
+18:26:31 [INFO] [Rank 1] step: 52, loss: 2.1213, tokens_per_second: 7901.96, mfu: 8.97, diloco_peers: 2
+18:26:31 [INFO] [Rank 3] step: 52, loss: 2.1213, tokens_per_second: 7903.72, mfu: 8.97, diloco_peers: 2
+18:26:31 [INFO] [Rank 0] step: 52, loss: 2.1213, tokens_per_second: 7903.74, mfu: 8.97, diloco_peers: 2
+18:26:37 [INFO] [Rank 2] step: 53, loss: 2.1491, tokens_per_second: 7835.83, mfu: 8.89, diloco_peers: 2
+18:26:37 [INFO] [Rank 3] step: 53, loss: 2.1491, tokens_per_second: 7835.84, mfu: 8.89, diloco_peers: 2
+18:26:37 [INFO] [Rank 1] step: 53, loss: 2.1491, tokens_per_second: 7835.64, mfu: 8.89, diloco_peers: 2
+18:26:37 [INFO] [Rank 0] step: 53, loss: 2.1491, tokens_per_second: 7834.11, mfu: 8.89, diloco_peers: 2
+18:26:41 [INFO] [Rank 3] step: 54, loss: 2.0924, tokens_per_second: 7884.25, mfu: 8.95, diloco_peers: 2
+18:26:41 [INFO] [Rank 1] step: 54, loss: 2.0924, tokens_per_second: 7886.04, mfu: 8.95, diloco_peers: 2
+18:26:41 [INFO] [Rank 2] step: 54, loss: 2.0924, tokens_per_second: 7886.66, mfu: 8.95, diloco_peers: 2
+18:26:41 [INFO] [Rank 0] step: 54, loss: 2.0924, tokens_per_second: 7878.55, mfu: 8.94, diloco_peers: 2
+18:26:46 [INFO] [Rank 2] step: 55, loss: 2.1650, tokens_per_second: 7867.61, mfu: 8.93, diloco_peers: 2
+18:26:46 [INFO] [Rank 1] step: 55, loss: 2.1650, tokens_per_second: 7867.31, mfu: 8.93, diloco_peers: 2
+18:26:46 [INFO] [Rank 3] step: 55, loss: 2.1650, tokens_per_second: 7827.37, mfu: 8.88, diloco_peers: 2
+18:26:46 [INFO] [Rank 0] step: 55, loss: 2.1650, tokens_per_second: 7827.49, mfu: 8.88, diloco_peers: 2
+18:26:51 [INFO] [Rank 3] step: 56, loss: 2.1686, tokens_per_second: 7748.70, mfu: 8.79, diloco_peers: 2
+18:26:51 [INFO] [Rank 1] step: 56, loss: 2.1686, tokens_per_second: 7746.86, mfu: 8.79, diloco_peers: 2
+18:26:51 [INFO] [Rank 2] step: 56, loss: 2.1686, tokens_per_second: 7746.99, mfu: 8.79, diloco_peers: 2
+18:26:51 [INFO] [Rank 0] step: 56, loss: 2.1686, tokens_per_second: 7751.58, mfu: 8.80, diloco_peers: 2
+18:26:56 [INFO] [Rank 2] step: 57, loss: 2.0824, tokens_per_second: 7835.53, mfu: 8.89, diloco_peers: 2
+18:26:56 [INFO] [Rank 1] step: 57, loss: 2.0824, tokens_per_second: 7835.24, mfu: 8.89, diloco_peers: 2
+18:26:56 [INFO] [Rank 3] step: 57, loss: 2.0824, tokens_per_second: 7837.75, mfu: 8.89, diloco_peers: 2
+18:26:56 [INFO] [Rank 0] step: 57, loss: 2.0824, tokens_per_second: 7840.07, mfu: 8.90, diloco_peers: 2
+18:27:01 [INFO] [Rank 2] step: 58, loss: 2.1419, tokens_per_second: 7862.74, mfu: 8.92, diloco_peers: 2
+18:27:01 [INFO] [Rank 3] step: 58, loss: 2.1419, tokens_per_second: 7863.82, mfu: 8.92, diloco_peers: 2
+18:27:01 [INFO] [Rank 1] step: 58, loss: 2.1419, tokens_per_second: 7843.09, mfu: 8.90, diloco_peers: 2
+18:27:01 [INFO] [Rank 0] step: 58, loss: 2.1419, tokens_per_second: 7843.09, mfu: 8.90, diloco_peers: 2
+18:27:05 [INFO] [Rank 1] step: 59, loss: 2.0193, tokens_per_second: 7855.67, mfu: 8.91, diloco_peers: 2
+18:27:05 [INFO] [Rank 2] step: 59, loss: 2.0193, tokens_per_second: 7855.58, mfu: 8.91, diloco_peers: 2
+18:27:05 [INFO] [Rank 3] step: 59, loss: 2.0193, tokens_per_second: 7853.32, mfu: 8.91, diloco_peers: 2
+18:27:05 [INFO] [Rank 0] step: 59, loss: 2.0193, tokens_per_second: 7853.38, mfu: 8.91, diloco_peers: 2
+18:27:10 [INFO] [Rank 2] step: 60, loss: 2.1309, tokens_per_second: 13745.68, mfu: 15.60, diloco_peers: 2
+18:27:10 [INFO] [Rank 1] step: 60, loss: 2.1309, tokens_per_second: 13748.96, mfu: 15.60, diloco_peers: 2
+18:27:10 [INFO] [Rank 3] step: 60, loss: 2.1309, tokens_per_second: 13745.85, mfu: 15.60, diloco_peers: 2
+18:27:10 [INFO] [Rank 0] step: 60, loss: 2.1309, tokens_per_second: 13738.01, mfu: 15.59, diloco_peers: 2
+18:27:29 [INFO] [Rank 2] Sync psuedo-gradient in 18.941414 seconds
+18:27:29 [INFO] [Rank 2] all reduce pseudo gradient in: 18.9420396630303 seconds
+18:27:29 [INFO] [Rank 1] Sync psuedo-gradient in 19.367437 seconds
+18:27:29 [INFO] [Rank 1] all reduce pseudo gradient in: 19.36773447401356 seconds
+18:27:31 [INFO] [Rank 0] Sync psuedo-gradient in 20.697168 seconds
+18:27:31 [INFO] [Rank 0] all reduce pseudo gradient in: 20.698097067011986 seconds
+18:27:31 [INFO] [Rank 3] Sync psuedo-gradient in 21.021475 seconds
+18:27:31 [INFO] [Rank 3] all reduce pseudo gradient in: 21.02210548997391 seconds
+18:27:37 [INFO] [Rank 1] effective mfu: 9.542570185389906
+18:27:37 [INFO] [Rank 1] outer_step step: 6
+18:27:37 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:27:38 [INFO] [Rank 2] effective mfu: 9.633652541732715
+18:27:38 [INFO] [Rank 2] outer_step step: 6
+18:27:38 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:27:42 [INFO] [Rank 3] effective mfu: 9.32939762976663
+18:27:42 [INFO] [Rank 3] outer_step step: 6
+18:27:42 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:27:43 [INFO] [Rank 0] effective mfu: 9.189009808790075
+18:27:43 [INFO] [Rank 0] outer_step step: 6
+18:27:43 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:27:47 [INFO] [Rank 1] step: 61, loss: 2.1578, tokens_per_second: 7841.40, mfu: 8.90, diloco_peers: 2
+18:27:47 [INFO] [Rank 3] step: 61, loss: 2.1578, tokens_per_second: 7843.24, mfu: 8.90, diloco_peers: 2
+18:27:47 [INFO] [Rank 2] step: 61, loss: 2.1578, tokens_per_second: 7840.32, mfu: 8.90, diloco_peers: 2
+18:27:47 [INFO] [Rank 0] step: 61, loss: 2.1578, tokens_per_second: 7838.43, mfu: 8.89, diloco_peers: 2
+18:27:51 [INFO] [Rank 3] step: 62, loss: 2.1019, tokens_per_second: 7945.02, mfu: 9.02, diloco_peers: 2
+18:27:51 [INFO] [Rank 2] step: 62, loss: 2.1019, tokens_per_second: 7942.97, mfu: 9.01, diloco_peers: 2
+18:27:51 [INFO] [Rank 1] step: 62, loss: 2.1019, tokens_per_second: 7943.04, mfu: 9.01, diloco_peers: 2
+18:27:51 [INFO] [Rank 0] step: 62, loss: 2.1019, tokens_per_second: 7945.82, mfu: 9.02, diloco_peers: 2
+18:27:57 [INFO] [Rank 2] step: 63, loss: 2.0671, tokens_per_second: 7785.37, mfu: 8.83, diloco_peers: 2
+18:27:57 [INFO] [Rank 1] step: 63, loss: 2.0671, tokens_per_second: 7785.38, mfu: 8.83, diloco_peers: 2
+18:27:57 [INFO] [Rank 3] step: 63, loss: 2.0671, tokens_per_second: 7785.36, mfu: 8.83, diloco_peers: 2
+18:27:57 [INFO] [Rank 0] step: 63, loss: 2.0671, tokens_per_second: 7790.92, mfu: 8.84, diloco_peers: 2
+18:28:01 [INFO] [Rank 2] step: 64, loss: 2.1049, tokens_per_second: 7855.49, mfu: 8.91, diloco_peers: 2
+18:28:01 [INFO] [Rank 3] step: 64, loss: 2.1049, tokens_per_second: 7851.85, mfu: 8.91, diloco_peers: 2
+18:28:01 [INFO] [Rank 1] step: 64, loss: 2.1049, tokens_per_second: 7855.36, mfu: 8.91, diloco_peers: 2
+18:28:01 [INFO] [Rank 0] step: 64, loss: 2.1049, tokens_per_second: 7855.89, mfu: 8.91, diloco_peers: 2
+18:28:05 [INFO] [Rank 2] step: 65, loss: 2.0774, tokens_per_second: 7953.03, mfu: 9.02, diloco_peers: 2
+18:28:05 [INFO] [Rank 3] step: 65, loss: 2.0774, tokens_per_second: 7950.99, mfu: 9.02, diloco_peers: 2
+18:28:05 [INFO] [Rank 1] step: 65, loss: 2.0774, tokens_per_second: 7952.97, mfu: 9.02, diloco_peers: 2
+18:28:05 [INFO] [Rank 0] step: 65, loss: 2.0774, tokens_per_second: 7951.26, mfu: 9.02, diloco_peers: 2
+18:28:10 [INFO] [Rank 3] step: 66, loss: 2.0619, tokens_per_second: 7972.81, mfu: 9.05, diloco_peers: 2
+18:28:10 [INFO] [Rank 0] step: 66, loss: 2.0619, tokens_per_second: 7972.71, mfu: 9.05, diloco_peers: 2
+18:28:10 [INFO] [Rank 2] step: 66, loss: 2.0619, tokens_per_second: 7969.38, mfu: 9.04, diloco_peers: 2
+18:28:10 [INFO] [Rank 1] step: 66, loss: 2.0619, tokens_per_second: 7969.65, mfu: 9.04, diloco_peers: 2
+18:28:14 [INFO] [Rank 3] step: 67, loss: 2.1360, tokens_per_second: 8022.11, mfu: 9.10, diloco_peers: 2
+18:28:14 [INFO] [Rank 1] step: 67, loss: 2.1360, tokens_per_second: 8019.71, mfu: 9.10, diloco_peers: 2
+18:28:14 [INFO] [Rank 2] step: 67, loss: 2.1360, tokens_per_second: 8019.43, mfu: 9.10, diloco_peers: 2
+18:28:14 [INFO] [Rank 0] step: 67, loss: 2.1360, tokens_per_second: 8020.24, mfu: 9.10, diloco_peers: 2
+18:28:19 [INFO] [Rank 3] step: 68, loss: 2.0553, tokens_per_second: 7966.82, mfu: 9.04, diloco_peers: 2
+18:28:19 [INFO] [Rank 2] step: 68, loss: 2.0553, tokens_per_second: 7966.84, mfu: 9.04, diloco_peers: 2
+18:28:19 [INFO] [Rank 1] step: 68, loss: 2.0553, tokens_per_second: 7966.82, mfu: 9.04, diloco_peers: 2
+18:28:19 [INFO] [Rank 0] step: 68, loss: 2.0553, tokens_per_second: 7960.81, mfu: 9.03, diloco_peers: 2
+18:28:23 [INFO] [Rank 2] step: 69, loss: 2.1186, tokens_per_second: 8037.03, mfu: 9.12, diloco_peers: 2
+18:28:23 [INFO] [Rank 1] step: 69, loss: 2.1186, tokens_per_second: 8035.83, mfu: 9.12, diloco_peers: 2
+18:28:23 [INFO] [Rank 3] step: 69, loss: 2.1186, tokens_per_second: 8033.11, mfu: 9.12, diloco_peers: 2
+18:28:23 [INFO] [Rank 0] step: 69, loss: 2.1186, tokens_per_second: 8033.33, mfu: 9.12, diloco_peers: 2
+18:28:29 [INFO] [Rank 3] step: 70, loss: 2.0071, tokens_per_second: 13977.95, mfu: 15.86, diloco_peers: 2
+18:28:29 [INFO] [Rank 2] step: 70, loss: 2.0071, tokens_per_second: 13986.09, mfu: 15.87, diloco_peers: 2
+18:28:29 [INFO] [Rank 1] step: 70, loss: 2.0071, tokens_per_second: 13982.25, mfu: 15.87, diloco_peers: 2
+18:28:29 [INFO] [Rank 0] step: 70, loss: 2.0071, tokens_per_second: 13993.18, mfu: 15.88, diloco_peers: 2
+18:28:48 [INFO] [Rank 1] Sync psuedo-gradient in 19.558163 seconds
+18:28:48 [INFO] [Rank 1] all reduce pseudo gradient in: 19.558455777994823 seconds
+18:28:51 [INFO] [Rank 3] Sync psuedo-gradient in 22.091825 seconds
+18:28:51 [INFO] [Rank 3] all reduce pseudo gradient in: 22.092350032995455 seconds
+18:28:52 [INFO] [Rank 0] Sync psuedo-gradient in 22.678291 seconds
+18:28:52 [INFO] [Rank 0] all reduce pseudo gradient in: 22.679202327970415 seconds
+18:28:52 [INFO] [Rank 2] Sync psuedo-gradient in 23.217651 seconds
+18:28:52 [INFO] [Rank 2] all reduce pseudo gradient in: 23.217955283005722 seconds
+18:28:57 [INFO] [Rank 1] effective mfu: 9.326727461517226
+18:28:57 [INFO] [Rank 1] outer_step step: 7
+18:28:57 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:29:00 [INFO] [Rank 3] effective mfu: 9.590002191779398
+18:29:00 [INFO] [Rank 3] outer_step step: 7
+18:29:00 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:29:01 [INFO] [Rank 2] effective mfu: 8.949349031258926
+18:29:01 [INFO] [Rank 2] outer_step step: 7
+18:29:01 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:29:03 [INFO] [Rank 0] effective mfu: 9.271710845135237
+18:29:03 [INFO] [Rank 0] outer_step step: 7
+18:29:03 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:29:07 [INFO] [Rank 3] step: 71, loss: 2.0063, tokens_per_second: 7759.56, mfu: 8.81, diloco_peers: 2
+18:29:07 [INFO] [Rank 0] step: 71, loss: 2.0063, tokens_per_second: 7760.45, mfu: 8.81, diloco_peers: 2
+18:29:07 [INFO] [Rank 2] step: 71, loss: 2.0063, tokens_per_second: 7756.16, mfu: 8.80, diloco_peers: 2
+18:29:07 [INFO] [Rank 1] step: 71, loss: 2.0063, tokens_per_second: 7756.27, mfu: 8.80, diloco_peers: 2
+18:29:11 [INFO] [Rank 2] step: 72, loss: 2.1051, tokens_per_second: 7914.44, mfu: 8.98, diloco_peers: 2
+18:29:11 [INFO] [Rank 3] step: 72, loss: 2.1051, tokens_per_second: 7916.22, mfu: 8.98, diloco_peers: 2
+18:29:11 [INFO] [Rank 1] step: 72, loss: 2.1051, tokens_per_second: 7914.38, mfu: 8.98, diloco_peers: 2
+18:29:11 [INFO] [Rank 0] step: 72, loss: 2.1051, tokens_per_second: 7916.23, mfu: 8.98, diloco_peers: 2
+18:29:16 [INFO] [Rank 2] step: 73, loss: 2.1870, tokens_per_second: 7848.36, mfu: 8.91, diloco_peers: 2
+18:29:16 [INFO] [Rank 3] step: 73, loss: 2.1870, tokens_per_second: 7850.18, mfu: 8.91, diloco_peers: 2
+18:29:16 [INFO] [Rank 1] step: 73, loss: 2.1870, tokens_per_second: 7848.33, mfu: 8.91, diloco_peers: 2
+18:29:16 [INFO] [Rank 0] step: 73, loss: 2.1870, tokens_per_second: 7848.34, mfu: 8.91, diloco_peers: 2
+18:29:21 [INFO] [Rank 3] step: 74, loss: 2.1493, tokens_per_second: 7822.64, mfu: 8.88, diloco_peers: 2
+18:29:21 [INFO] [Rank 2] step: 74, loss: 2.1493, tokens_per_second: 7824.79, mfu: 8.88, diloco_peers: 2
+18:29:21 [INFO] [Rank 1] step: 74, loss: 2.1493, tokens_per_second: 7824.75, mfu: 8.88, diloco_peers: 2
+18:29:21 [INFO] [Rank 0] step: 74, loss: 2.1493, tokens_per_second: 7820.91, mfu: 8.87, diloco_peers: 2
+18:29:25 [INFO] [Rank 2] step: 75, loss: 2.1282, tokens_per_second: 7823.71, mfu: 8.88, diloco_peers: 2
+18:29:25 [INFO] [Rank 3] step: 75, loss: 2.1282, tokens_per_second: 7818.08, mfu: 8.87, diloco_peers: 2
+18:29:25 [INFO] [Rank 1] step: 75, loss: 2.1282, tokens_per_second: 7823.75, mfu: 8.88, diloco_peers: 2
+18:29:25 [INFO] [Rank 0] step: 75, loss: 2.1282, tokens_per_second: 7814.52, mfu: 8.87, diloco_peers: 2
+18:29:29 [INFO] [Rank 3] step: 76, loss: 2.0934, tokens_per_second: 7865.65, mfu: 8.93, diloco_peers: 2
+18:29:29 [INFO] [Rank 0] step: 76, loss: 2.0934, tokens_per_second: 7864.84, mfu: 8.92, diloco_peers: 2
+18:29:29 [INFO] [Rank 2] step: 76, loss: 2.0934, tokens_per_second: 7834.53, mfu: 8.89, diloco_peers: 2
+18:29:29 [INFO] [Rank 1] step: 76, loss: 2.0934, tokens_per_second: 7834.28, mfu: 8.89, diloco_peers: 2
+18:29:34 [INFO] [Rank 1] step: 77, loss: 2.1264, tokens_per_second: 7857.89, mfu: 8.92, diloco_peers: 2
+18:29:34 [INFO] [Rank 3] step: 77, loss: 2.1264, tokens_per_second: 7859.67, mfu: 8.92, diloco_peers: 2
+18:29:34 [INFO] [Rank 2] step: 77, loss: 2.1264, tokens_per_second: 7857.17, mfu: 8.92, diloco_peers: 2
+18:29:34 [INFO] [Rank 0] step: 77, loss: 2.1264, tokens_per_second: 7865.47, mfu: 8.93, diloco_peers: 2
+18:29:40 [INFO] [Rank 2] step: 78, loss: 2.0927, tokens_per_second: 7743.82, mfu: 8.79, diloco_peers: 2
+18:29:40 [INFO] [Rank 3] step: 78, loss: 2.0927, tokens_per_second: 7743.82, mfu: 8.79, diloco_peers: 2
+18:29:40 [INFO] [Rank 1] step: 78, loss: 2.0927, tokens_per_second: 7743.83, mfu: 8.79, diloco_peers: 2
+18:29:40 [INFO] [Rank 0] step: 78, loss: 2.0927, tokens_per_second: 7746.15, mfu: 8.79, diloco_peers: 2
+18:29:44 [INFO] [Rank 1] step: 79, loss: 2.1101, tokens_per_second: 7818.01, mfu: 8.87, diloco_peers: 2
+18:29:44 [INFO] [Rank 2] step: 79, loss: 2.1101, tokens_per_second: 7817.90, mfu: 8.87, diloco_peers: 2
+18:29:44 [INFO] [Rank 3] step: 79, loss: 2.1101, tokens_per_second: 7814.70, mfu: 8.87, diloco_peers: 2
+18:29:44 [INFO] [Rank 0] step: 79, loss: 2.1101, tokens_per_second: 7815.80, mfu: 8.87, diloco_peers: 2
+18:29:49 [INFO] [Rank 2] step: 80, loss: 2.1758, tokens_per_second: 14102.75, mfu: 16.00, diloco_peers: 2
+18:29:49 [INFO] [Rank 3] step: 80, loss: 2.1758, tokens_per_second: 14092.50, mfu: 15.99, diloco_peers: 2
+18:29:49 [INFO] [Rank 1] step: 80, loss: 2.1758, tokens_per_second: 14102.67, mfu: 16.00, diloco_peers: 2
+18:29:49 [INFO] [Rank 0] step: 80, loss: 2.1758, tokens_per_second: 14092.75, mfu: 15.99, diloco_peers: 2
+18:30:09 [INFO] [Rank 1] Sync psuedo-gradient in 20.377928 seconds
+18:30:09 [INFO] [Rank 1] all reduce pseudo gradient in: 20.37845901597757 seconds
+18:30:11 [INFO] [Rank 2] Sync psuedo-gradient in 21.778223 seconds
+18:30:11 [INFO] [Rank 2] all reduce pseudo gradient in: 21.7785172900185 seconds
+18:30:11 [INFO] [Rank 3] Sync psuedo-gradient in 22.448700 seconds
+18:30:11 [INFO] [Rank 3] all reduce pseudo gradient in: 22.449345715984236 seconds
+18:30:12 [INFO] [Rank 0] Sync psuedo-gradient in 22.940710 seconds
+18:30:12 [INFO] [Rank 0] all reduce pseudo gradient in: 22.94160700100474 seconds
+18:30:18 [INFO] [Rank 1] effective mfu: 9.239217600923727
+18:30:18 [INFO] [Rank 1] outer_step step: 8
+18:30:18 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:30:20 [INFO] [Rank 2] effective mfu: 9.449926194362147
+18:30:20 [INFO] [Rank 2] outer_step step: 8
+18:30:20 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:30:22 [INFO] [Rank 3] effective mfu: 9.055717866502802
+18:30:22 [INFO] [Rank 3] outer_step step: 8
+18:30:22 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:30:24 [INFO] [Rank 0] effective mfu: 9.200989375933215
+18:30:24 [INFO] [Rank 0] outer_step step: 8
+18:30:24 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:30:28 [INFO] [Rank 3] step: 81, loss: 2.2508, tokens_per_second: 7708.33, mfu: 8.75, diloco_peers: 2
+18:30:28 [INFO] [Rank 1] step: 81, loss: 2.2508, tokens_per_second: 7708.16, mfu: 8.75, diloco_peers: 2
+18:30:28 [INFO] [Rank 2] step: 81, loss: 2.2508, tokens_per_second: 7708.03, mfu: 8.75, diloco_peers: 2
+18:30:28 [INFO] [Rank 0] step: 81, loss: 2.2508, tokens_per_second: 7706.45, mfu: 8.74, diloco_peers: 2
+18:30:32 [INFO] [Rank 2] step: 82, loss: 2.1289, tokens_per_second: 7719.22, mfu: 8.76, diloco_peers: 2
+18:30:32 [INFO] [Rank 1] step: 82, loss: 2.1289, tokens_per_second: 7717.50, mfu: 8.76, diloco_peers: 2
+18:30:32 [INFO] [Rank 3] step: 82, loss: 2.1289, tokens_per_second: 7719.23, mfu: 8.76, diloco_peers: 2
+18:30:32 [INFO] [Rank 0] step: 82, loss: 2.1289, tokens_per_second: 7719.26, mfu: 8.76, diloco_peers: 2
+18:30:37 [INFO] [Rank 3] step: 83, loss: 2.1466, tokens_per_second: 7719.16, mfu: 8.76, diloco_peers: 2
+18:30:37 [INFO] [Rank 2] step: 83, loss: 2.1466, tokens_per_second: 7719.08, mfu: 8.76, diloco_peers: 2
+18:30:37 [INFO] [Rank 1] step: 83, loss: 2.1466, tokens_per_second: 7719.15, mfu: 8.76, diloco_peers: 2
+18:30:37 [INFO] [Rank 0] step: 83, loss: 2.1466, tokens_per_second: 7719.11, mfu: 8.76, diloco_peers: 2
+18:30:42 [INFO] [Rank 3] step: 84, loss: 2.2048, tokens_per_second: 7704.86, mfu: 8.74, diloco_peers: 2
+18:30:42 [INFO] [Rank 2] step: 84, loss: 2.2048, tokens_per_second: 7704.71, mfu: 8.74, diloco_peers: 2
+18:30:42 [INFO] [Rank 1] step: 84, loss: 2.2048, tokens_per_second: 7704.76, mfu: 8.74, diloco_peers: 2
+18:30:42 [INFO] [Rank 0] step: 84, loss: 2.2048, tokens_per_second: 7708.33, mfu: 8.75, diloco_peers: 2
+18:30:47 [INFO] [Rank 2] step: 85, loss: 2.1296, tokens_per_second: 7658.58, mfu: 8.69, diloco_peers: 2
+18:30:47 [INFO] [Rank 3] step: 85, loss: 2.1296, tokens_per_second: 7628.75, mfu: 8.66, diloco_peers: 2
+18:30:47 [INFO] [Rank 1] step: 85, loss: 2.1296, tokens_per_second: 7658.68, mfu: 8.69, diloco_peers: 2
+18:30:47 [INFO] [Rank 0] step: 85, loss: 2.1296, tokens_per_second: 7631.22, mfu: 8.66, diloco_peers: 2
+18:30:51 [INFO] [Rank 3] step: 86, loss: 2.1378, tokens_per_second: 7718.52, mfu: 8.76, diloco_peers: 2
+18:30:51 [INFO] [Rank 0] step: 86, loss: 2.1378, tokens_per_second: 7718.61, mfu: 8.76, diloco_peers: 2
+18:30:51 [INFO] [Rank 1] step: 86, loss: 2.1378, tokens_per_second: 7716.74, mfu: 8.76, diloco_peers: 2
+18:30:51 [INFO] [Rank 2] step: 86, loss: 2.1378, tokens_per_second: 7717.02, mfu: 8.76, diloco_peers: 2
+18:30:55 [INFO] [Rank 2] step: 87, loss: 2.1291, tokens_per_second: 7786.10, mfu: 8.84, diloco_peers: 2
+18:30:55 [INFO] [Rank 1] step: 87, loss: 2.1291, tokens_per_second: 7786.25, mfu: 8.84, diloco_peers: 2
+18:30:55 [INFO] [Rank 3] step: 87, loss: 2.1291, tokens_per_second: 7787.62, mfu: 8.84, diloco_peers: 2
+18:30:55 [INFO] [Rank 0] step: 87, loss: 2.1291, tokens_per_second: 7787.54, mfu: 8.84, diloco_peers: 2
+18:31:01 [INFO] [Rank 3] step: 88, loss: 2.1177, tokens_per_second: 7673.03, mfu: 8.71, diloco_peers: 2
+18:31:01 [INFO] [Rank 2] step: 88, loss: 2.1177, tokens_per_second: 7672.00, mfu: 8.71, diloco_peers: 2
+18:31:01 [INFO] [Rank 1] step: 88, loss: 2.1177, tokens_per_second: 7671.99, mfu: 8.71, diloco_peers: 2
+18:31:01 [INFO] [Rank 0] step: 88, loss: 2.1177, tokens_per_second: 7669.68, mfu: 8.70, diloco_peers: 2
+18:31:05 [INFO] [Rank 1] step: 89, loss: 2.0193, tokens_per_second: 7697.35, mfu: 8.73, diloco_peers: 2
+18:31:05 [INFO] [Rank 2] step: 89, loss: 2.0193, tokens_per_second: 7697.38, mfu: 8.73, diloco_peers: 2
+18:31:05 [INFO] [Rank 3] step: 89, loss: 2.0193, tokens_per_second: 7695.14, mfu: 8.73, diloco_peers: 2
+18:31:05 [INFO] [Rank 0] step: 89, loss: 2.0193, tokens_per_second: 7689.55, mfu: 8.73, diloco_peers: 2
+18:31:10 [INFO] [Rank 2] step: 90, loss: 2.0540, tokens_per_second: 14001.88, mfu: 15.89, diloco_peers: 2
+18:31:10 [INFO] [Rank 3] step: 90, loss: 2.0540, tokens_per_second: 13999.35, mfu: 15.89, diloco_peers: 2
+18:31:10 [INFO] [Rank 1] step: 90, loss: 2.0540, tokens_per_second: 14005.74, mfu: 15.89, diloco_peers: 2
+18:31:10 [INFO] [Rank 0] step: 90, loss: 2.0540, tokens_per_second: 13996.68, mfu: 15.88, diloco_peers: 2
+18:31:29 [INFO] [Rank 1] Sync psuedo-gradient in 19.089928 seconds
+18:31:29 [INFO] [Rank 1] all reduce pseudo gradient in: 19.0902268459904 seconds
+18:31:31 [INFO] [Rank 3] Sync psuedo-gradient in 20.994738 seconds
+18:31:31 [INFO] [Rank 3] all reduce pseudo gradient in: 20.995365771988872 seconds
+18:31:31 [INFO] [Rank 0] Sync psuedo-gradient in 21.683378 seconds
+18:31:31 [INFO] [Rank 0] all reduce pseudo gradient in: 21.684275584004354 seconds
+18:31:32 [INFO] [Rank 2] Sync psuedo-gradient in 21.789851 seconds
+18:31:32 [INFO] [Rank 2] all reduce pseudo gradient in: 21.790356904966757 seconds
+18:31:37 [INFO] [Rank 1] effective mfu: 9.322484111304423
+18:31:37 [INFO] [Rank 1] outer_step step: 9
+18:31:37 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:31:40 [INFO] [Rank 3] effective mfu: 9.54678914445963
+18:31:40 [INFO] [Rank 3] outer_step step: 9
+18:31:40 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:31:40 [INFO] [Rank 2] effective mfu: 9.265460779428057
+18:31:40 [INFO] [Rank 2] outer_step step: 9
+18:31:40 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:31:41 [INFO] [Rank 0] effective mfu: 9.643344366355013
+18:31:41 [INFO] [Rank 0] outer_step step: 9
+18:31:41 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:31:45 [INFO] [Rank 3] step: 91, loss: 2.1548, tokens_per_second: 8114.59, mfu: 9.21, diloco_peers: 2
+18:31:45 [INFO] [Rank 0] step: 91, loss: 2.1548, tokens_per_second: 8114.46, mfu: 9.21, diloco_peers: 2
+18:31:45 [INFO] [Rank 1] step: 91, loss: 2.1548, tokens_per_second: 8112.91, mfu: 9.21, diloco_peers: 2
+18:31:45 [INFO] [Rank 2] step: 91, loss: 2.1548, tokens_per_second: 8110.49, mfu: 9.20, diloco_peers: 2
+18:31:50 [INFO] [Rank 3] step: 92, loss: 2.2327, tokens_per_second: 8112.36, mfu: 9.21, diloco_peers: 2
+18:31:50 [INFO] [Rank 2] step: 92, loss: 2.2327, tokens_per_second: 8110.95, mfu: 9.20, diloco_peers: 2
+18:31:50 [INFO] [Rank 1] step: 92, loss: 2.2327, tokens_per_second: 8110.70, mfu: 9.20, diloco_peers: 2
+18:31:50 [INFO] [Rank 0] step: 92, loss: 2.2327, tokens_per_second: 8114.13, mfu: 9.21, diloco_peers: 2
+18:31:55 [INFO] [Rank 2] step: 93, loss: 2.2190, tokens_per_second: 8098.27, mfu: 9.19, diloco_peers: 2
+18:31:55 [INFO] [Rank 1] step: 93, loss: 2.2190, tokens_per_second: 8098.19, mfu: 9.19, diloco_peers: 2
+18:31:55 [INFO] [Rank 3] step: 93, loss: 2.2190, tokens_per_second: 8097.72, mfu: 9.19, diloco_peers: 2
+18:31:55 [INFO] [Rank 0] step: 93, loss: 2.2190, tokens_per_second: 8097.73, mfu: 9.19, diloco_peers: 2
+18:31:59 [INFO] [Rank 2] step: 94, loss: 2.1796, tokens_per_second: 8111.07, mfu: 9.20, diloco_peers: 2
+18:31:59 [INFO] [Rank 3] step: 94, loss: 2.1796, tokens_per_second: 8106.08, mfu: 9.20, diloco_peers: 2
+18:31:59 [INFO] [Rank 1] step: 94, loss: 2.1796, tokens_per_second: 8110.94, mfu: 9.20, diloco_peers: 2
+18:31:59 [INFO] [Rank 0] step: 94, loss: 2.1796, tokens_per_second: 8108.24, mfu: 9.20, diloco_peers: 2
+18:32:04 [INFO] [Rank 3] step: 95, loss: 2.1695, tokens_per_second: 8020.41, mfu: 9.10, diloco_peers: 2
+18:32:04 [INFO] [Rank 1] step: 95, loss: 2.1695, tokens_per_second: 8021.73, mfu: 9.10, diloco_peers: 2
+18:32:04 [INFO] [Rank 2] step: 95, loss: 2.1695, tokens_per_second: 8022.16, mfu: 9.10, diloco_peers: 2
+18:32:04 [INFO] [Rank 0] step: 95, loss: 2.1695, tokens_per_second: 8019.74, mfu: 9.10, diloco_peers: 2
+18:32:09 [INFO] [Rank 3] step: 96, loss: 2.0461, tokens_per_second: 8065.73, mfu: 9.15, diloco_peers: 2
+18:32:09 [INFO] [Rank 0] step: 96, loss: 2.0461, tokens_per_second: 8054.92, mfu: 9.14, diloco_peers: 2
+18:32:09 [INFO] [Rank 2] step: 96, loss: 2.0461, tokens_per_second: 8054.45, mfu: 9.14, diloco_peers: 2
+18:32:09 [INFO] [Rank 1] step: 96, loss: 2.0461, tokens_per_second: 8038.54, mfu: 9.12, diloco_peers: 2
+18:32:13 [INFO] [Rank 3] step: 97, loss: 2.1538, tokens_per_second: 8191.43, mfu: 9.30, diloco_peers: 2
+18:32:13 [INFO] [Rank 2] step: 97, loss: 2.1538, tokens_per_second: 8188.84, mfu: 9.29, diloco_peers: 2
+18:32:13 [INFO] [Rank 1] step: 97, loss: 2.1538, tokens_per_second: 8189.60, mfu: 9.29, diloco_peers: 2
+18:32:13 [INFO] [Rank 0] step: 97, loss: 2.1538, tokens_per_second: 8192.56, mfu: 9.30, diloco_peers: 2
+18:32:19 [INFO] [Rank 2] step: 98, loss: 2.1669, tokens_per_second: 8060.95, mfu: 9.15, diloco_peers: 2
+18:32:19 [INFO] [Rank 1] step: 98, loss: 2.1669, tokens_per_second: 8061.03, mfu: 9.15, diloco_peers: 2
+18:32:19 [INFO] [Rank 3] step: 98, loss: 2.1669, tokens_per_second: 8060.96, mfu: 9.15, diloco_peers: 2
+18:32:19 [INFO] [Rank 0] step: 98, loss: 2.1669, tokens_per_second: 8067.09, mfu: 9.15, diloco_peers: 2
+18:32:23 [INFO] [Rank 2] step: 99, loss: 2.1782, tokens_per_second: 8041.26, mfu: 9.12, diloco_peers: 2
+18:32:23 [INFO] [Rank 1] step: 99, loss: 2.1782, tokens_per_second: 8039.91, mfu: 9.12, diloco_peers: 2
+18:32:23 [INFO] [Rank 3] step: 99, loss: 2.1782, tokens_per_second: 8039.94, mfu: 9.12, diloco_peers: 2
+18:32:23 [INFO] [Rank 0] step: 99, loss: 2.1782, tokens_per_second: 8042.88, mfu: 9.13, diloco_peers: 2
+18:32:28 [INFO] [Rank 3] step: 100, loss: 2.0060, tokens_per_second: 13769.74, mfu: 15.62, diloco_peers: 2
+18:32:28 [INFO] [Rank 1] step: 100, loss: 2.0060, tokens_per_second: 13773.19, mfu: 15.63, diloco_peers: 2
+18:32:28 [INFO] [Rank 2] step: 100, loss: 2.0060, tokens_per_second: 13772.75, mfu: 15.63, diloco_peers: 2
+18:32:28 [INFO] [Rank 0] step: 100, loss: 2.0060, tokens_per_second: 13769.81, mfu: 15.63, diloco_peers: 2
+18:32:48 [INFO] [Rank 1] Sync psuedo-gradient in 20.426511 seconds
+18:32:48 [INFO] [Rank 1] all reduce pseudo gradient in: 20.426796242012642 seconds
+18:32:51 [INFO] [Rank 2] Sync psuedo-gradient in 22.797635 seconds
+18:32:51 [INFO] [Rank 2] all reduce pseudo gradient in: 22.798086259048432 seconds
+18:32:51 [INFO] [Rank 3] Sync psuedo-gradient in 23.013575 seconds
+18:32:51 [INFO] [Rank 3] all reduce pseudo gradient in: 23.01383904303657 seconds
+18:32:52 [INFO] [Rank 0] Sync psuedo-gradient in 24.433081 seconds
+18:32:52 [INFO] [Rank 0] all reduce pseudo gradient in: 24.434145232022274 seconds
+18:32:57 [INFO] [Rank 1] effective mfu: 9.367183462838007
+18:32:57 [INFO] [Rank 1] outer_step step: 10
+18:32:57 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+18:32:59 [INFO] [Rank 2] effective mfu: 9.367074672025588
+18:32:59 [INFO] [Rank 2] outer_step step: 10
+18:32:59 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+18:33:02 [INFO] [Rank 3] effective mfu: 9.047983208763595
+18:33:02 [INFO] [Rank 3] outer_step step: 10
+18:33:02 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+18:33:04 [INFO] [Rank 0] effective mfu: 8.969269986078512
+18:33:04 [INFO] [Rank 0] outer_step step: 10
+18:33:04 [INFO] [Rank 0] live_recovery should_send_ckpt_to: None
+18:33:07 [INFO] [Rank 3] step: 101, loss: 2.0923, tokens_per_second: 7597.28, mfu: 8.62, diloco_peers: 2
+18:33:07 [INFO] [Rank 0] step: 101, loss: 2.0923, tokens_per_second: 7597.30, mfu: 8.62, diloco_peers: 2
+18:33:07 [INFO] [Rank 1] step: 101, loss: 2.0923, tokens_per_second: 7595.44, mfu: 8.62, diloco_peers: 2
+18:33:07 [INFO] [Rank 2] step: 101, loss: 2.0923, tokens_per_second: 7595.00, mfu: 8.62, diloco_peers: 2

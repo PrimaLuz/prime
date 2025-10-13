@@ -514,11 +514,11 @@ def load_all_datasets(
         split_rank = data_config.data_rank * world_size + rank
         split_world_size = data_config.data_world_size * world_size
         
-        print(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>\nuse split, split_rank {split_rank} split_world_size {split_world_size}\n>>>>>>>>>>>>>>>>>>>>>>>>\n")
+        get_logger().info(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>\nuse split, split_rank {split_rank} split_world_size {split_world_size}\n>>>>>>>>>>>>>>>>>>>>>>>>\n")
     else:
         split_rank = rank
         split_world_size = world_size
-        print(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>\nNO USE  split_rank {split_rank} split_world_size {split_world_size}\n>>>>>>>>>>>>>>>>>>>>>>>>\n")
+        get_logger().info(f"\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>\nNO USE  split_rank {split_rank} split_world_size {split_world_size}\n>>>>>>>>>>>>>>>>>>>>>>>>\n")
 
 
     get_logger().info("Loading Train dataset(s)")

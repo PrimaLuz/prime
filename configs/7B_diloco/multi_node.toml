@@ -1,22 +1,22 @@
 # 双节点7B diloco训练配置
-name_model = "/userdata/models/Qwen/Qwen2.5-7B-Instruct"
-project = "Qwen25_7B_diloco_multi_node"
+name_model = "/userdata/models/Qwen/Qwen2.5-7B"
+project = "Qwen25_7B_Base_diloco_2_nodes"
 type_model = "llama2"
 
 [train]
-micro_bs = 2  # 根据双节点调整
+micro_bs = 1  
 reshard_after_forward = true
 reduce_fp32 = true
 torch_compile = false
 
 [optim]
-batch_size = 2048  # 双节点翻倍
-warmup_steps = 1000
+batch_size = 32  
+warmup_steps = 400
 total_steps = 88_000
 
 [optim.optim]
 type = "adam"
-lr = 3e-4
+lr = 3e-5
 weight_decay = 0.1
 betas1 = 0.9
 betas2 = 0.95
@@ -24,17 +24,17 @@ betas2 = 0.95
 [data]
 dataset_name_or_paths = "/userdata/datasets/fineweb-edu"
 seq_length = 2048
-num_workers = 8
+num_workers = 4
+sequence_packing = false
 
 [diloco]
 outer_lr = 0.7
-inner_steps = 100
+inner_steps = 125
 compression = "uint8"
 retry_all_reduce = 3
 
 [ckpt]
-path = "/data/outputs_7b_diloco_multi"
-interval = 1000  # 每50个diloco step保存一次
+interval = 500  # 每50个diloco step保存一次
 
 [monitor]
 log_flush_interval = 10

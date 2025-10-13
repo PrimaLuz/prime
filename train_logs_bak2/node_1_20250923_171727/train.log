@@ -1,0 +1,341 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0923 17:17:29.296000 3684376 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0923 17:17:29.296000 3684376 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0923 17:17:29.296000 3684376 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0923 17:17:29.296000 3684376 .venv/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/userdata/workspace/Prime/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=1, local_rank=1, local_world_size=4, nnodes=1, global_unique_id=1, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=0, local_rank=0, local_world_size=4, nnodes=1, global_unique_id=1, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=3, local_rank=3, local_world_size=4, nnodes=1, global_unique_id=1, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+World info: WorldInfo(world_size=4, rank=2, local_rank=2, local_world_size=4, nnodes=1, global_unique_id=1, global_addr=172.16.92.204, global_port=26969, global_world_size=2, global_rank=1)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 0 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+17:17:48 [INFO] [Rank 0] Loading Train dataset(s)
+17:17:49 [INFO] [Rank 0] [Rank0/4] files:['/userdata/datasets/fineweb-edu/data0/train-00000.parquet', '/userdata/datasets/fineweb-edu/data0/train-00004.parquet', '/userdata/datasets/fineweb-edu/data0/train-00008.parquet', '/userdata/datasets/fineweb-edu/data0/train-00012.parquet']
+17:17:49 [INFO] [Rank 0] Loaded datasets (train)
+17:17:49 [INFO] [Rank 0] Train dataset: <zeroband.data.ParquetDataset object at 0x7f1cd05e8ee0>
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 1 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+17:17:49 [INFO] [Rank 1] Loading Train dataset(s)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 3 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+17:17:49 [INFO] [Rank 3] Loading Train dataset(s)
+17:17:49 [WARNING] [Rank 0] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 0] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+17:17:49 [INFO] [Rank 1] [Rank1/4] files:['/userdata/datasets/fineweb-edu/data0/train-00001.parquet', '/userdata/datasets/fineweb-edu/data0/train-00005.parquet', '/userdata/datasets/fineweb-edu/data0/train-00009.parquet', '/userdata/datasets/fineweb-edu/data0/train-00013.parquet']
+17:17:49 [INFO] [Rank 1] Loaded datasets (train)
+17:17:49 [INFO] [Rank 1] Train dataset: <zeroband.data.ParquetDataset object at 0x7f2294ed80d0>
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]17:17:49 [INFO] [Rank 3] [Rank3/4] files:['/userdata/datasets/fineweb-edu/data0/train-00003.parquet', '/userdata/datasets/fineweb-edu/data0/train-00007.parquet', '/userdata/datasets/fineweb-edu/data0/train-00011.parquet', '/userdata/datasets/fineweb-edu/data0/train-00015.parquet']
+17:17:49 [INFO] [Rank 3] Loaded datasets (train)
+17:17:49 [INFO] [Rank 3] Train dataset: <zeroband.data.ParquetDataset object at 0x7fe1504d8040>
+17:17:49 [WARNING] [Rank 1] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 1] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+17:17:49 [WARNING] [Rank 3] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+NO USE  split_rank 2 split_world_size 4
+>>>>>>>>>>>>>>>>>>>>>>>>
+
+17:17:49 [INFO] [Rank 2] Loading Train dataset(s)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]17:17:50 [INFO] [Rank 2] [Rank2/4] files:['/userdata/datasets/fineweb-edu/data0/train-00002.parquet', '/userdata/datasets/fineweb-edu/data0/train-00006.parquet', '/userdata/datasets/fineweb-edu/data0/train-00010.parquet', '/userdata/datasets/fineweb-edu/data0/train-00014.parquet']
+17:17:50 [INFO] [Rank 2] Loaded datasets (train)
+17:17:50 [INFO] [Rank 2] Train dataset: <zeroband.data.ParquetDataset object at 0x7fb6d4f6c160>
+17:17:50 [WARNING] [Rank 2] dataloader rank 0 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 3 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 6 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 1 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 5 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 2 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 4 Number of workers 8 is greater than the number of files 4
+17:17:50 [WARNING] [Rank 2] dataloader rank 7 Number of workers 8 is greater than the number of files 4
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.12s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.21s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:14,  4.79s/it]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.56s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.81s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.86s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.68s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.75s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:13<00:04,  4.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.78s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.87s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.42s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.51s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.54s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.65s/it]
+17:18:08 [INFO] [Rank 2] Peak FLOPS used for computing MFU: 9.890e+14
+17:18:08 [INFO] [Rank 2] Number of parameters: 7070619136
+17:18:08 [INFO] [Rank 2] [1](Leader: False) TCPStore init: Connecting via 172.16.92.204:26971
+17:18:08 [INFO] [Rank 2] Destroyed process group
+17:18:08 [INFO] [Rank 1] Peak FLOPS used for computing MFU: 9.890e+14
+17:18:08 [INFO] [Rank 1] Number of parameters: 7070619136
+17:18:08 [INFO] [Rank 1] [1](Leader: False) TCPStore init: Connecting via 172.16.92.204:26970
+17:18:08 [INFO] [Rank 1] Destroyed process group
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.56s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.68s/it]
+17:18:08 [INFO] [Rank 3] Peak FLOPS used for computing MFU: 9.890e+14
+17:18:08 [INFO] [Rank 3] Number of parameters: 7070619136
+17:18:08 [INFO] [Rank 3] [1](Leader: False) TCPStore init: Connecting via 172.16.92.204:26972
+17:18:08 [INFO] [Rank 3] Destroyed process group
+17:18:08 [INFO] [Rank 2] Elastic Device mesh init done with 2 peers in 0.2331179580069147 seconds
+17:18:08 [INFO] [Rank 2] finished init global pg
+Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.61s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.77s/it]
+17:18:08 [INFO] [Rank 1] Elastic Device mesh init done with 2 peers in 0.31236755597637966 seconds
+17:18:08 [INFO] [Rank 1] finished init global pg
+17:18:08 [INFO] [Rank 0] Peak FLOPS used for computing MFU: 9.890e+14
+17:18:08 [INFO] [Rank 0] Number of parameters: 7070619136
+17:18:08 [INFO] [Rank 0] [1](Leader: False) TCPStore init: Connecting via 172.16.92.204:26969
+17:18:08 [INFO] [Rank 0] Destroyed process group
+17:18:08 [INFO] [Rank 3] Elastic Device mesh init done with 2 peers in 0.2576253680163063 seconds
+17:18:08 [INFO] [Rank 3] finished init global pg
+17:18:09 [INFO] [Rank 0] Elastic Device mesh init done with 2 peers in 0.3721931600011885 seconds
+17:18:09 [INFO] [Rank 0] Started iperf server on 172.16.96.251 with port 10102
+17:18:09 [INFO] [Rank 0] finished init global pg
+17:18:09 [INFO] [Rank 0] finished dist.init_process_group
+17:18:09 [INFO] [Rank 1] finished dist.init_process_group
+17:18:09 [INFO] [Rank 3] finished dist.init_process_group
+17:18:09 [INFO] [Rank 2] finished dist.init_process_group
+17:18:09 [INFO] [Rank 3] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+17:18:09 [INFO] [Rank 1] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+17:18:09 [INFO] [Rank 2] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+17:18:09 [INFO] [Rank 0] local_pg size: 4, cuda_local_mesh size: 4, cpu_local_mesh size: 4
+17:18:09 [INFO] [Rank 0] Measuring bandwidths
+17:18:10 [INFO] [Rank 0] Measuring bandwidths done
+17:18:10 [INFO] [Rank 0] Destroyed process group
+17:18:10 [INFO] [Rank 3] Destroyed process group
+17:18:10 [INFO] [Rank 2] Destroyed process group
+17:18:10 [INFO] [Rank 1] Destroyed process group
+17:18:10 [INFO] [Rank 3] finished optimize_ring_ranks
+17:18:10 [INFO] [Rank 2] finished optimize_ring_ranks
+17:18:10 [INFO] [Rank 0] finished optimize_ring_ranks
+17:18:10 [INFO] [Rank 1] finished optimize_ring_ranks
+17:18:10 [INFO] [Rank 3] finished global_pg.barrier().wait()
+17:18:10 [INFO] [Rank 2] finished global_pg.barrier().wait()
+17:18:10 [INFO] [Rank 2] global_pg size : 2, local_pg size: 4
+17:18:10 [INFO] [Rank 3] global_pg size : 2, local_pg size: 4
+17:18:10 [INFO] [Rank 0] finished global_pg.barrier().wait()
+17:18:10 [INFO] [Rank 2] FSDP2 shard model, cuda_local_mesh size: 4
+17:18:10 [INFO] [Rank 0] global_pg size : 2, local_pg size: 4
+17:18:10 [INFO] [Rank 1] finished global_pg.barrier().wait()
+17:18:10 [INFO] [Rank 3] FSDP2 shard model, cuda_local_mesh size: 4
+17:18:10 [INFO] [Rank 2] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+17:18:10 [INFO] [Rank 1] global_pg size : 2, local_pg size: 4
+17:18:10 [INFO] [Rank 3] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+17:18:10 [INFO] [Rank 0] FSDP2 shard model, cuda_local_mesh size: 4
+17:18:10 [INFO] [Rank 1] FSDP2 shard model, cuda_local_mesh size: 4
+17:18:10 [INFO] [Rank 0] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+17:18:10 [INFO] [Rank 1] elastic_device_mesh.cuda_local_mesh: DeviceMesh('cuda', [0, 1, 2, 3])
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f1ac0363430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fb4c432b1b0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+17:18:16 [INFO] [Rank 0] finished shard model using FSDP2
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+17:18:16 [INFO] [Rank 2] finished shard model using FSDP2
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7f2084273430>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+17:18:17 [INFO] [Rank 1] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+[Torch FSDP] FSDPMeshInfo, shard_process_group: <torch.distributed.distributed_c10d.ProcessGroup object at 0x7fdf40127df0>
+17:18:18 [INFO] [Rank 3] finished shard model using FSDP2
+Using /root/.cache/torch_extensions/py310_cu124 as PyTorch extensions root...
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu124/collectives/build.ninja...
+Building extension module collectives...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module collectives...
+17:18:23 [INFO] [Rank 2] need_live_recovery: False
+17:18:23 [INFO] [Rank 2] outer_step step: 0
+17:18:23 [INFO] [Rank 2] live_recovery should_send_ckpt_to: None
+17:18:24 [INFO] [Rank 1] need_live_recovery: False
+17:18:24 [INFO] [Rank 1] outer_step step: 0
+17:18:25 [INFO] [Rank 3] need_live_recovery: False
+17:18:25 [INFO] [Rank 3] outer_step step: 0
+17:18:25 [INFO] [Rank 3] live_recovery should_send_ckpt_to: None
+17:18:25 [INFO] [Rank 1] live_recovery should_send_ckpt_to: None
+swanlab: Using SwanLab to track your experiments. Please refer to 
+https://docs.swanlab.cn for more information.
+swanlab: (1) Create a SwanLab account.
+swanlab: (2) Use an existing SwanLab account.
+swanlab: (3) Don't visualize my results.
+swanlab: Enter your choice: 
